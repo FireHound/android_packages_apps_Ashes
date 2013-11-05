@@ -39,6 +39,14 @@
 
         <!-- Main fragment -->
         <Preference
+            android:key="fh_clock"
+            android:fragment="com.fh.settings.fragments.statusbar.Clock"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/fh_clock_title"
+            android:summary="@string/fh_clock_summary" />
+
+        <!-- Main fragment -->
+        <Preference
             android:key="traffic"
             android:fragment="com.fh.settings.fragments.statusbar.Traffic"
             android:icon="@drawable/ic_traffic"
