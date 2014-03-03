@@ -26,4 +26,12 @@
             android:title="@string/sys_anim_title"
             android:summary="@string/sys_anim_summary" />
 
+        <!-- Toast Animations -->
+        <ListPreference
+            android:key="toast_animation"
+            android:title="@string/toast_animation_title" 
+            android:entries="@array/toast_animation_entries"
+            android:entryValues="@array/toast_animation_values"
+            android:defaultValue="1" />
+
 </PreferenceScreen>
