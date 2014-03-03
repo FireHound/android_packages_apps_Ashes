@@ -16,29 +16,81 @@
 
 package com.fh.settings.fragments.animation;
 
+import android.app.AlertDialog;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
-import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v14.preference.SwitchPreference;
+import android.provider.Settings;
+import android.view.Menu;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.internal.logging.nano.MetricsProto;
-
-import android.content.res.Resources;
-import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 
-public class AnimationSettings extends SettingsPreferenceFragment {
+import com.fh.settings.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AnimationSettings extends SettingsPreferenceFragment
+        implements Preference.OnPreferenceChangeListener {
+
     private static final String TAG = "AnimationSettings";
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
+
+    private ListPreference mToastAnimation;
+    Toast mToast;
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        addPreferencesFromResource(R.xml.animation_settings);
+
+    final ContentResolver resolver = getActivity().getContentResolver();
+
+        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
+        int toastanimation = Settings.System.getInt(resolver,
+                Settings.System.TOAST_ANIMATION, 1);
+        mToastAnimation.setValue(String.valueOf(toastanimation));
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        mToastAnimation.setOnPreferenceChangeListener(this);
+
+        if (mToast != null) {
+            mToast.cancel();
+            mToast = null;
+        }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mToastAnimation) {
+            int value = Integer.parseInt((String) newValue);
+            int index = mToastAnimation.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.TOAST_ANIMATION, value);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            if (mToast != null) {
+                mToast.cancel();
+            }
+            mToast = Toast.makeText(getActivity(), R.string.toast_animation_test,
+                    Toast.LENGTH_SHORT);
+            mToast.show();
+            return true;
+            }
+            return false;
+    }
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.FH_SETTINGS;
-
-    }
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.animation_settings);
     }
 }
