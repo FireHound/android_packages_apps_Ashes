@@ -19,4 +19,17 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/animation_settings">
 
+    <PreferenceCategory
+        android:key="toast_animations"
+        android:title="@string/toast_settings" >
+
+        <!-- Toast icon switch -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

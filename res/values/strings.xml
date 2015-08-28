@@ -786,6 +786,7 @@
     <string name="disable_immersive_message_summary">Hide all messages shown in immersive mode</string>
 
     <!-- Toast Animation -->
+    <string name="toast_settings">Toast</string>
     <string name="toast_animation_title">Toast animation</string>
     <string name="toast_none_animation">None</string>
     <string name="toast_default_animation">Default</string>
