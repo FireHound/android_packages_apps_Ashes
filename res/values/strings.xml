@@ -591,6 +591,7 @@
     <string name="powermenu_soundpanel">Sound Panel</string>
     <string name="powermenu_users">Users</string>
     <string name="powermenu_torch">Flashlight</string>
+    <string name="powermenu_screenrecord">Screenrecord</string>
 
     <!-- Power menu -->
     <string name="power_button_title">Power Button</string>
