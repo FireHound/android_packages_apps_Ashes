@@ -32,4 +32,8 @@
     <color name="white">#FFF</color>
     <color name="black">#000000</color>
     
+    <!-- Expanded Desktop -->
+    <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
+    <drawable name="expanded_item_bg">@android:color/background_light</drawable>
+
 </resources>
