@@ -40,19 +40,20 @@
         android:summary="@string/lockscreen_qs_disabled_summary"
         android:defaultValue="false" />
 
-    <lineageos.preference.LineageSecureSettingSwitchPreference
-        android:key="qs_show_brightness_slider"
+    <!-- SHow brightness slider -->
+    <com.fh.settings.preferences.SecureSettingSwitchPreference
+        android:key="qs_show_brightness"
         android:title="@string/qs_brightness_slider_title"
         android:summary="@string/qs_brightness_slider_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true"/>
 
-    <lineageos.preference.LineageSecureSettingSwitchPreference
-        android:key="qs_show_auto_brightness"
+    <!-- Auto brightness icon -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_show_brightness_icon"
         android:title="@string/brightness_icon_title"
         android:summary="@string/brightness_icon_summary"
-        android:dependency="qs_show_brightness_slider"
-        lineage:requiresConfig="@*android:bool/config_automatic_brightness_available"
-        android:defaultValue="true" />
+        android:dependency="qs_show_brightness"
+        android:defaultValue="false"/>
 
     <!-- QS titles visibility -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
