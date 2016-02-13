@@ -16,6 +16,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+                  xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
                   android:title="@string/sound_title">
 
     <!-- Misc sound settings -->
@@ -36,6 +37,11 @@
             android:title="@string/volume_dialog_force_expanded_title"
             android:summary="@string/volume_dialog_force_expanded_summary"
             android:defaultValue="false" />
+
+    <!-- Volume adjust sound -->
+    <lineageos.preference.LineageSystemSettingSwitchPreference
+        android:key="volume_adjust_sounds_enabled"
+        android:title="@string/volume_adjust_sounds_title" />
 
     </PreferenceCategory>
 
