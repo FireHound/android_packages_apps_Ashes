@@ -18,9 +18,17 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/button_title">
 
+    <!-- Hardware Keys -->
+        <Preference
+            android:key="hardware_key_category"
+            android:fragment="com.fh.settings.fragments.hwbuttons.HardwareButtons"
+            android:icon="@drawable/ic_hw_buttons"
+            android:title="@string/hw_buttons_title"
+            android:summary="@string/hw_buttons_summary" />
+
     <!-- Volume button -->
         <Preference
-            android:key="traffic"
+            android:key="volume_buttons_category"
             android:fragment="com.fh.settings.fragments.hwbuttons.VolumeButtons"
             android:icon="@drawable/ic_volume_buttons"
             android:title="@string/volume_buttons_title"
