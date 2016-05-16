@@ -34,7 +34,7 @@
 
     <PreferenceCategory
         android:key="fh_call_sounds"
-        android:title="@string/call_sound" >
+        android:title="@string/call_sounds" >
 
         <!-- Incall vibrations -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
