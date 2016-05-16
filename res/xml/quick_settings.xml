@@ -28,18 +28,26 @@
 
         <!-- Main fragment -->
         <Preference
-            android:key="qs_misc"
-            android:fragment="com.fh.settings.fragments.qs.Misc"
-            android:icon="@drawable/ic_qs_misc"
-            android:title="@string/qs_misc_title"
-            android:summary="@string/qs_misc_summary" />
-
-        <!-- Main fragment -->
-        <Preference
             android:key="qs_headers"
             android:fragment="com.fh.settings.fragments.qs.Header"
             android:icon="@drawable/ic_qs_header"
             android:title="@string/qs_header_title"
             android:summary="@string/qs_header_summary" />
+
+        <!-- Main fragment -->
+        <Preference
+            android:key="qs_animation"
+            android:fragment="com.fh.settings.fragments.qs.QsAnimation"
+            android:icon="@drawable/ic_qs_animation"
+            android:title="@string/qs_animation_title"
+            android:summary="@string/qs_animation_summary" />
+
+        <!-- Main fragment -->
+        <Preference
+            android:key="qs_misc"
+            android:fragment="com.fh.settings.fragments.qs.Misc"
+            android:icon="@drawable/ic_qs_misc"
+            android:title="@string/qs_misc_title"
+            android:summary="@string/qs_misc_summary" />
 
 </PreferenceScreen>
