@@ -41,6 +41,8 @@ public class MiscNotifications extends SettingsPreferenceFragment implements
     private static final String TAG = "NotificationsSettings";
 
     private ListPreference mNoisyNotification;
+    private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
+    private SwitchPreference mDisableIM;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,6 +58,12 @@ public class MiscNotifications extends SettingsPreferenceFragment implements
         mNoisyNotification.setValue(String.valueOf(mode));
         mNoisyNotification.setSummary(mNoisyNotification.getEntry());
         mNoisyNotification.setOnPreferenceChangeListener(this);
+
+        mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
+        mDisableIM.setOnPreferenceChangeListener(this);
+        int DisableIM = Settings.System.getInt(getContentResolver(),
+                DISABLE_IMMERSIVE_MESSAGE, 0);
+        mDisableIM.setChecked(DisableIM != 0);
     }
 
     @Override
@@ -68,6 +76,12 @@ public class MiscNotifications extends SettingsPreferenceFragment implements
             int index = mNoisyNotification.findIndexOfValue((String) newValue);
             mNoisyNotification.setSummary(
                     mNoisyNotification.getEntries()[index]);
+            return true;
+        }
+        if (preference == mDisableIM) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), DISABLE_IMMERSIVE_MESSAGE,
+                    value ? 1 : 0);
             return true;
         }
         return false;

@@ -877,4 +877,8 @@
     <string name="powermenu_lockscreen_title">Show Powermenu on Lockscreen</string>
     <string name="powermenu_lockscreen_summary">Enable the ability to show and use the power menu dialog while on the lockscreen</string>
 
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Disable immersive mode messages</string>
+    <string name="disable_immersive_message_summary">Hide all messages shown in immersive mode</string>
+
 </resources>
