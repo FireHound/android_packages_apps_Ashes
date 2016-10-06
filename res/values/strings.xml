@@ -873,4 +873,8 @@
     <string name="notification_sound_vib_screen_on_always">Always (default)</string>
     <string name="notification_sound_vib_screen_on_nomedia">If no media is playing</string>
 
+    <!-- Hide powermenu on lockscreen -->
+    <string name="powermenu_lockscreen_title">Show Powermenu on Lockscreen</string>
+    <string name="powermenu_lockscreen_summary">Enable the ability to show and use the power menu dialog while on the lockscreen</string>
+
 </resources>
