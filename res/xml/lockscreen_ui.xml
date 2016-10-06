@@ -51,6 +51,13 @@
         android:title="@string/unlock_quick_unlock_control_title"
         android:summary="@string/unlock_quick_unlock_control_summary" />
 
+    <!-- Hide powermenu on lockscreen -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="powermenu_lockscreen"
+        android:title="@string/powermenu_lockscreen_title"
+        android:summary="@string/powermenu_lockscreen_summary"
+        android:defaultValue="true" />
+
     <!-- FP vibration -->
     <SwitchPreference
         android:key="fingerprint_success_vib"
