@@ -55,6 +55,14 @@
 
         <!-- Main fragment -->
         <Preference
+            android:key="ticker_category"
+            android:fragment="com.fh.settings.fragments.statusbar.Ticker"
+            android:icon="@drawable/ic_cursor"
+            android:title="@string/ticker_screen_title"
+            android:summary="@string/ticker_screen_summary" />
+
+        <!-- Main fragment -->
+        <Preference
             android:key="battery_bar_category"
             android:fragment="com.fh.settings.fragments.statusbar.BatteryBar"
             android:icon="@drawable/ic_battery_bar"
