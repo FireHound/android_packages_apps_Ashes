@@ -40,8 +40,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
     private static final String TAG = "MiscSettings";
 
     private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "1";
 
     private ListPreference mMSOB;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
         mMSOB.setValue(String.valueOf(mMSOBValue));
         mMSOB.setSummary(mMSOB.getEntry());
         mMSOB.setOnPreferenceChangeListener(this);
+
+    mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -69,6 +78,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
             mMSOB.setValue(String.valueOf(value));
             mMSOB.setSummary(mMSOB.getEntries()[value]);
             return true;
+        }
+        if (preference == mScrollingCachePref) {
+            if (newValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) newValue);
+                return true;
         }
         return false;
     }
