@@ -55,6 +55,16 @@
             android:entries="@array/media_scanner_on_boot_entries"
             android:entryValues="@array/media_scanner_on_boot_values" />
 
+        <!-- Disable scrolling cache -->
+        <ListPreference
+            android:key="pref_scrollingcache"
+            android:dialogTitle="@string/pref_scrollingcache_title"
+            android:title="@string/pref_scrollingcache_title"
+            android:summary="@string/pref_scrollingcache_summary"
+            android:icon="@drawable/ic_cache"
+            android:entries="@array/entries_scrollingcache"
+            android:entryValues="@array/values_scrollingcache" />
+
         <!-- Pocket Mode -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
         android:key="pocket_judge"
