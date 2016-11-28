@@ -19,4 +19,17 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/qs_title">
 
+    <PreferenceCategory
+        android:key="qs_tiles"
+        android:title="@string/tiles_title" >
+
+        <!-- QS Tiles title -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_title_visibility"
+            android:title="@string/qs_tile_title_visibility_title"
+            android:summary="@string/qs_tile_title_visibility_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
