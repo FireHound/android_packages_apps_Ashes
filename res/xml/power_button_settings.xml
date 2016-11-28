@@ -37,7 +37,7 @@
             android:title="@string/powermenu_screenshot"
             android:defaultValue="false" />
 
-         <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+         <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="powermenu_screenrecord"
             android:title="@string/powermenu_screenrecord"
             android:defaultValue="false" />
