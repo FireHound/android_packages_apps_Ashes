@@ -928,4 +928,8 @@
     <string name="panic_mode_title">Panic Mode</string>
     <string name="panic_mode_summary">Press the back button continuously to go to the Home Screen</string>
 
+    <!-- Hide powermenu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Powermenu on lockscreen</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on secure lock screens</string>
+
 </resources>
