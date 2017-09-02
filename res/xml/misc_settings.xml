@@ -88,11 +88,18 @@
 
         <!-- Auto face unlock -->
         <com.fh.settings.preferences.SecureSettingSwitchPreference
-        android:key="face_auto_unlock"
-        android:icon="@drawable/ic_face"
-        android:title="@string/face_auto_unlock_title"
-        android:summary="@string/face_auto_unlock_summary"
-        android:defaultValue="false" />
+            android:key="face_auto_unlock"
+            android:icon="@drawable/ic_face"
+            android:title="@string/face_auto_unlock_title"
+            android:summary="@string/face_auto_unlock_summary"
+            android:defaultValue="false" />
+
+        <!-- MTP Dirty hack -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="mtp_dirty_hack"
+            android:title="@string/enable_mtp_dirtyhack_title"
+            android:summary="@string/enable_mtp_dirtyhack_summary"
+            android:defaultValue="true" />
 
         </PreferenceCategory>
 
