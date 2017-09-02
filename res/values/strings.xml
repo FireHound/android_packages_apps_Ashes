@@ -860,4 +860,8 @@
     <string name="navbar_dynamic_summary">Adapt navbar color to match foreground running app</string>
     <string name="restart_app_required">Restart respective app to see effect</string>
 
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
+    <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
+
 </resources>
