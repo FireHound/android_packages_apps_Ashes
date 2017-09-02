@@ -799,7 +799,7 @@
 
     <!-- Battery Styles -->
     <string name="fh_battery_title">Battery</string>
-    <string name="fh_battery_summary">Control battery stles in statusbar</string>
+    <string name="fh_battery_summary">Control battery styles in statusbar</string>
     <string name="battery_style_title">Battery icon style</string>
     <string name="battery_style_port">Portrait</string>
     <string name="battery_style_land">Landscape</string>
@@ -864,5 +864,9 @@
     <string name="screenshot_spoof_title">Screenshot spoofing</string>
     <string name="screenshot_spoof_summary">Spoof apps checking screenshot triggers</string>
     <string name="screenshot_spoof_warning">Screenshot Spoofing allows you to override the ability of apps like Snapchat who check and notify when you take a Screenshot.\n\nEnabling this feature will spoof such apps and your victims won't be notified when you take a screenshot of their chats. While this spoof protects your privacy, remember that you are voiding other's. Screenshot spoof is disabled by default.\n\nEnabling this will save your Screenshots in Internal Storage under Pictures/SpoofedImages folder. Proceed with caution!</string>
+
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
+    <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
 
 </resources>
