@@ -62,7 +62,6 @@
     <string name="double_tap_to_sleep_lockscreen_summary">Double tap on the top third or bottom shortcut area of the lock screen to put the device to sleep</string>
 
     <!-- Lockscreen and Status bar tuner -->
-    <string name="lockscreen_tuner_title">Lockscreen Tuner</string>
     <string name="tuner">Tuner</string>
     <string name="statusbar_items_category">Statusbar Tuner</string>
 
@@ -173,9 +172,6 @@
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
     <string name="recents_ui_title">Recents UI</string>
     <string name="recents_ui_summary">Control Recents panel</string>
-
-    <!-- Navbar tuner -->
-    <string name="navbar_tuner_title">Navbar Tuner</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
@@ -439,12 +435,10 @@
     <string name="allow_signature_fake_summary">Allow apps to bypass security systems by pretending to be a different app</string>
 
     <!-- Summaries -->
-    <string name="lockscreen_tuner_summary">Customize lockscreen parts</string>
     <string name="lock_screen_weather_settings_summary">It\'s hot or raining today!</string>
     <string name="lockscreen_ui_summary">Miscellaneous lockscreen settings</string>
     <string name="app_ops_summary">App Ops Privacy</string>
     <string name="wakelock_blocker_sumary">Block various wakelocks</string>
-    <string name="navbar_tuner_summary">Customize navigation bar</string>
     <string name="statusbar_tuner_summary">Customize statusbar parts</string>
 
     <!-- Hardware keys -->
@@ -990,6 +984,10 @@
     <string name="status_bar_system_icons_title">System icons</string>
     <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
 
+    <!-- Status bar - icons -->
+    <string name="statusbar_items_title">Icons</string>
+    <string name="statusbar_items_summary">Control which status bar icons are shown</string>
+
     <!-- Pull down -->
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
@@ -1073,5 +1071,13 @@
     <!-- Charging animation -->
     <string name="wireless_charging_animation_title">Charging animation</string>
     <string name="wireless_charging_animation_summary">Display an animation when the device is plugged in</string>
+
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_tuner_summary">Control what icons are shown on the lockscreen.</string>
+
+    <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Navbar buttons</string>
+    <string name="navbar_tuner_summary">Control navigation bar layouts.</string>
 
 </resources>
