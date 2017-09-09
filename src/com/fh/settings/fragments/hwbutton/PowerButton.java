@@ -16,12 +16,15 @@
 package com.fh.settings.fragments.hwbutton;
 
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 
@@ -32,15 +35,21 @@ import com.fh.settings.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.android.internal.util.fh.FhUtils;
+
 import lineageos.providers.LineageSettings;
 
 import org.lineageos.internal.util.PowerMenuConstants;
 
 import static org.lineageos.internal.util.PowerMenuConstants.*;
 
-public class PowerButton extends SettingsPreferenceFragment {
-    final static String TAG = "PowerMenuActions";
+public class PowerButton extends SettingsPreferenceFragment implements
+          Preference.OnPreferenceChangeListener {
 
+    final static String TAG = "PowerMenuActions";
+    private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+
+    private ListPreference mTorchPowerButton;
     private CheckBoxPreference mScreenshotPref;
     private CheckBoxPreference mAirplanePref;
     private CheckBoxPreference mUsersPref;
@@ -56,7 +65,8 @@ public class PowerButton extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.power_button_settings);
         mContext = getActivity().getApplicationContext();
-
+        ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
         mAllActions = PowerMenuConstants.getAllActions();
 
         for (String action : mAllActions) {
@@ -69,6 +79,20 @@ public class PowerButton extends SettingsPreferenceFragment {
 //            } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
 //                mBugReportPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
             }
+        }
+
+        if (!FhUtils.deviceHasFlashlight(getContext())) {
+            Preference toRemove = prefScreen.findPreference(TORCH_POWER_BUTTON_GESTURE);
+            if (toRemove != null) {
+                prefScreen.removePreference(toRemove);
+            }
+        } else {
+            mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
+            int mTorchPowerButtonValue = Settings.Secure.getInt(resolver,
+                    Settings.Secure.TORCH_POWER_BUTTON_GESTURE, 0);
+            mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
+            mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
+            mTorchPowerButton.setOnPreferenceChangeListener(this);
         }
 
         getUserConfig();
@@ -222,6 +246,27 @@ public class PowerButton extends SettingsPreferenceFragment {
         Intent u = new Intent();
         u.setAction(lineageos.content.Intent.ACTION_UPDATE_POWER_MENU);
         mContext.sendBroadcastAsUser(u, UserHandle.ALL);
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        if (preference == mTorchPowerButton) {
+            int mTorchPowerButtonValue = Integer.valueOf((String) newValue);
+            int index = mTorchPowerButton.findIndexOfValue((String) newValue);
+            mTorchPowerButton.setSummary(
+                    mTorchPowerButton.getEntries()[index]);
+            Settings.Secure.putInt(resolver, Settings.Secure.TORCH_POWER_BUTTON_GESTURE,
+                    mTorchPowerButtonValue);
+            if (mTorchPowerButtonValue == 1) {
+                //if doubletap for torch is enabled, switch off double tap for camera
+                Settings.Secure.putInt(resolver, Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
+                        1);
+            }
+            return true;
+        }
+
+          return false;
     }
 
     @Override
