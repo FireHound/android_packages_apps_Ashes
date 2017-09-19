@@ -34,4 +34,12 @@
             android:title="@string/volume_buttons_title"
             android:summary="@string/volume_buttons_summary" />
 
+    <!-- Power Button -->
+         <Preference
+            android:key="power_buttons_category"
+            android:fragment="com.fh.settings.fragments.hwbutton.PowerButton"
+            android:icon="@drawable/ic_power_buttons"
+            android:title="@string/power_buttons_title"
+            android:summary="@string/power_buttons_summary" />
+
 </PreferenceScreen>
