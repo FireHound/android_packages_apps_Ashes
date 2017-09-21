@@ -23,6 +23,19 @@
         android:key="fh_system_sounds"
         android:title="@string/system_sound_settings" >
 
+        <!-- Screenshot Sound -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="screenshot_sound"
+            android:title="@string/screenshot_sound_title"
+            android:summary="@string/screenshot_sound_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="fh_call_sounds"
+        android:title="@string/call_sound" >
+
         <!-- Incall vibrations -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
