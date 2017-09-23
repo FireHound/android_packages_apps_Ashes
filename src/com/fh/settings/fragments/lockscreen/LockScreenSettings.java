@@ -19,12 +19,14 @@ package com.fh.settings.fragments.lockscreen;
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.os.Bundle;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.UserHandle;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -43,12 +45,25 @@ import java.util.ArrayList;
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String FP_SUCCESS_VIBRATE = "lockscreen_fingerprint";
+
+    private Preference mFingerprintVib;
+    private FingerprintManager mFingerprintManager;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.lockscreen_settings);
-        PreferenceScreen prefScreen = getPreferenceScreen();
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintVib = (Preference) findPreference(FP_SUCCESS_VIBRATE);
+
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
+            prefScreen.removePreference(mFingerprintVib);
+        }
     }
 
     @Override

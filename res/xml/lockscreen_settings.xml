@@ -32,4 +32,17 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="lockscreen_fingerptint"
+        android:title="@string/fingerprint_title" >
+
+        <!-- Fingerprint vibration -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="fp_success_vibrate"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
