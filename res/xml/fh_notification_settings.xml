@@ -16,16 +16,7 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
                   android:title="@string/notification_title">
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="misc_notifications"
-            android:fragment="com.fh.settings.fragments.notifications.MiscNotifications"
-            android:icon="@drawable/ic_misc_notifications"
-            android:title="@string/misc_notifications_title"
-            android:summary="@string/misc_notifications_summary" />
-
-        <!-- Battery light -->
+         <!-- Battery light -->
         <org.lineageos.internal.lineageparts.LineagePartsPreference
             android:key="battery_lights"
             android:icon="@drawable/ic_lights"
@@ -39,5 +30,20 @@
             lineage:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
             lineage:replacesKey="notification_pulse" />
 
+        <!-- Heads Up -->
+        <Preference
+            android:key="fh_heads_up"
+            android:fragment="com.fh.settings.fragments.notifications.FhHeadsUp"
+            android:icon="@drawable/ic_fh_headsup"
+            android:title="@string/fh_headsup_title"
+            android:summary="@string/fh_headsup_summary" />
+
+        <!-- Main fragment -->
+        <Preference
+            android:key="misc_notifications"
+            android:fragment="com.fh.settings.fragments.notifications.MiscNotifications"
+            android:icon="@drawable/ic_misc_notifications"
+            android:title="@string/misc_notifications_title"
+            android:summary="@string/misc_notifications_summary" />
 
 </PreferenceScreen>
