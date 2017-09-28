@@ -26,6 +26,13 @@
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false" />
 
+    <!-- QS scroller -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_quickbar_scroll_enabled"
+        android:title="@string/qqs_scroll_title"
+        android:summary="@string/qqs_scroll_summary"
+        android:defaultValue="false"/>
+
     <!-- Disable qs on lockscreen -->
     <com.fh.settings.preferences.SecureSettingSwitchPreference
         android:key="lockscreen_qs_disabled"
