@@ -38,7 +38,7 @@
     <string name="back_soon_title">Hey there</string>
     <string name="back_soon_summary">We will be back soon with all the features! Till then chill ya!!!</string>
     <string name="lockscreen_gestures">Lockscreen Gestures</string>
-    <string name="lockscreen_ui">Lockscreen UI / UX</string>
+    <string name="lockscreen_ui_ux">UI / UX</string>
     <string name="ui">UI</string>
     <string name="ux">UX</string>
     <string name="lockscreen_misc">Miscellaneous Settings</string>
