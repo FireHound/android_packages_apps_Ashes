@@ -53,6 +53,13 @@
         android:entryValues="@array/immersive_recents_values"
         android:persistent="false" />
 
+    <!-- Main fragment -->
+    <Preference
+        android:key="recents_icon_pack_category"
+        android:fragment="com.fh.settings.fragments.recents.IconPack"
+        android:title="@string/recents_icon_pack_title"
+        android:summary="@string/recents_icon_pack_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
