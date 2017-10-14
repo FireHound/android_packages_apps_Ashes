@@ -146,6 +146,7 @@
     <string name="sound_other_summary">Miscellaneous sound controls</string>
 
     <!-- Incall vibrate options -->
+    <string name="system_sound_settings">System Sounds</string>
     <string name="incall_vibration_category">In-call vibration options</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
