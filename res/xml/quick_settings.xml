@@ -34,4 +34,12 @@
             android:title="@string/qs_misc_title"
             android:summary="@string/qs_misc_summary" />
 
+        <!-- Main fragment -->
+        <Preference
+            android:key="qs_headers"
+            android:fragment="com.fh.settings.fragments.qs.Header"
+            android:icon="@drawable/ic_qs_header"
+            android:title="@string/qs_header_title"
+            android:summary="@string/qs_header_summary" />
+
 </PreferenceScreen>
