@@ -73,6 +73,27 @@
             android:summaryOff="@string/show_emergency_button_off"
             android:defaultValue="true" />
 
+    <!-- Show lockscreen clock -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_lockscreen_clock"
+        android:title="@string/show_lockscreen_clock_title"
+        android:summary="@string/show_lockscreen_clock_summary"
+        android:defaultValue="true" />
+
+    <!-- Show lockscreen date -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_lockscreen_date"
+        android:title="@string/show_lockscreen_date_title"
+        android:summary="@string/show_lockscreen_date_summary"
+        android:defaultValue="true" />
+
+    <!-- Show lockscreen alarm -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_lockscreen_alarm"
+        android:title="@string/show_lockscreen_alarm_title"
+        android:summary="@string/show_lockscreen_alarm_summary"
+        android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
