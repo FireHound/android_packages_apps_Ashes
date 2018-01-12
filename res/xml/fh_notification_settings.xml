@@ -20,4 +20,17 @@
                   xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
                   android:title="@string/notification_title">
 
+    <PreferenceCategory
+        android:key="fh_notifications_ui_ux"
+        android:title="@string/notification_title">
+
+        <!-- Force Expanded Notifications -->
+	<com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/force_expanded_notifications_title"
+            android:summary="@string/force_expanded_notifications_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
