@@ -23,21 +23,24 @@
             android:key="app_ops"
             android:fragment="com.android.settings.applications.AppOpsSummary"
             android:icon="@drawable/ic_settings_appops"
-            android:title="@string/app_ops_category" />
+            android:title="@string/app_ops_category"
+            android:summary="@string/app_ops_summary" />
 
         <!-- Wakelock blocker -->
         <Preference
              android:key="wakelock_blocker"
              android:icon="@drawable/ic_wakelock_fh"
              android:fragment="com.fh.settings.fragments.misc.WakeLockBlocker"
-             android:title="@string/wakelock_blocker_title" />
+             android:title="@string/wakelock_blocker_title"
+             android:summary="@string/wakelock_blocker_sumary" />
 
         <!-- Alarm blocker -->
         <Preference
              android:id="@+id/alarm_blocker"
              android:icon="@drawable/ic_alarm_fh"
              android:fragment="com.fh.settings.fragments.misc.AlarmBlocker"
-             android:title="@string/alarm_blocker" />
+             android:title="@string/alarm_blocker"
+             android:summary="@string/alarm_blocker_summary" />
 
         <!-- Misc shitz -->
         <PreferenceCategory

@@ -21,6 +21,7 @@
     <!-- Navbar Tuner -->
     <Preference
             android:title="@string/navbar_tuner_title"
+            android:summary="@string/navbar_tuner_summary"
             android:icon="@drawable/ic_navbar_tuner">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
