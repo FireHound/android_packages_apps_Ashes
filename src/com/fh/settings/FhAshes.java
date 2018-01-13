@@ -116,18 +116,18 @@ public class FhAshes extends SettingsPreferenceFragment {
 
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new Firehound();
-            frags[1] = new StatusBarSettings();
-            frags[2] = new QuickSettings();
-            frags[3] = new FhNotificationsSettings();
-            frags[4] = new LockScreenSettings();
-            frags[5] = new RecentsSettings();
-            frags[6] = new ButtonSettings();
-            frags[7] = new NavbarSettings();
-            frags[8] = new DisplaySettings();
-            frags[9] = new FhSoundSettings();
-            frags[10] = new AnimationSettings();
-            frags[11] = new MiscSettings();
+            // frags[0] = new Firehound();
+            frags[0] = new StatusBarSettings();
+            frags[1] = new QuickSettings();
+            frags[2] = new FhNotificationsSettings();
+            frags[3] = new LockScreenSettings();
+            frags[4] = new RecentsSettings();
+            frags[5] = new ButtonSettings();
+            frags[6] = new NavbarSettings();
+            frags[7] = new DisplaySettings();
+            frags[8] = new FhSoundSettings();
+            // frags[10] = new AnimationSettings();
+            frags[9] = new MiscSettings();
         }
 
         @Override
@@ -149,7 +149,7 @@ public class FhAshes extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[] {
-            getString(R.string.fh_online),
+            // getString(R.string.fh_online),
             getString(R.string.status_bar_title),
             getString(R.string.qs_title),
             getString(R.string.notification_title),
@@ -159,7 +159,7 @@ public class FhAshes extends SettingsPreferenceFragment {
             getString(R.string.navbar_title),
             getString(R.string.display_title),
             getString(R.string.sound_title),
-            getString(R.string.animation_settings),
+            // getString(R.string.animation_settings),
             getString(R.string.misc_title)
         };
         return titleString;

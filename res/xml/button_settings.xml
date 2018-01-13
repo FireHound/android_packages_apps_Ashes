@@ -29,7 +29,7 @@
     <!-- Volume button -->
         <Preference
             android:key="volume_buttons_category"
-            android:fragment="com.fh.settings.fragments.hwbuttons.VolumeButtons"
+            android:fragment="com.fh.settings.fragments.hwbutton.VolumeButtons"
             android:icon="@drawable/ic_volume_buttons"
             android:title="@string/volume_buttons_title"
             android:summary="@string/volume_buttons_summary" />
