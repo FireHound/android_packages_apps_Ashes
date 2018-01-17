@@ -16,7 +16,8 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-                  android:title="@string/lockscreen_ui">
+                  android:title="@string/lockscreen_ui"
+                  xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
 
     <!-- Lockscreen UI Settings -->
     <PreferenceCategory
@@ -28,6 +29,13 @@
         android:key="lockscreen_media_metadata"
         android:title="@string/media_art_title"
         android:summary="@string/media_art_summary"
+        android:defaultValue="true" />
+
+    <!-- Lockscreen visualizer -->
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:summary="@string/lockscreen_visualizer_summary"
         android:defaultValue="true" />
 
     <!-- Lockscreen charging -->
