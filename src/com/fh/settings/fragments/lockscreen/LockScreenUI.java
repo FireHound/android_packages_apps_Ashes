@@ -37,6 +37,8 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import lineageos.providers.LineageSettings;
+
 public class LockScreenUI extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 

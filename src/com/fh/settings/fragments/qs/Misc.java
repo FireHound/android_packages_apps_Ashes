@@ -28,14 +28,16 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import lineageos.providers.LineageSettings;
+
 public class Misc extends SettingsPreferenceFragment {
     private static final String TAG = "QuickSettings";
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.FH_SETTINGS;
-
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
