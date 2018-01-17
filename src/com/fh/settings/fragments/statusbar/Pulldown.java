@@ -67,11 +67,11 @@ public class Pulldown extends SettingsPreferenceFragment implements OnPreference
         final PreferenceScreen prefSet = getPreferenceScreen();
 
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
-        mQuickPulldown.setOnPreferenceChangeListener(this);
-        int quickPulldownValue = Settings.System.getIntForUser(resolver,
-                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1, UserHandle.USER_CURRENT);
+        int quickPulldownValue = LineageSettings.System.getIntForUser(resolver,
+                LineageSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
 
         mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
         mSmartPulldown.setOnPreferenceChangeListener(this);
@@ -128,10 +128,10 @@ public class Pulldown extends SettingsPreferenceFragment implements OnPreference
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mQuickPulldown) {
-            int quickPulldownValue = Integer.valueOf((String) newValue);
-            Settings.System.putIntForUser(resolver, Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
-                    quickPulldownValue, UserHandle.USER_CURRENT);
-            updatePulldownSummary(quickPulldownValue);
+            int value = Integer.parseInt((String) newValue);
+            LineageSettings.System.putIntForUser(resolver, LineageSettings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
+                    value, UserHandle.USER_CURRENT);
+            updatePulldownSummary(value);
             return true;
         } else if (preference == mSmartPulldown) {
             int smartPulldown = Integer.valueOf((String) newValue);
