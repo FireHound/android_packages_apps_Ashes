@@ -16,7 +16,8 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-                  android:title="@string/qs_misc_title">
+                  android:title="@string/qs_misc_title"
+                  xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
 
     <!-- Vibrate tiles -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
@@ -31,6 +32,20 @@
         android:title="@string/lockscreen_qs_disabled_title"
         android:summary="@string/lockscreen_qs_disabled_summary"
         android:defaultValue="false" />
+
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:key="qs_show_brightness_slider"
+        android:title="@string/qs_brightness_slider_title"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true" />
+
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+        android:key="qs_show_auto_brightness"
+        android:title="@string/brightness_icon_title"
+        android:summary="@string/brightness_icon_summary"
+        android:dependency="qs_show_brightness_slider"
+        lineage:requiresConfig="@*android:bool/config_automatic_brightness_available"
+        android:defaultValue="true" />
 
     <!-- QS titles visibility -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
