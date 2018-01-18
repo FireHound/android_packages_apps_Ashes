@@ -31,6 +31,12 @@
             android:summary="@string/anbi_summary"
             android:defaultValue="false" />
 
+        <!-- Music Ticker -->
+        <com.fh.settings.preferences.SecureSettingSwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
