@@ -26,4 +26,12 @@
             android:title="@string/misc_display_title"
             android:summary="@string/misc_display_summary" />
 
+        <!-- Main fragment -->
+        <Preference
+            android:key="force_ambient_for_media_pref"
+            android:icon="@drawable/ic_music"
+            android:fragment="com.fh.settings.fragments.ui.AmbientTicker"
+            android:title="@string/force_ambient_for_media_pref_title"
+            android:summary="@string/force_ambient_for_media_pref_summary"/>
+
 </PreferenceScreen>
