@@ -58,6 +58,13 @@
         android:summary="@string/fprint_sucess_vib_summary"
         android:persistent="false" />
 
+    <!-- FP quick unlock -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="fp_unlock_keystore"
+        android:title="@string/fp_unlock_keystore_title"
+        android:summary="@string/fp_unlock_keystore_summary"
+        android:defaultValue="false" />
+
     <!-- Disable emergency button on lockscreen -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="show_emergency_button"

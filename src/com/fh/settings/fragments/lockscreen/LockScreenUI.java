@@ -44,20 +44,22 @@ public class LockScreenUI extends SettingsPreferenceFragment implements
 
     private static final String TAG = "StatusBarSettings";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
+    private static final String FH_FP = "fh_fp";
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
+    private PreferenceScreen mFpFragment;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         addPreferencesFromResource(R.xml.lockscreen_ui);
 
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         Resources resources = getResources();
 
-        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
         if (mFingerprintManager == null){
             prefScreen.removePreference(mFingerprintVib);
@@ -65,6 +67,11 @@ public class LockScreenUI extends SettingsPreferenceFragment implements
         mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
         mFingerprintVib.setOnPreferenceChangeListener(this);
+        }
+
+        mFpFragment = (PreferenceScreen) findPreference(RR_FP);
+        if (mFingerprintManager == null) {
+            getPreferenceScreen().removePreference(mFpFragment);
         }
     }
 
