@@ -19,9 +19,11 @@ package com.fh.settings.fragments.ui;
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.os.Bundle;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.os.PowerManager;
 import android.os.UserHandle;
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -40,8 +42,14 @@ import android.view.View;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.fh.settings.preferences.SystemSettingSwitchPreference;
+
 public class DisplaySettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
+
+    private static final String ON_POWER_SAVE = "smart_pixels_on_power_save";
+
+    private SystemSettingSwitchPreference mSmartPixelsOnPowerSave;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -49,11 +57,36 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.ui_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mSmartPixelsOnPowerSave = (SystemSettingSwitchPreference) findPreference(ON_POWER_SAVE);
+        updateDependency();
+        boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference SmartPixels = findPreference("fh_smart_pixels");
+
+        if (!enableSmartPixels){
+            prefScreen.removePreference(SmartPixels);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
+        final String key = preference.getKey();
+        updateDependency();
+        return true;
+    }
+
+    private void updateDependency() {
+        ContentResolver resolver = getActivity().getContentResolver();
+        boolean mUseOnPowerSave = (Settings.System.getIntForUser(
+                resolver, Settings.System.SMART_PIXELS_ON_POWER_SAVE,
+                0, UserHandle.USER_CURRENT) == 1);
+        PowerManager pm = (PowerManager)getActivity().getSystemService(Context.POWER_SERVICE);
+        if (pm.isPowerSaveMode() && mUseOnPowerSave) {
+            mSmartPixelsOnPowerSave.setEnabled(false);
+        } else {
+            mSmartPixelsOnPowerSave.setEnabled(true);
+        }
     }
 
     @Override

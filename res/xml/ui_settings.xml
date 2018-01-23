@@ -34,24 +34,59 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="fh_smart_pixels"
+        android:title="@string/smart_pixels_title" >
+
+        <!-- Smart Pixels -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="smart_pixels_enable"
+            android:title="@string/smart_pixels_enable_title"
+            android:summary="@string/smart_pixels_enable_summary"
+            android:defaultValue="false" />
+
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="smart_pixels_on_power_save"
+            android:title="@string/smart_pixels_on_power_save_title"
+            android:summary="@string/smart_pixels_on_power_save_summary"
+            android:defaultValue="false" />
+
+        <com.fh.settings.preferences.SystemSettingListPreference
+            android:key="smart_pixels_pattern"
+            android:entries="@array/smart_pixels_percent_strings"
+            android:entryValues="@array/smart_pixels_percent_values"
+            android:defaultValue="3"
+            android:title="@string/smart_pixels_percent"
+            android:dialogTitle="@string/smart_pixels_percent" />
+
+        <com.fh.settings.preferences.SystemSettingListPreference
+            android:key="smart_pixels_shift_timeout"
+            android:entries="@array/smart_pixels_shift_times"
+            android:entryValues="@array/smart_pixels_shift_values"
+            android:defaultValue="5"
+            android:title="@string/smart_pixels_shift"
+            android:dialogTitle="@string/smart_pixels_shift" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="fh_ui"
         android:title="@string/ui" >
 
         <!-- Disable dashboard conditions -->
-    <com.fh.settings.preferences.SystemSettingSwitchPreference
-        android:key="enable_conditions"
-        android:title="@string/dashboard_conditions_title"
-        android:summaryOn="@string/summary_dashboard_conditions_enabled"
-        android:summaryOff="@string/summary_dashboard_conditions_disabled"
-        android:defaultValue="true" />
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="enable_conditions"
+            android:title="@string/dashboard_conditions_title"
+            android:summaryOn="@string/summary_dashboard_conditions_enabled"
+            android:summaryOff="@string/summary_dashboard_conditions_disabled"
+            android:defaultValue="true" />
 
-    <!-- Disable dashboard suggestions -->
-    <com.fh.settings.preferences.SystemSettingSwitchPreference
-        android:key="enable_suggestions"
-        android:title="@string/dashboard_suggestions_title"
-        android:summaryOn="@string/summary_dashboard_suggestions_enabled"
-        android:summaryOff="@string/summary_dashboard_suggestions_disabled"
-        android:defaultValue="true" />
+        <!-- Disable dashboard suggestions -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="enable_suggestions"
+            android:title="@string/dashboard_suggestions_title"
+            android:summaryOn="@string/summary_dashboard_suggestions_enabled"
+            android:summaryOff="@string/summary_dashboard_suggestions_disabled"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
