@@ -54,6 +54,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
         Context mContext = getActivity().getApplicationContext();
         addPreferencesFromResource(R.xml.misc_settings);
 
+        PreferenceScreen prefSet = getPreferenceScreen();
+
     mMSOB = (ListPreference) findPreference(MEDIA_SCANNER_ON_BOOT);
         int mMSOBValue = Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
@@ -65,6 +67,14 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
         mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
                 SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
         mScrollingCachePref.setOnPreferenceChangeListener(this);
+
+    boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference SmartPixels = findPreference("smart_pixels");
+
+        if (!enableSmartPixels){
+            prefSet.removePreference(SmartPixels);
+        }
     }
 
     @Override
