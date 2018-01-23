@@ -126,8 +126,8 @@ public class FhAshes extends SettingsPreferenceFragment {
             frags[6] = new NavbarSettings();
             frags[7] = new DisplaySettings();
             frags[8] = new FhSoundSettings();
-            // frags[10] = new AnimationSettings();
-            frags[9] = new MiscSettings();
+            frags[9] = new AnimationSettings();
+            frags[10] = new MiscSettings();
         }
 
         @Override
@@ -159,7 +159,7 @@ public class FhAshes extends SettingsPreferenceFragment {
             getString(R.string.navbar_title),
             getString(R.string.display_title),
             getString(R.string.sound_title),
-            // getString(R.string.animation_settings),
+            getString(R.string.animation_settings),
             getString(R.string.misc_title)
         };
         return titleString;
