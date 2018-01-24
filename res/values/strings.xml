@@ -717,4 +717,9 @@
     <string name="force_ambient_for_media_on_forced">Normal (forced)</string>
     <string name="force_ambient_for_media_on_forced_clean">Minimal (forced)</string>
 
+    <!-- Automatic albumart base color mode -->
+    <string name="fling_pulse_color_summary">Used also as fallback for automatic color</string>
+    <string name="pulse_auto_color_title">Automatic Pulse color</string>
+    <string name="pulse_auto_color_summary">Sync color with album arts. Overrides Lava Lamp and lines opacity.</string>
+
 </resources>
