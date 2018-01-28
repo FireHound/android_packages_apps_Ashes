@@ -63,6 +63,14 @@
 
         <!-- Main fragment -->
         <Preference
+            android:key="carrier_label"
+            android:fragment="com.fh.settings.fragments.statusbar.CarrierLabel"
+            android:icon="@drawable/ic_carrierlabel"
+            android:title="@string/carrierlabel_title"
+            android:summary="@string/carrierlabel_summary" />
+
+        <!-- Main fragment -->
+        <Preference
             android:key="battery_bar_category"
             android:fragment="com.fh.settings.fragments.statusbar.BatteryBar"
             android:icon="@drawable/ic_battery_bar"
