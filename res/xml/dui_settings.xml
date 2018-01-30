@@ -21,6 +21,12 @@
         android:key="navbar_visibility"
         android:title="@string/navbar_visibility" />
 
+    <SwitchPreference
+            android:key="navbar_dynamic"
+            android:title="@string/navbar_dynamic_title"
+            android:summary="@string/navbar_dynamic_summary"
+            android:defaultValue="false"/>
+
     <PreferenceCategory
         android:key="category_navbar_interface"
         android:title="@string/navbar_interface_title" >

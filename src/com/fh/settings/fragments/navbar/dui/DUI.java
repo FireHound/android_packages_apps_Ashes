@@ -18,6 +18,8 @@ package com.fh.settings.fragments.navbar.dui;
 
 import java.util.ArrayList;
 
+import android.content.ContentResolver;
+import android.content.Context;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -30,6 +32,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.fh.settings.preferences.CustomSeekBarPreference;
@@ -55,6 +58,7 @@ public class DUI extends SettingsPreferenceFragment implements Preference.OnPref
     private static final String KEY_NAVIGATION_HEIGHT_LAND = "navbar_height_landscape";
     private static final String KEY_NAVIGATION_WIDTH = "navbar_width";
     private static final String KEY_PULSE_SETTINGS = "pulse_settings";
+    private static final String NAVBAR_DYNAMIC = "navbar_dynamic";
 
     private SwitchPreference mNavbarVisibility;
     private ListPreference mNavbarMode;
@@ -67,6 +71,7 @@ public class DUI extends SettingsPreferenceFragment implements Preference.OnPref
     private CustomSeekBarPreference mBarHeightLand;
     private CustomSeekBarPreference mBarWidth;
     private Preference mPulseSettings;
+    private SwitchPreference mNavbarDynamic;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,6 +86,7 @@ public class DUI extends SettingsPreferenceFragment implements Preference.OnPref
         mFlingSettings = (Preference) findPreference(KEY_FLING_NAVBAR_SETTINGS);
         mSmartbarSettings = (Preference) findPreference(KEY_SMARTBAR_SETTINGS);
         mPulseSettings = (Preference) findPreference(KEY_PULSE_SETTINGS);
+        mNavbarDynamic = (SwitchPreference) findPreference(NAVBAR_DYNAMIC);
 
         boolean showing = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.NAVIGATION_BAR_VISIBLE,
@@ -116,6 +122,11 @@ public class DUI extends SettingsPreferenceFragment implements Preference.OnPref
             mBarHeightLand.setValue(size);
             mBarHeightLand.setOnPreferenceChangeListener(this);
         }
+
+        boolean isDynamic = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.NAVBAR_DYNAMIC, 0, UserHandle.USER_CURRENT) == 1;
+        mNavbarDynamic.setChecked(isDynamic);
+        mNavbarDynamic.setOnPreferenceChangeListener(this);
     }
 
     private void updateBarModeSettings(int mode) {
@@ -158,6 +169,7 @@ public class DUI extends SettingsPreferenceFragment implements Preference.OnPref
         mNavbarVisibility.setChecked(showing);
         mNavInterface.setEnabled(mNavbarVisibility.isChecked());
         mNavGeneral.setEnabled(mNavbarVisibility.isChecked());
+        mNavbarDynamic.setEnabled(mNavbarVisibility.isChecked());
     }
 
     @Override
@@ -188,6 +200,13 @@ public class DUI extends SettingsPreferenceFragment implements Preference.OnPref
             int val = (Integer) newValue;
             Settings.Secure.putIntForUser(getContentResolver(),
                     Settings.Secure.NAVIGATION_BAR_WIDTH, val, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference.equals(mNavbarDynamic)) {
+            boolean isDynamic = (Boolean) newValue;
+            Settings.System.putIntForUser(getContentResolver(), Settings.System.NAVBAR_DYNAMIC,
+                    isDynamic ? 1 : 0, UserHandle.USER_CURRENT);
+            Toast.makeText(getActivity(), R.string.restart_app_required,
+                    Toast.LENGTH_LONG).show();
             return true;
         }
         return false;
