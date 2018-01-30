@@ -69,4 +69,10 @@
             android:title="@string/battery_bar_title"
             android:summary="@string/battery_bar_summary" />
 
+      <!-- Status bar clock customizations -->
+         <Preference
+         android:fragment="com.crdroid.settings.fargments.statusbar.ClockSettings"
+         android:key="crdroid_clock_settings"
+         android:title="@string/clock_settings_title"
+         android:summary="@string/clock_settings_summary" />
 </PreferenceScreen>
