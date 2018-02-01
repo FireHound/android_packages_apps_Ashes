@@ -28,6 +28,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import lineageos.providers.LineageSettings;
+
 public class FhNotificationsSettings extends SettingsPreferenceFragment {
     private static final String TAG = "FhNotificationsSettings";
 

@@ -14,6 +14,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+                  xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
                   android:title="@string/notification_title">
 
         <!-- Main fragment -->
@@ -23,5 +24,18 @@
             android:icon="@drawable/ic_misc_notifications"
             android:title="@string/misc_notifications_title"
             android:summary="@string/misc_notifications_summary" />
+
+        <!-- Battery light -->
+        <org.lineageos.internal.lineageparts.LineagePartsPreference
+            android:key="battery_lights"
+            lineage:requiresConfig="@*lineageos.platform:integer/config_deviceLightCapabilities"
+            lineage:requiresConfigMask="64" />
+
+        <!-- Notification lights -->
+        <org.lineageos.internal.lineageparts.LineagePartsPreference
+            android:key="notification_lights"
+            lineage:requiresConfig="@*android:bool/config_intrusiveNotificationLed"
+            lineage:replacesKey="notification_pulse" />
+
 
 </PreferenceScreen>
