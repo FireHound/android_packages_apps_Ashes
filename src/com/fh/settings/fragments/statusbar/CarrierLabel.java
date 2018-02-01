@@ -51,7 +51,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-public class CarrierLabel extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class CarrierLabel extends SettingsPreferenceFragment {
 
     private static final String KEY_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
 
