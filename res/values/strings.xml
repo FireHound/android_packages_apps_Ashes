@@ -683,4 +683,8 @@
     <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
     <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
 
+    <!-- Lights customizations -->
+    <string name="fh_lights_title">Lights</string>
+    <string name="fh_lights_summary">Customize notifications and battery lights</string>
+
 </resources>
