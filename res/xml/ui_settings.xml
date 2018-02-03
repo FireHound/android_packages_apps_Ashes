@@ -24,6 +24,13 @@
         android:key="fh_ux"
         android:title="@string/ux" >
 
+        <!-- Pocket Judge -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="pocket_judge"
+            android:title="@string/pocket_judge_title"
+            android:summary="@string/pocket_judge_summary"
+            android:defaultValue="false" />
+
         <!-- Accidental touch -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="anbi_enabled"
