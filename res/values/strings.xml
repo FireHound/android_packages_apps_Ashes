@@ -753,4 +753,8 @@
     <string name="qs_header_title">Custom Headers</string>
     <string name="qs_header_summary">Beautify quick settings with custom headers</string>
 
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+
 </resources>
