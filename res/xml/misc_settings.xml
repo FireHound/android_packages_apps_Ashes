@@ -42,6 +42,14 @@
              android:title="@string/alarm_blocker"
              android:summary="@string/alarm_blocker_summary" />
 
+        <!-- Screenshot spoof -->
+        <Preference
+             android:key="screenshot_spoof_category"
+             android:icon="@drawable/ic_screenshot_spoof"
+             android:fragment="com.fh.settings.fragments.misc.ScreenshotSpoof"
+             android:title="@string/screenshot_spoof_title"
+             android:summary="@string/screenshot_spoof_summary" />
+
         <!-- Misc shitz -->
         <PreferenceCategory
             android:key="misc_settings_category"
