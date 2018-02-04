@@ -924,4 +924,8 @@
     <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: at your own risk!</string>
 
 
+    <!-- Panic Mode -->
+    <string name="panic_mode_title">Panic Mode</string>
+    <string name="panic_mode_summary">Press the back button continuously to go to the Home Screen</string>
+
 </resources>
