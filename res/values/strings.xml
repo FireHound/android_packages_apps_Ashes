@@ -761,4 +761,9 @@
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 
+    <!-- Screenshot spoofing -->
+    <string name="screenshot_spoof_title">Screenshot spoofing</string>
+    <string name="screenshot_spoof_summary">Spoof apps checking screenshot triggers</string>
+    <string name="screenshot_spoof_warning">Screenshot Spoofing allows you to override the ability of apps like Snapchat who check and notify when you take a Screenshot.\n\nEnabling this feature will spoof such apps and your victims won't be notified when you take a screenshot of their chats. While this spoof protects your privacy, remember that you are voiding other's. Screenshot spoof is disabled by default.\n\nEnabling this will save your Screenshots in Internal Storage under SpoofedImages folder. Proceed with caution!</string>
+
 </resources>
