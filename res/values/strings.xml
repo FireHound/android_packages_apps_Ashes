@@ -761,4 +761,8 @@
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 
+    <!-- Screenshot spoofing -->
+    <string name="screenshot_spoof_title">Screenshot spoofing</string>
+    <string name="screenshot_spoof_summary">Spoof apps checking screenshot triggers</string>
+
 </resources>

@@ -47,6 +47,14 @@
             android:key="misc_settings_category"
             android:title="@string/misc_title">
 
+        <!-- Screenshot spoofing -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="screenshot_spoof"
+            android:icon="@drawable/ic_screenshot_spoof"
+            android:title="@string/screenshot_spoof_title"
+            android:summary="@string/screenshot_spoof_summary"
+            android:defaultValue="false" />
+
         <!-- MediaScanner behavior on boot -->
         <ListPreference
             android:key="media_scanner_on_boot"
