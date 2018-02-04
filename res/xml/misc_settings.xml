@@ -71,6 +71,14 @@
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="true" />
 
+        <!-- Pocket Mode -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="panic_mode"
+        android:icon="@drawable/ic_panic_mode"
+        android:title="@string/panic_mode_title"
+        android:summary="@string/panic_mode_summary"
+        android:defaultValue="false" />
+
         <!-- Signature spoofing -->
         <com.fh.settings.preferences.SecureSettingSwitchPreference
             android:key="allow_signature_fake"

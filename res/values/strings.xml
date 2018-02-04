@@ -766,4 +766,8 @@
     <string name="screenshot_spoof_summary">Spoof apps checking screenshot triggers</string>
     <string name="screenshot_spoof_warning">Screenshot Spoofing allows you to override the ability of apps like Snapchat who check and notify when you take a Screenshot.\n\nEnabling this feature will spoof such apps and your victims won't be notified when you take a screenshot of their chats. While this spoof protects your privacy, remember that you are voiding other's. Screenshot spoof is disabled by default.\n\nEnabling this will save your Screenshots in Internal Storage under Pictures/SpoofedImages folder. Proceed with caution!</string>
 
+    <!-- Panic Mode -->
+    <string name="panic_mode_title">Panic Mode</string>
+    <string name="panic_mode_summary">Press the back button continuously to go to the Home Screen</string>
+
 </resources>
