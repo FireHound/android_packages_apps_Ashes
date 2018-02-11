@@ -460,7 +460,7 @@
   <string name="app_ops_summary">App Ops Privacy</string>
   <string name="wakelock_blocker_sumary">Block various wakelocks</string>
   <string name="navbar_tuner_summary">Customize navigation bar</string>
-  <string name="statusbar_items_category_summary">Customize statusbar parta</string>
+  <string name="statusbar_tuner_summary">Customize statusbar parts</string>
   <!-- Hardware keys -->
   <string name="hw_buttons_title">Hardware Buttons</string>
   <string name="hw_buttons_summary">Hardware keys custom action rebinding</string>
@@ -557,15 +557,13 @@
   <string name="ticker_enabled">Notification ticker</string>
   <string name="ticker_media_enabled">Notifications and music ticker</string>
   <!-- Power Menu -->
+  <string name="advanced_reboot_title">Advanced restart</string>
+  <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
   <string name="powermenu_screenshot">Screenshot</string>
-  <string name="powermenu_power">Power</string>
-  <string name="powermenu_restart">Restart</string>
-  <string name="powermenu_restart_recovery">Advanced restart</string>
-  <string name="powermenu_airplane">Airplane</string>
-  <string name="powermenu_settings">Settings</string>
-  <string name="powermenu_lockdown">Lock Down</string>
-  <string name="powermenu_soundpanel">Sound Panel</string>
-  <string name="powermenu_users">Users</string>
+  <string name="power_menu_reboot_title">Restart menu</string>
+  <string name="power_menu_screenshot_title">Screenshot</string>
+  <string name="power_menu_airplane_title">Airplane mode</string>
+  <string name="power_menu_users_title">User switcher</string>
   <string name="powermenu_torch">Flashlight</string>
   <string name="powermenu_screenrecord">Screenrecord</string>
   <!-- Power menu -->
@@ -582,4 +580,90 @@
   <!-- QS tiles title visibility -->
   <string name="qs_tile_title_visibility_title">QS tile titles</string>
   <string name="qs_tile_title_visibility_summary">Show quick settings tiles titles</string>
+  <!-- Lock screen visualizer -->
+  <string name="lockscreen_visualizer_title">Music visualizer</string>
+  <string name="lockscreen_visualizer_summary">Display music visualizer while playing music</string>
+  <!-- Quick settings brightness slider -->
+  <string name="qs_brightness_slider_title">Brightness slider</string>
+  <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+  <!-- Quick settings brightness icon -->
+  <string name="brightness_icon_title">Auto brightness</string>
+  <string name="brightness_icon_summary">Show toggle for adaptive brightness near the slider</string>
+  <!-- Status bar -->
+  <string name="status_bar_toggle_brightness">Brightness control</string>
+  <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+  <!-- Disable dashboard conditions -->
+  <string name="dashboard_conditions_title">Dashboard conditions</string>
+  <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+  <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+  <!-- Disable dashboard suggestions -->
+  <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+  <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+  <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
+  <!-- Carrier Label -->
+  <string name="carrierlabel_title">Carrier Label</string>
+  <string name="carrierlabel_summary">Customize statusbar Carrier Label</string>
+  <string name="carrier_options">Select display locations</string>
+  <string name="custom_carrier_label_title">Custom carrier label</string>
+  <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
+  <string name="custom_carrier_label_notset">Custom label currently not set</string>
+  <string name="show_carrier_title">Carrier label</string>
+  <string name="show_carrier_disabled">Disabled</string>
+  <string name="show_carrier_keyguard">Lockscreen</string>
+  <string name="show_carrier_statusbar">Status bar</string>
+  <string name="show_carrier_enabled">Both</string>
+  <string name="carrier_label_warning_text">Be advised that the custom carrier label is not available in the extended statusbar area, also known as the quick settings area. Also using emojis as your carrier label might cause some visibility issues on lighter backgrounds.</string>
+  <!-- Screen Off animation -->
+  <string name="screen_off_animation_title">Screen off animation</string>
+  <string name="screen_off_animation_default">Default</string>
+  <string name="screen_off_animation_crt">CRT</string>
+  <string name="screen_off_animation_scale">Scale</string>
+  <!-- Animations -->
+  <string name="sys_anim_title">System</string>
+  <string name="sys_anim_summary">Control System animations</string>
+  <!-- Ambient Ticker -->
+  <string name="force_ambient_for_media_pref_title">Ambient music ticker</string>
+  <string name="force_ambient_for_media_pref_summary">Configure the Ambient music ticker</string>
+  <string name="ambient_ticker_footer">This feature allows for the ability to show the current music track info on the lockscreen with or without Ambient display enabled.\n\nYou can select from two layouts, normal and minimal. While this feature takes advantage of ambient display, it does not depend on it. It can be triggered without having ambient display enabled by using the (forced) options.\n\nNormal view includes the lockscreen clock, date and ticker.\n\nMinimal view includes just the ticker at the center of the screen.</string>
+  <string name="force_ambient_for_media_title">Select layout</string>
+  <string name="force_ambient_for_media_off">Disabled</string>
+  <string name="force_ambient_for_media_on">Normal</string>
+  <string name="force_ambient_for_media_on_forced">Normal (forced)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Minimal (forced)</string>
+  <!-- Automatic albumart base color mode -->
+  <string name="fling_pulse_color_summary">Used also as fallback for automatic color</string>
+  <string name="pulse_auto_color_title">Automatic Pulse color</string>
+  <string name="pulse_auto_color_summary">Sync color with album arts. Overrides Lava Lamp and lines opacity.</string>
+  <!-- Small quick settings scroller -->
+  <string name="qqs_scroll_title">Scroll small QS tiles</string>
+  <string name="qqs_scroll_summary">Allow scrolling through the small QS tiles</string>
+  <!-- QS Headers -->
+  <string name="status_bar_custom_header_title">Enable</string>
+  <string name="daylight_header_pack_title">Header image collection</string>
+  <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+  <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+  <string name="unit_percent">\u0025</string>
+  <string name="static_header_provider_title">Static image</string>
+  <string name="daylight_header_provider_title">Image collection</string>
+  <string name="custom_header_provider_title">Header provider</string>
+  <string name="custom_header_browse_title">Browse installed headers</string>
+  <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
+  <string name="custom_header_browse_summary_new">Browse all available header collections</string>
+  <string name="custom_header_pick_title">Select header image</string>
+  <string name="custom_header_pick_summary">Select an image to use for static mode</string>
+  <string name="style_enabled_summary">Custom header image is ON</string>
+  <string name="style_disabled_summary">Custom header image is OFF</string>
+  <string name="header_provider_disabled">Disabled</string>
+  <string name="custom_header_title">Custom header image</string>
+  <string name="file_header_select_title">Select image</string>
+  <string name="file_header_select_summary">Select custom image</string>
+  <string name="file_header_provider_title">Custom image</string>
+  <string name="qs_header_title">Custom Headers</string>
+  <string name="qs_header_summary">Beautify quick settings with custom headers</string>
+  <!-- Pocket judge -->
+  <string name="pocket_judge_title">Pocket detection</string>
+  <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
+  <!-- Auto face unlock -->
+  <string name="face_auto_unlock_title">Face auto unlock</string>
+  <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 </resources>
