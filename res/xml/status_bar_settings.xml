@@ -31,6 +31,14 @@
 
         <!-- Main fragment -->
         <Preference
+            android:key="fh_battery"
+            android:fragment="com.fh.settings.fragments.statusbar.Battery"
+            android:icon="@drawable/ic_fh_battery"
+            android:title="@string/fh_battery_title"
+            android:summary="@string/fh_battery_summary" />
+
+        <!-- Main fragment -->
+        <Preference
             android:key="traffic"
             android:fragment="com.fh.settings.fragments.statusbar.Traffic"
             android:icon="@drawable/ic_traffic"
