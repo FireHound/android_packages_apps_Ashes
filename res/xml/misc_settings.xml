@@ -69,7 +69,7 @@
         android:icon="@drawable/ic_pocket_judge"
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
         <!-- Signature spoofing -->
         <com.fh.settings.preferences.SecureSettingSwitchPreference
