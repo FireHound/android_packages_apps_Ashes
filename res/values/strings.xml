@@ -799,7 +799,7 @@
 
     <!-- Battery Styles -->
     <string name="fh_battery_title">Battery</string>
-    <string name="fh_battery_summary">Control battery stles in statusbar</string>
+    <string name="fh_battery_summary">Control battery styles in statusbar</string>
     <string name="battery_style_title">Battery icon style</string>
     <string name="battery_style_port">Portrait</string>
     <string name="battery_style_land">Landscape</string>
