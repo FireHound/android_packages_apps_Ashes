@@ -701,7 +701,7 @@
   <string name="heads_up_snooze_20min">20 minutes</string>
   <!-- Battery Styles -->
   <string name="fh_battery_title">Battery</string>
-  <string name="fh_battery_summary">Control battery stles in statusbar</string>
+  <string name="fh_battery_summary">Control battery styles in statusbar</string>
   <string name="battery_style_title">Battery icon style</string>
   <string name="battery_style_port">Portrait</string>
   <string name="battery_style_land">Landscape</string>
@@ -758,4 +758,7 @@
   <string name="navbar_dynamic_title">Dynamic navbar color</string>
   <string name="navbar_dynamic_summary">Adapt navbar color to match foreground running app</string>
   <string name="restart_app_required">Restart respective app to see effect</string>
+  <!-- MTP Dirty Hack -->
+  <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
+  <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
 </resources>
