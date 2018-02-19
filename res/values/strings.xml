@@ -854,6 +854,9 @@
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="menu_cancel">Cancel</string>
     <string name="menu_save">Save</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
 
     <!-- Dynamic Navbar -->
     <string name="navbar_dynamic_title">Dynamic navbar color</string>
