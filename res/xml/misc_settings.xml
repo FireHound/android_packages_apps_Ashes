@@ -70,14 +70,6 @@
             android:title="@string/allow_signature_fake"
             android:summary="@string/allow_signature_fake_summary" />
 
-        <!-- Three-fingers-swipe to screenshot -->
-        <com.fh.settings.preferences.SystemSettingSwitchPreference
-            android:key="three_finger_gesture"
-            android:icon="@drawable/ic_pulldown"
-            android:title="@string/three_finger_gesture"
-            android:summary="@string/three_finger_gesture_summary"
-            android:defaultValue="false" />
-
         <!-- Auto face unlock -->
         <com.fh.settings.preferences.SecureSettingSwitchPreference
             android:key="face_auto_unlock"
