@@ -16,6 +16,9 @@
 
 package com.fh.settings.fragments.animation;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
 import android.app.ActivityManagerNative;
 import android.content.Context;
 import android.content.ContentResolver;
@@ -35,10 +38,16 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
+import android.view.Menu;
+import android.widget.EditText;
+import android.widget.Toast;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import java.util.Locale;
+import java.util.ArrayList;
+import java.util.List;
+
 import android.text.TextUtils;
 import android.view.View;
 
@@ -51,8 +60,11 @@ public class SystemAnimations extends SettingsPreferenceFragment implements OnPr
 
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String TAG = "AnimationSettings";
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
 
     private ListPreference mScreenOffAnimation;
+    private ListPreference mToastAnimation;
+    Toast mToast;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,6 +80,18 @@ public class SystemAnimations extends SettingsPreferenceFragment implements OnPr
         mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
         mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
         mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
+        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
+        int toastanimation = Settings.System.getInt(resolver,
+                Settings.System.TOAST_ANIMATION, 1);
+        mToastAnimation.setValue(String.valueOf(toastanimation));
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        mToastAnimation.setOnPreferenceChangeListener(this);
+
+        if (mToast != null) {
+            mToast.cancel();
+            mToast = null;
+        }
     }
 
     @Override
@@ -91,7 +115,21 @@ public class SystemAnimations extends SettingsPreferenceFragment implements OnPr
             int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
             return true;
-    }
-            return false;
+        }
+        if (preference == mToastAnimation) {
+            int value = Integer.parseInt((String) newValue);
+            int index = mToastAnimation.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.TOAST_ANIMATION, value);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            if (mToast != null) {
+                mToast.cancel();
+            }
+            mToast = Toast.makeText(getActivity(), R.string.toast_animation_test,
+                    Toast.LENGTH_SHORT);
+            mToast.show();
+            return true;
+        }
+        return false;
     }
 }

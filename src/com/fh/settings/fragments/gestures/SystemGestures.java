@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fh.settings.fragments.animation;
+package com.fh.settings.fragments.gestures;
 
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
@@ -28,17 +28,19 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class AnimationSettings extends SettingsPreferenceFragment {
-    private static final String TAG = "AnimationSettings";
+import lineageos.providers.LineageSettings;
+
+public class SystemGestures extends SettingsPreferenceFragment {
+    private static final String TAG = "FhGestures";
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.FH_SETTINGS;
-
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.animation_settings);
+        addPreferencesFromResource(R.xml.sys_gestures);
     }
 }

@@ -14,31 +14,43 @@
  * limitations under the License.
  */
 
-package com.fh.settings.fragments.animation;
-
-import android.os.Bundle;
-import android.support.v7.preference.ListPreference;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.Preference;
+package com.fh.settings.fragments.gestures;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.ContentResolver;
+import android.app.WallpaperManager;
+import android.content.Intent;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
+
+import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 
-public class AnimationSettings extends SettingsPreferenceFragment {
-    private static final String TAG = "AnimationSettings";
+import lineageos.providers.LineageSettings;
+
+public class FhGestures extends SettingsPreferenceFragment {
+
+    private static final String TAG = "FhGestures";
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.fh_gestures);
+    }
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.FH_SETTINGS;
-
-    }
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.animation_settings);
     }
 }
