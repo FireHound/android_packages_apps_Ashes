@@ -63,6 +63,7 @@ import com.fh.settings.fragments.sound.FhSoundSettings;
 import com.fh.settings.fragments.animation.AnimationSettings;
 import com.fh.settings.fragments.misc.MiscSettings;
 import com.fh.settings.fragments.firehound.Firehound;
+import com.fh.settings.fragments.gestures.FhGestures;
 
 public class FhAshes extends SettingsPreferenceFragment {
 
@@ -127,7 +128,8 @@ public class FhAshes extends SettingsPreferenceFragment {
             frags[7] = new DisplaySettings();
             frags[8] = new FhSoundSettings();
             frags[9] = new AnimationSettings();
-            frags[10] = new MiscSettings();
+            frags[10] = new FhGestures();
+            frags[11] = new MiscSettings();
         }
 
         @Override
@@ -160,6 +162,7 @@ public class FhAshes extends SettingsPreferenceFragment {
             getString(R.string.display_title),
             getString(R.string.sound_title),
             getString(R.string.animation_settings),
+            getString(R.string.fh_gestures),
             getString(R.string.misc_title)
         };
         return titleString;
