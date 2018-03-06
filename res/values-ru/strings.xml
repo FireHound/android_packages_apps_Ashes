@@ -701,7 +701,7 @@
   <string name="heads_up_snooze_20min">20 минут</string>
   <!-- Battery Styles -->
   <string name="fh_battery_title">Батарея</string>
-  <string name="fh_battery_summary">Control battery styles in statusbar</string>
+  <string name="fh_battery_summary">Стиль батареи в строке состояния</string>
   <string name="battery_style_title">Стиль батареи</string>
   <string name="battery_style_port">Портретная</string>
   <string name="battery_style_land">Альбомная</string>
@@ -709,6 +709,7 @@
   <string name="battery_style_dotted_circle">Точечный круг</string>
   <string name="battery_style_big_circle">Большой круг</string>
   <string name="battery_style_big_dotted_circle">Большой точечный круг</string>
+  <string name="battery_style_square">Square</string>
   <string name="battery_style_text">Текст</string>
   <string name="battery_style_hidden">Скрытый</string>
   <string name="show_battery_percent_title">Процент заряда батареи</string>
@@ -754,11 +755,61 @@
   <string name="clock_date_format_custom">Пользовательский Java-формат</string>
   <string name="menu_cancel">Отменить</string>
   <string name="menu_save">Сохранить</string>
+  <string name="clock_date_position">Date position</string>
+  <string name="clock_date_right">Right of time</string>
+  <string name="clock_date_left">Left of time</string>
   <!-- Dynamic Navbar -->
   <string name="navbar_dynamic_title">Динамический цвет панели навигации</string>
   <string name="navbar_dynamic_summary">Изменять цвет панели навигации в зависимости от основного цвета приложения</string>
   <string name="restart_app_required">Требуется перезапуск приложения</string>
   <!-- MTP Dirty Hack -->
-  <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
-  <string name="enable_mtp_dirtyhack_summary">Enable MTP instead Charging after connect to PC</string>
+  <string name="enable_mtp_dirtyhack_title">MTP вместо зарядки</string>
+  <string name="enable_mtp_dirtyhack_summary">Стиль батареи в строке состояния</string>
+  <!-- Disabling immersive mode messages -->
+  <string name="disable_immersive_message_title">Disable immersive mode messages</string>
+  <string name="disable_immersive_message_summary">Hide all messages shown in immersive mode</string>
+  <!-- Toast Animation -->
+  <string name="toast_animation_title">Toast animation</string>
+  <string name="toast_none_animation">None</string>
+  <string name="toast_default_animation">Default</string>
+  <string name="toast_fade_animation">Fade</string>
+  <string name="toast_SlideRight_animation">Slide right</string>
+  <string name="toast_SlideLeft_animation">Slide left</string>
+  <string name="toast_Xylon_animation">Xylon</string>
+  <string name="toast_Toko_animation">Toko</string>
+  <string name="toast_Tn_animation">Tn</string>
+  <string name="toast_Honami_animation">Honami</string>
+  <string name="toast_FastFade_animation">Fast fade</string>
+  <string name="toast_GrowFade_animation">Grow fade</string>
+  <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
+  <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
+  <string name="toast_Translucent_animation">Translucent</string>
+  <string name="toast_SlideLeftRight_animation">Slide left to right</string>
+  <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+  <string name="toast_animation_test">This is test for selected toast animation</string>
+  <!-- Stock recents icon pack -->
+  <string name="recents_icon_pack_title">Icon pack</string>
+  <string name="recents_icon_pack_summary">Apply a custom icon pack for apps in the panel</string>
+  <string name="no_iconpacks_summary">No icon packs installed</string>
+  <string name="dialog_pick_iconpack_title">Pick icon pack</string>
+  <string name="default_iconpack_title">Default icons</string>
+  <!-- Gestures -->
+  <string name="fh_gestures">Gestures</string>
+  <string name="sys_gestures">System Gestures</string>
+  <string name="sys_gestures_summary">Control system wide gestures</string>
+  <!-- Double tap to sleep on status bar or lockscreen -->
+  <string name="status_bar_double_tap_to_sleep_title">Double tap to sleep</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
+  <!-- Volume settings - Volume adjustment sound -->
+  <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+  <!-- Option to enable/disable scrolling cache -->
+  <string name="pref_scrollingcache_title">Scrolling cache</string>
+  <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
+  <string name="pref_scrollingcache_force_enable">Force enable</string>
+  <string name="pref_scrollingcache_default_enable">Default enable</string>
+  <string name="pref_scrollingcache_default_disable">Default disable</string>
+  <string name="pref_scrollingcache_force_disable">Force disable</string>
+  <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Fingerprint unlock</string>
+  <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: at your own risk!</string>
 </resources>
