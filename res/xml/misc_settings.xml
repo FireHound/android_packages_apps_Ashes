@@ -80,6 +80,14 @@
             android:title="@string/allow_signature_fake"
             android:summary="@string/allow_signature_fake_summary" />
 
+	<!-- Allow untrusted overlays toggle-->
+        <com.fh.settings.preferences.SecureSettingSwitchPreference
+            android:key="untrusted_overlay_toggle"
+            android:icon="@drawable/ic_oms"
+            android:title="@string/untrusted_overlay_toggle_title"
+            android:summary="@string/untrusted_overlay_toggle_summary"
+            android:defaultValue="false" />
+
         <!-- Auto face unlock -->
         <com.fh.settings.preferences.SecureSettingSwitchPreference
             android:key="face_auto_unlock"
