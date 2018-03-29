@@ -957,4 +957,14 @@
     <string name="show_lockscreen_alarm_title">Alarm text</string>
     <string name="show_lockscreen_alarm_summary">Enable to show alarm text below the clock widget</string>
 
+    <!-- QS footer icon customizations -->
+    <string name="qs_settings_icon_title">Settings Icon</string>
+    <string name="qs_settings_icon_summary">Enable the settings shortcut in the footer</string>
+    <string name="qs_edit_title">Edit Icon</string>
+    <string name="qs_edit_summary">Enable the tile edit icon in the footer</string>
+    <string name="qs_multiuser_switch_title">Multi-user Switch</string>
+    <string name="qs_multiuser_switch_summary">Enable the multi-user switch in the footer</string>
+    <string name="qs_expand_indicator_title">Expand Indicator</string>
+    <string name="qs_expand_indicator_summary">Enable the expand indicator in the footer</string>
+
 </resources>

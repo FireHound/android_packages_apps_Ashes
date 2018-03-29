@@ -61,6 +61,35 @@
         android:summary="@string/qs_tile_title_visibility_summary"
         android:defaultValue="true" />
 
+    <!-- Settings icon -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_settings_icon_enable"
+        android:title="@string/qs_settings_icon_title"
+        android:summary="@string/qs_settings_icon_summary"
+        android:disableDependentsState="true"
+        android:defaultValue="true" />
+
+    <!-- Edit icon -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_edit_icon_enable"
+        android:title="@string/qs_edit_title"
+        android:summary="@string/qs_edit_summary"
+        android:defaultValue="true" />
+
+    <!-- Multiuser icon -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_user_icon_enable"
+        android:title="@string/qs_multiuser_switch_title"
+        android:summary="@string/qs_multiuser_switch_summary"
+        android:defaultValue="true" />
+
+    <!-- QS Expand icon -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_expand_icon_enable"
+        android:title="@string/qs_expand_indicator_title"
+        android:summary="@string/qs_expand_indicator_summary"
+        android:defaultValue="true" />
+
     <!-- QS Transparency -->
     <com.fh.settings.preferences.CustomSeekBarPreference
         android:key="qs_panel_alpha"
