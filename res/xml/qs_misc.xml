@@ -55,6 +55,13 @@
         android:dependency="qs_show_brightness"
         android:defaultValue="false"/>
 
+    <!-- Brightness slider buttons toggle -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_brightness_buttons"
+        android:title="@string/qs_brightness_slider_buttons_title"
+        android:summary="@string/qs_brightness_slider_buttons_summary"
+        android:defaultValue="true"/>
+
     <!-- QS titles visibility -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
