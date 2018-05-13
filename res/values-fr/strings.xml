@@ -357,7 +357,7 @@
   <string name="fling_longpress_title">Long press delay</string>
   <string name="fling_longpress_summary">Increase or decrease the time it takes to execute a long press</string>
   <string name="fling_keyboard_cursors_title">Dynamic keyboard cursors action</string>
-  <string name="fling_keyboard_cursors_summary">Double tap left and right actions becomes left and right keyboard cursor actions if keyboard is open</string>
+  <string name="fling_keyboard_cursors_move_summary">When keyboard is showing, long press left or right to move the text cursor to left or right.\nKeep longpressing to keep moving the cursor, single tap on bar to go to home screen.</string>
   <string name="fling_logo_opacity_title">Fling logo opacity</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse does not work with some audio sources when listening on device speaker</string>
@@ -583,12 +583,6 @@
   <!-- Lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Music visualizer</string>
   <string name="lockscreen_visualizer_summary">Display music visualizer while playing music</string>
-  <!-- Quick settings brightness slider -->
-  <string name="qs_brightness_slider_title">Brightness slider</string>
-  <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
-  <!-- Quick settings brightness icon -->
-  <string name="brightness_icon_title">Auto brightness</string>
-  <string name="brightness_icon_summary">Show toggle for adaptive brightness near the slider</string>
   <!-- Status bar -->
   <string name="status_bar_toggle_brightness">Brightness control</string>
   <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
@@ -812,4 +806,43 @@
   <!-- Fingerprint unlock keystore -->
   <string name="fp_unlock_keystore_title">Fingerprint unlock</string>
   <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: at your own risk!</string>
+  <!-- QuickSettings Panel Transparency -->
+  <string name="qs_panel_alpha_title">Transparency</string>
+  <!-- Tiles animation style  -->
+  <string name="qs_animation_title">Quick settings</string>
+  <string name="qs_animation_summary">Control quick settings animation</string>
+  <string name="qs_tile_animation_style_title">QS tile animation</string>
+  <string name="qs_tile_animation_duration_title">QS tile animation duration</string>
+  <string name="qs_tile_animation_style_off">No animation</string>
+  <string name="qs_tile_animation_style_flip">Flip</string>
+  <string name="qs_tile_animation_style_rotate">Rotate</string>
+  <string name="qs_tile_animation_duration_low">Low</string>
+  <string name="qs_tile_animation_duration_default">Default</string>
+  <string name="qs_tile_animation_duration_fast">Fast</string>
+  <!-- Tiles animation interpolator -->
+  <string name="qs_tile_animation_interpolator_title">QS tile animation interpolator</string>
+  <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+  <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+  <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+  <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+  <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+  <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+  <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+  <!-- Show Lockscreen clock, date, & alarm -->
+  <string name="show_lockscreen_clock_title">Clock widget</string>
+  <string name="show_lockscreen_clock_summary">Enable to show clock widget</string>
+  <string name="show_lockscreen_date_title">Date widget</string>
+  <string name="show_lockscreen_date_summary">Enable to show date below the clock widget</string>
+  <string name="show_lockscreen_alarm_title">Alarm text</string>
+  <string name="show_lockscreen_alarm_summary">Enable to show alarm text below the clock widget</string>
+  <!-- Quick Settings brightness icon -->
+  <string name="brightness_icon_title">Brightness icon</string>
+  <string name="brightness_icon_summary">Show a brightness icon to the right of the brighness slider to adjust autobrightness</string>
+  <!-- Quick Settings brightness slider -->
+  <string name="qs_brightness_slider_title">Brightness slider</string>
+  <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+  <!-- Brightness slider buttons toggle -->
+  <string name="qs_brightness_slider_buttons_title">Brightness slider buttons</string>
+  <string name="qs_brightness_slider_buttons_summary">Enable the brightness slider buttons in Quick Settings</string>
 </resources>
