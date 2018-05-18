@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -40,5 +41,15 @@ public class ButtonSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.button_settings);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        boolean showHardwareButtons = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_hardwareKeysPresent);
+        Preference HardwareButtons = findPreference("hardware_key_category");
+
+        if (!showHardwareButtons){
+            prefSet.removePreference(HardwareButtons);
+        }
     }
 }
