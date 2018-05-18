@@ -60,6 +60,7 @@
         android:key="show_brightness_buttons"
         android:title="@string/qs_brightness_slider_buttons_title"
         android:summary="@string/qs_brightness_slider_buttons_summary"
+        android:dependency="qs_show_brightness"
         android:defaultValue="true"/>
 
     <!-- QS titles visibility -->
