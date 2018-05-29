@@ -104,9 +104,9 @@
   <string name="fh_online">O nás</string>
   <string name="status_bar_title">Stavová lišta</string>
   <string name="qs_title">Panel rychlého nastavení</string>
-  <string name="notification_title">Notifikace</string>
+  <string name="notification_title">Oznámení</string>
   <string name="lockscreen_title">Zamykací obrazovka</string>
-  <string name="recents_settings">Nedávno spuštěné</string>
+  <string name="recents_settings">Nedávné</string>
   <string name="button_title">Hardwarová tlačítka</string>
   <string name="navbar_title">Navigační panel</string>
   <string name="display_title">UI / UX</string>
@@ -116,7 +116,7 @@
   <string name="back_soon_title">Ahoj</string>
   <string name="back_soon_summary">Brzy se vrátíme se všemi funkcemi! Do té doby buďte v klidu!!!</string>
   <string name="lockscreen_gestures">Gesta na zamykací obrazovce</string>
-  <string name="lockscreen_ui">Uživatelské rozhraní zamykací obrazovky</string>
+  <string name="lockscreen_ui">UI / UX zamykací obrazovky</string>
   <string name="ui">UI</string>
   <string name="ux">UX</string>
   <string name="lockscreen_misc">Různá nastavení</string>
@@ -200,10 +200,10 @@
   <string name="qs_columns_portrait_title">Počet sloupců dlaždic na výšku</string>
   <string name="qs_columns_landscape_title">Počet sloupců dlaždic na šířku</string>
   <!-- MediaScanner behavior on boot -->
-  <string name="media_scanner_on_boot_title">Chování MediaScanneru po startu</string>
-  <string name="media_scanner_on_boot_enabled">Skenovat nová média</string>
-  <string name="media_scanner_on_boot_ask">Zeptat se na skenování (notifikace)</string>
-  <string name="media_scanner_on_boot_disabled">Neskenovat nová média</string>
+  <string name="media_scanner_on_boot_title">Chování skenování medií při startu</string>
+  <string name="media_scanner_on_boot_enabled">Skenování médií</string>
+  <string name="media_scanner_on_boot_ask">Zeptat se na skenování (oznámení)</string>
+  <string name="media_scanner_on_boot_disabled">Neskenovat média</string>
   <!-- Misc sound -->
   <string name="sound_other_settings">Ostatní zvuky</string>
   <string name="sound_other_summary">Různé ovládací prvky zvuku</string>
@@ -357,7 +357,7 @@
   <string name="fling_longpress_title">Zpoždění při dlouhém stisknutí</string>
   <string name="fling_longpress_summary">Zvýšit nebo snížit dobu potřebnou k provedení akce dlouhým stisknutím</string>
   <string name="fling_keyboard_cursors_title">Akce kurzorů dynamické klávesnice</string>
-  <string name="fling_keyboard_cursors_move_summary">When keyboard is showing, long press left or right to move the text cursor to left or right.\nKeep longpressing to keep moving the cursor, single tap on bar to go to home screen.</string>
+  <string name="fling_keyboard_cursors_move_summary">Když se klávesnice zobrazí, dlouhým stiskem vlevo nebo vpravo přesunete textový kurzor doleva nebo doprava.\nDlouhým stiskem pokračujete v pohybu kurzoru, jedním klepnutím na panel přejdete na domovskou obrazovku.</string>
   <string name="fling_logo_opacity_title">Průhlednost loga Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse nefunguje s některými zvukovými zdroji při poslechu z reproduktoru zařízení</string>
@@ -489,14 +489,14 @@
   <!-- Enable keys backlight-->
   <string name="button_brightness_title">Podsvícení</string>
   <string name="button_backlight_on_touch_only_title">Podsvícení tlačítek při dotyku</string>
-  <string name="button_backlight_on_touch_only_summary">Aktivujte podsvícení s časovým omezením pouze při stisknutí tlačítka</string>
+  <string name="button_backlight_on_touch_only_summary">Povolit podsvícení s časovým omezením pouze při stisknutí tlačítka</string>
   <!-- Enable keys backlight-->
   <string name="button_brightness_sw_title">Zapnout podsvícení</string>
   <!-- ANBI -->
   <string name="anbi_title">Náhodný dotyk</string>
   <string name="anbi_summary">Zabránit interakci s navigačními tlačítky během dotyku obrazovky</string>
   <!-- Show or Hide emergency button on lockscreen-->
-  <string name="show_emergency_button">Nouzové tlačítko</string>
+  <string name="show_emergency_button">Zobrazit nouzové tlačítko</string>
   <string name="show_emergency_button_on">Nouzové tlačítko je viditelné na zamykací obrazovce</string>
   <string name="show_emergency_button_off">Zobrazí nouzové tlačítko na zamykací obrazovce</string>
   <!-- Volume Dialog Expanded -->
@@ -529,7 +529,7 @@
   <string name="battery_bar_animate_title">Animace při nabíjení</string>
   <string name="battery_bar_style_regular">Standardní</string>
   <string name="battery_bar_style_center_mirrored">Zrcadlově na střed</string>
-  <string name="battery_bar_style_reversed">Obrácený</string>
+  <string name="battery_bar_style_reversed">Obráceně</string>
   <string name="battery_bar_use_charging_color">Vlastní barvy při nabíjení</string>
   <string name="battery_bar_blend_color_title">Smíšené barvy</string>
   <string name="battery_bar_blend_color_summary">Smíchání barvy odpovídající procentu baterie - plné/prázdné</string>
@@ -578,7 +578,7 @@
   <string name="immersive_recents_statusbar">Pouze stavová lišta</string>
   <string name="immersive_recents_navbar">Pouze navigační panel</string>
   <!-- QS tiles title visibility -->
-  <string name="qs_tile_title_visibility_title">Zobrazit názvy dlaždic</string>
+  <string name="qs_tile_title_visibility_title">Názvy QS dlaždic</string>
   <string name="qs_tile_title_visibility_summary">Zobrazit názvy dlaždic rychlého nastavení</string>
   <!-- Lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Hudební vizualizace</string>
@@ -807,42 +807,58 @@
   <string name="fp_unlock_keystore_title">Odemknout pomocí otisku prstu</string>
   <string name="fp_unlock_keystore_summary">Odemknutí zařízení pomocí otisku prstu po restartu bez zadání PINu/hesla/Vzoru\nUpozornění: na vlastní nebezpečí!</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">Transparency</string>
+  <string name="qs_panel_alpha_title">Průhlednost</string>
   <!-- Tiles animation style  -->
-  <string name="qs_animation_title">Quick settings</string>
-  <string name="qs_animation_summary">Control quick settings animation</string>
-  <string name="qs_tile_animation_style_title">QS tile animation</string>
-  <string name="qs_tile_animation_duration_title">QS tile animation duration</string>
-  <string name="qs_tile_animation_style_off">No animation</string>
-  <string name="qs_tile_animation_style_flip">Flip</string>
-  <string name="qs_tile_animation_style_rotate">Rotate</string>
-  <string name="qs_tile_animation_duration_low">Low</string>
-  <string name="qs_tile_animation_duration_default">Default</string>
-  <string name="qs_tile_animation_duration_fast">Fast</string>
+  <string name="qs_animation_title">Rychlá nastavení</string>
+  <string name="qs_animation_summary">Nastavení animací QS</string>
+  <string name="qs_tile_animation_style_title">Animace dlaždice QS</string>
+  <string name="qs_tile_animation_duration_title">Doba trvání animace dlaždice QS</string>
+  <string name="qs_tile_animation_style_off">Bez animace</string>
+  <string name="qs_tile_animation_style_flip">Překlopit</string>
+  <string name="qs_tile_animation_style_rotate">Otočit</string>
+  <string name="qs_tile_animation_duration_low">Pomalu</string>
+  <string name="qs_tile_animation_duration_default">Výchozí</string>
+  <string name="qs_tile_animation_duration_fast">Rychle</string>
   <!-- Tiles animation interpolator -->
-  <string name="qs_tile_animation_interpolator_title">QS tile animation interpolator</string>
-  <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-  <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-  <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-  <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
-  <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-  <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-  <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+  <string name="qs_tile_animation_interpolator_title">Interpolace animace dlaždice QS</string>
+  <string name="qs_tile_animation_interpolator_linearInterpolator">Lineární</string>
+  <string name="qs_tile_animation_interpolator_accelerateInterpolator">Zrychlit</string>
+  <string name="qs_tile_animation_interpolator_decelerateInterpolator">Zpomalit</string>
+  <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Zrychlit a zpomalit</string>
+  <string name="qs_tile_animation_interpolator_bounceInterpolator">Odskočit</string>
+  <string name="qs_tile_animation_interpolator_overshootInterpolator">Překročit</string>
+  <string name="qs_tile_animation_interpolator_anticipateInterpolator">Předbíhat</string>
+  <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Předběhnout a překročit</string>
   <!-- Show Lockscreen clock, date, & alarm -->
-  <string name="show_lockscreen_clock_title">Clock widget</string>
-  <string name="show_lockscreen_clock_summary">Enable to show clock widget</string>
-  <string name="show_lockscreen_date_title">Date widget</string>
-  <string name="show_lockscreen_date_summary">Enable to show date below the clock widget</string>
-  <string name="show_lockscreen_alarm_title">Alarm text</string>
-  <string name="show_lockscreen_alarm_summary">Enable to show alarm text below the clock widget</string>
+  <string name="show_lockscreen_clock_title">Widget hodin</string>
+  <string name="show_lockscreen_clock_summary">Povolit zobrazení widgetu hodin</string>
+  <string name="show_lockscreen_date_title">Widget data</string>
+  <string name="show_lockscreen_date_summary">Povolit zobrazení data pod widgetem hodin</string>
+  <string name="show_lockscreen_alarm_title">Text budíku</string>
+  <string name="show_lockscreen_alarm_summary">Povolit zobrazení textu budíku pod widgetem hodin</string>
   <!-- Quick Settings brightness icon -->
-  <string name="brightness_icon_title">Brightness icon</string>
-  <string name="brightness_icon_summary">Show a brightness icon to the right of the brighness slider to adjust autobrightness</string>
+  <string name="brightness_icon_title">Ikona jasu</string>
+  <string name="brightness_icon_summary">Zobrazit ikonu jasu na pravé straně posuvníku k přepnutí automatického jasu</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Posuvník jasu</string>
   <string name="qs_brightness_slider_summary">Zobrazit posuvník jasu v panelu rychlého nastavení</string>
   <!-- Brightness slider buttons toggle -->
-  <string name="qs_brightness_slider_buttons_title">Brightness slider buttons</string>
-  <string name="qs_brightness_slider_buttons_summary">Enable the brightness slider buttons in Quick Settings</string>
+  <string name="qs_brightness_slider_buttons_title">Tlačítko posuvníku jasu</string>
+  <string name="qs_brightness_slider_buttons_summary">Povolit tlačítko posuvníku jasu v rychlém nastavení</string>
+  <!-- Applications: Expanded desktop -->
+  <string name="expanded_desktop_settings_title">Expanded desktop</string>
+  <string name="expanded_desktop_settings_summary">Expand your available desktop space by hiding the status bar, navigation bar, or both</string>
+  <!-- Swipe FP to dismiss notifications -->
+  <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+  <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart Pixels</string>
+  <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+  <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+  <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+  <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+  <string name="smart_pixels_percent">Percent of pixels to disable</string>
+  <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
+  <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
 </resources>

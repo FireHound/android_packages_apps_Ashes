@@ -357,7 +357,7 @@
   <string name="fling_longpress_title">Задержка долгого нажатия</string>
   <string name="fling_longpress_summary">Увеличить или уменьшить время, необходимое для длительного нажатия</string>
   <string name="fling_keyboard_cursors_title">Управление курсором</string>
-  <string name="fling_keyboard_cursors_move_summary">When keyboard is showing, long press left or right to move the text cursor to left or right.\nKeep longpressing to keep moving the cursor, single tap on bar to go to home screen.</string>
+  <string name="fling_keyboard_cursors_move_summary">Когда отображается клавиатура, длительное нажатие на стрелочки влево или вправо перемещает текстовый курсор влево или вправо.\nУдерживайте, чтобы продолжить перемещение курсора или нажмите на панель, чтобы перейти к домашнему экрану.</string>
   <string name="fling_logo_opacity_title">Прозрачность логотипа Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Пульс не работает с некоторыми источниками аудио во время прослушивания через динамик</string>
@@ -807,9 +807,9 @@
   <string name="fp_unlock_keystore_title">Разблокировка отпечатком пальца</string>
   <string name="fp_unlock_keystore_summary">Разблокировка устройства после перезагрузки с помощью отпечатка пальца без использования PIN-кода/Пароля/Графического ключа\nПримечание: используйте на свой страх и риск!</string>
   <!-- QuickSettings Panel Transparency -->
-  <string name="qs_panel_alpha_title">Transparency</string>
+  <string name="qs_panel_alpha_title">Прозрачность</string>
   <!-- Tiles animation style  -->
-  <string name="qs_animation_title">Quick settings</string>
+  <string name="qs_animation_title">Быстрые настройки</string>
   <string name="qs_animation_summary">Control quick settings animation</string>
   <string name="qs_tile_animation_style_title">QS tile animation</string>
   <string name="qs_tile_animation_duration_title">QS tile animation duration</string>
@@ -845,4 +845,20 @@
   <!-- Brightness slider buttons toggle -->
   <string name="qs_brightness_slider_buttons_title">Brightness slider buttons</string>
   <string name="qs_brightness_slider_buttons_summary">Enable the brightness slider buttons in Quick Settings</string>
+  <!-- Applications: Expanded desktop -->
+  <string name="expanded_desktop_settings_title">Expanded desktop</string>
+  <string name="expanded_desktop_settings_summary">Expand your available desktop space by hiding the status bar, navigation bar, or both</string>
+  <!-- Swipe FP to dismiss notifications -->
+  <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+  <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Smart Pixels</string>
+  <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+  <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+  <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+  <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+  <string name="smart_pixels_percent">Percent of pixels to disable</string>
+  <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
+  <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
 </resources>
