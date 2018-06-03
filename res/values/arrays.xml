@@ -396,6 +396,7 @@
         <item>@string/battery_style_big_circle</item>
         <item>@string/battery_style_big_dotted_circle</item>
         <item>@string/battery_style_square</item>
+        <item>@string/battery_style_dotted_square</item>
         <item>@string/battery_style_text</item>
         <item>@string/battery_style_hidden</item>
     </string-array>
@@ -410,6 +411,7 @@
         <item>6</item>
         <item>7</item>
         <item>8</item>
+        <item>9</item>
     </string-array>
 
     <!-- Battery Percent -->
