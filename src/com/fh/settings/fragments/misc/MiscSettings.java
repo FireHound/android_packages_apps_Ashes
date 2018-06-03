@@ -34,7 +34,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import android.content.res.Resources;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+
+import com.fh.settings.utils.Utils;
 
 public class MiscSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
@@ -79,11 +80,17 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
         }
 
         mFlashlightOnCall = (ListPreference) findPreference(FLASHLIGHT_ON_CALL);
+        Preference FlashOnCall = findPreference("flashlight_on_call");
         int flashlightValue = Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.FLASHLIGHT_ON_CALL, 0);
         mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
         mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
         mFlashlightOnCall.setOnPreferenceChangeListener(this);
+
+        if (!Utils.deviceSupportsFlashLight(getActivity())) {
+            prefSet.removePreference(FlashOnCall);
+        }
+
     }
 
     @Override
