@@ -19,6 +19,7 @@ package com.fh.settings.fragments.sound;
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.os.Bundle;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -40,19 +41,49 @@ import android.view.View;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.fh.settings.utils.Utils;
+
 public class FhSoundSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
+
+    private static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
+
+    private ListPreference mFlashlightOnCall;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        Context mContext = getActivity().getApplicationContext();
         addPreferencesFromResource(R.xml.fh_sound_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mFlashlightOnCall = (ListPreference) findPreference(FLASHLIGHT_ON_CALL);
+        Preference FlashOnCall = findPreference("flashlight_on_call");
+        int flashlightValue = Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.FLASHLIGHT_ON_CALL, 0);
+        mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
+        mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
+        mFlashlightOnCall.setOnPreferenceChangeListener(this);
+
+        if (!Utils.deviceSupportsFlashLight(getActivity())) {
+            prefScreen.removePreference(FlashOnCall);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        Context mContext = getActivity().getApplicationContext();
+
+        if (preference == mFlashlightOnCall) {
+            int flashlightValue = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL, flashlightValue);
+            mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
+            mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
+            return true;
+        }
         return false;
     }
 
