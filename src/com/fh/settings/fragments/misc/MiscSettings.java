@@ -45,11 +45,9 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "1";
-    private static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
 
     private ListPreference mMSOB;
     private ListPreference mScrollingCachePref;
-    private ListPreference mFlashlightOnCall;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,18 +77,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
             prefSet.removePreference(SmartPixels);
         }
 
-        mFlashlightOnCall = (ListPreference) findPreference(FLASHLIGHT_ON_CALL);
-        Preference FlashOnCall = findPreference("flashlight_on_call");
-        int flashlightValue = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.FLASHLIGHT_ON_CALL, 0);
-        mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
-        mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
-        mFlashlightOnCall.setOnPreferenceChangeListener(this);
-
-        if (!Utils.deviceSupportsFlashLight(getActivity())) {
-            prefSet.removePreference(FlashOnCall);
-        }
-
     }
 
     @Override
@@ -112,15 +98,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements Preferen
                 SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) newValue);
                 return true;
             }
-        }
-
-        if (preference == mFlashlightOnCall) {
-            int flashlightValue = Integer.parseInt(((String) newValue).toString());
-            Settings.System.putInt(resolver,
-                    Settings.System.FLASHLIGHT_ON_CALL, flashlightValue);
-            mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
-            mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
-            return true;
         }
         return false;
     }

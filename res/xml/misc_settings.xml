@@ -63,14 +63,6 @@
             android:entries="@array/media_scanner_on_boot_entries"
             android:entryValues="@array/media_scanner_on_boot_values" />
 
-        <!-- Flashlight on incoming calls -->
-        <ListPreference
-            android:key="flashlight_on_call"
-            android:icon="@drawable/ic_flashlight_call"
-            android:title="@string/flashlight_on_call_title"
-            android:entries="@array/flashlight_on_call_entries"
-            android:entryValues="@array/flashlight_on_call_values" />
-
         <!-- Disable scrolling cache -->
         <ListPreference
             android:key="pref_scrollingcache"
