@@ -26,9 +26,10 @@ import com.android.internal.logging.nano.MetricsProto;
 import android.content.res.Resources;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 
 import lineageos.providers.LineageSettings;
+
+import com.fh.settings.utils.Utils;
 
 public class FhNotificationsSettings extends SettingsPreferenceFragment {
     private static final String TAG = "FhNotificationsSettings";
@@ -42,5 +43,10 @@ public class FhNotificationsSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.fh_notification_settings);
+
+        Preference FlashLightAlerts = findPreference("flashlight_alerts");
+        if(!Utils.deviceSupportsFlashLight(getActivity())) {
+            prefSet.removePreference(FlashLightAlerts);
+        }
     }
 }

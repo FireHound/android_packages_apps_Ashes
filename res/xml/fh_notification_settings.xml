@@ -46,4 +46,12 @@
             android:title="@string/misc_notifications_title"
             android:summary="@string/misc_notifications_summary" />
 
+        <!-- Flashlight on call -->
+       <Preference
+            android:key="flashlight_alerts"
+            android:fragment="com.fh.settings.fragments.notifications.FlashlightAlerts"
+            android:icon="@drawable/ic_flashlight_call"
+            android:title="@string/flashlight_notifications_title"
+            android:summary="@string/flashlight_notifications_summary" />
+
 </PreferenceScreen>
