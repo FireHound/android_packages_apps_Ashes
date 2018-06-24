@@ -51,6 +51,7 @@ public class PowerButton extends SettingsPreferenceFragment implements
 
     private ListPreference mTorchPowerButton;
     private CheckBoxPreference mScreenshotPref;
+    private CheckBoxPreference mOnTheGoPref;
     private CheckBoxPreference mAirplanePref;
     private CheckBoxPreference mUsersPref;
     //private CheckBoxPreference mBugReportPref;
@@ -72,6 +73,8 @@ public class PowerButton extends SettingsPreferenceFragment implements
         for (String action : mAllActions) {
             if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
+            } else if (action.equals(GLOBAL_ACTION_KEY_ONTHEGO)) {
+                mOnTheGoPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_ONTHEGO);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
             } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
@@ -104,6 +107,10 @@ public class PowerButton extends SettingsPreferenceFragment implements
 
         if (mScreenshotPref != null) {
             mScreenshotPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENSHOT));
+        }
+
+        if (mOnTheGoPref != null) {
+            mOnTheGoPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_ONTHEGO));
         }
 
         if (mAirplanePref != null) {
@@ -146,6 +153,10 @@ public class PowerButton extends SettingsPreferenceFragment implements
         if (preference == mScreenshotPref) {
             value = mScreenshotPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
+
+        } else if (preference == mOnTheGoPref) {
+            value = mOnTheGoPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_ONTHEGO);
 
         } else if (preference == mAirplanePref) {
             value = mAirplanePref.isChecked();

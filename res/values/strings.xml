@@ -1000,4 +1000,7 @@
     <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
     <string name="edge_gestures_summary">Navigate using edge gestures</string>
 
+    <!-- On the go mode -->
+    <string name="power_menu_onthego_title">On-The-Go</string>
+
 </resources>
