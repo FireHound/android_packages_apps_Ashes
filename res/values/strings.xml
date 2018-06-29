@@ -1006,4 +1006,8 @@
     <!-- Custom small QS tiles -->
     <string name="sysui_qqs_count_title">Small QS tiles</string>
 
+    <!-- Berry Styles -->
+    <string name="style_title">Style</string>
+    <string name="style_summary">Choose system colors</string>
+
 </resources>
