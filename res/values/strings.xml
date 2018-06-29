@@ -990,4 +990,8 @@
 
     <string name="screenshot_spoof_title">Screenshot spoof</string>
 
+    <!-- Berry Styles -->
+    <string name="style_title">Style</string>
+    <string name="style_summary">Choose system colors</string>
+
 </resources>

@@ -18,6 +18,13 @@
                   xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/display_title">
+        
+        <!-- Berry Styles -->
+        <org.lineageos.internal.lineageparts.LineagePartsPreference
+            android:key="style"
+            android:title="@string/style_title"
+            android:summary="@string/style_summary"
+            android:icon="@drawable/ic_berry_style" />
 
         <!-- Main fragment -->
         <Preference
