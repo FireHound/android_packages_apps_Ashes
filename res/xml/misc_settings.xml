@@ -112,6 +112,13 @@
             android:summary="@string/enable_mtp_dirtyhack_summary"
             android:defaultValue="true" />
 
+        <!-- Screenshot spoofing -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="screenshot_spoof"
+            android:title="@string/screenshot_spoof_title"
+            android:summary="@string/screenshot_spoof_title"
+            android:defaultValue="false" />
+
         </PreferenceCategory>
 
 </PreferenceScreen>
