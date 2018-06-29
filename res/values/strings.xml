@@ -1003,4 +1003,8 @@
     <!-- On the go mode -->
     <string name="power_menu_onthego_title">On-The-Go</string>
 
+    <!-- Berry Styles -->
+    <string name="style_title">Style</string>
+    <string name="style_summary">Choose system colors</string>
+
 </resources>
