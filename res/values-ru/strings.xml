@@ -704,6 +704,7 @@
   <string name="battery_style_big_circle">Большой круг</string>
   <string name="battery_style_big_dotted_circle">Большой точечный круг</string>
   <string name="battery_style_square">Квадрат</string>
+  <string name="battery_style_dotted_square">Dotted square</string>
   <string name="battery_style_text">Текст</string>
   <string name="battery_style_hidden">Скрытый</string>
   <string name="show_battery_percent_title">Процент заряда батареи</string>
@@ -838,7 +839,7 @@
   <string name="show_lockscreen_alarm_summary">Enable to show alarm text below the clock widget</string>
   <!-- Quick Settings brightness icon -->
   <string name="brightness_icon_title">Brightness icon</string>
-  <string name="brightness_icon_summary">Show a brightness icon to the right of the brighness slider to adjust autobrightness</string>
+  <string name="brightness_icon_summary">Отображение значка яркости справа от ползунка яркости для настройки автоматической яркости</string>
   <!-- Quick Settings brightness slider -->
   <string name="qs_brightness_slider_title">Регулятор яркости</string>
   <string name="qs_brightness_slider_summary">Показывать регулятор яркости в панели быстрых настроек</string>
@@ -860,5 +861,11 @@
   <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
   <string name="smart_pixels_percent">Percent of pixels to disable</string>
   <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
-  <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
+  <string name="smart_pixels_warning_text">Smart Pixels - это функция энергосбережения. В зависимости от того, сколько пикселей вы хотите отключить, вы можете увидеть значительное улучшение времени автономной работы. Для хорошего пользовательского интерфейса мы рекомендуем установить количество отключенных пикселей до 75 процентов при переключении каждые 10 минут.</string>
+  <!-- Blink flashlight for incoming calls -->
+  <string name="flashlight_on_call_title">Blink Flashlight on call</string>
+  <string name="flashlight_on_call_disabled">Disabled</string>
+  <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
+  <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
+  <string name="flashlight_on_call_always">Always blink flashlight</string>
 </resources>

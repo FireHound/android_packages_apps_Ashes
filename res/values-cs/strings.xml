@@ -704,6 +704,7 @@
   <string name="battery_style_big_circle">Velký kruh</string>
   <string name="battery_style_big_dotted_circle">Velký tečkovaný kruh</string>
   <string name="battery_style_square">Čtverec</string>
+  <string name="battery_style_dotted_square">Dotted square</string>
   <string name="battery_style_text">Text</string>
   <string name="battery_style_hidden">Nezobrazovat</string>
   <string name="show_battery_percent_title">Zobrazit stav baterie v procentech</string>
@@ -846,19 +847,25 @@
   <string name="qs_brightness_slider_buttons_title">Tlačítko posuvníku jasu</string>
   <string name="qs_brightness_slider_buttons_summary">Povolit tlačítko posuvníku jasu v rychlém nastavení</string>
   <!-- Applications: Expanded desktop -->
-  <string name="expanded_desktop_settings_title">Expanded desktop</string>
-  <string name="expanded_desktop_settings_summary">Expand your available desktop space by hiding the status bar, navigation bar, or both</string>
+  <string name="expanded_desktop_settings_title">Rozšířená plocha</string>
+  <string name="expanded_desktop_settings_summary">Rozšířit prostor na ploše skrytím stavové lišty, navigačního panelu nebo obojí</string>
   <!-- Swipe FP to dismiss notifications -->
-  <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
-  <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+  <string name="fp_swipe_to_dismiss_notifications_title">Přejetím otiskem prstu vlevo nebo vpravo odmítnout oznámení</string>
+  <string name="fp_swipe_to_dismiss_notifications_summary">Chcete-li zrušit oznámení, přejeďte prstem vlevo nebo vpravo pře snímač otisků prstů na zadní straně telefonu.</string>
   <!-- Smart Pixels -->
   <string name="smart_pixels_title">Smart Pixels</string>
-  <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
-  <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
-  <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
-  <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
-  <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
-  <string name="smart_pixels_percent">Percent of pixels to disable</string>
-  <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
-  <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
+  <string name="smart_pixels_summary">Ušetření baterie vypnutím pixelů</string>
+  <string name="smart_pixels_enable_title">Povolit Smart Pixels</string>
+  <string name="smart_pixels_enable_summary">Chcete-li snížit spotřebu energie, vypněte pixely</string>
+  <string name="smart_pixels_on_power_save_title">Automatické zapnutí při spořiči baterie</string>
+  <string name="smart_pixels_on_power_save_summary">Povolit Smart Pixels, pokud je aktivován spořič baterie</string>
+  <string name="smart_pixels_percent">Procenta pixelů k vypnutí</string>
+  <string name="smart_pixels_shift">Zabraňuje vypalování častým přepínáním pixelů</string>
+  <string name="smart_pixels_warning_text">Smart Pixels je funkce pro úsporu energie. V závislosti na počtu pixelů, které se rozhodnete vypnout, by mohlo dojít k výraznému zlepšení životnosti baterie. Pro dobrý uživatelský zážitek doporučujeme nastavit množství vypnutých pixelů na 75 procent při přesunu každých 10 minut.</string>
+  <!-- Blink flashlight for incoming calls -->
+  <string name="flashlight_on_call_title">Blink Flashlight on call</string>
+  <string name="flashlight_on_call_disabled">Disabled</string>
+  <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
+  <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
+  <string name="flashlight_on_call_always">Always blink flashlight</string>
 </resources>
