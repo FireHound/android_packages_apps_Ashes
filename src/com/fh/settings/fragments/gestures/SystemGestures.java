@@ -17,6 +17,8 @@
 package com.fh.settings.fragments.gestures;
 
 import android.os.Bundle;
+
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
@@ -31,16 +33,27 @@ import com.android.settings.Utils;
 import lineageos.providers.LineageSettings;
 
 public class SystemGestures extends SettingsPreferenceFragment {
-    private static final String TAG = "FhGestures";
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.FH_SETTINGS;
-    }
+    private static final String TAG = "FhGestures";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.sys_gestures);
+
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        Preference swipeFp = findPreference("gesture_swipe_dismiss_fingerprint");
+
+        boolean fpDevice = getContext().getResources().
+                getBoolean(R.bool.config_deviceHasFp);
+
+        if(!fpDevice){
+            prefScreen.removePreference(swipeFp);
+        }
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.FH_SETTINGS;
     }
 }
