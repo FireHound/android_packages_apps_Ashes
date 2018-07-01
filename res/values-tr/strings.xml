@@ -51,58 +51,6 @@
 
     <!-- Maintainers -->
     <string name="maintainers">Resmi FireHound Sorumluları</string>
-    <string name="yureka">YU YUREKA (tomato)</string>
-    <string name="yureka_summary">Rakesh Batra</string>
-    <string name="yuphoria">YU YUPHORIA (lettuce)</string>
-    <string name="yuphoria_summary">Pranay Narang</string>
-    <string name="yunique">YU YUNIQUE (jalebi)</string>
-    <string name="yunique_summary">Shubhojit Nag</string>
-    <string name="op1">One Plus One (bacon)</string>
-    <string name="op1_summary">PrathameshMS</string>
-    <string name="op2">One Plus Two (oneplus2)</string>
-    <string name="op2_summary">Bilal (oldswag)</string>
-    <string name="op3">One Plus Three (oneplus3)</string>
-    <string name="op3_summary">PrathameshMS</string>
-    <string name="note3">Redmi Note 3 (kenzo)</string>
-    <string name="note3_summary">Manhar Gupta</string>
-    <string name="dior">Redmi Note 4g (dior)</string>
-    <string name="dior_summary">Luy Nagda (Devil2709)</string>
-    <string name="fortuna3g">Samsung Galaxy Grand (fortuna3g)</string>
-    <string name="fortuna3g_summary">Siddhant Satam</string>
-    <string name="note2">Samsung Note 2 (note2)</string>
-    <string name="note2_summary">Sagar Shah</string>
-    <string name="victara">Mote G (victara)</string>
-    <string name="victara_summary">Anderson Mendes</string>
-    <string name="merlin">Moto G (merlin)</string>
-    <string name="merlin_summary">DerkLord</string>
-    <string name="g3">LG G3 (D855)</string>
-    <string name="g3_summary">Rafael Marchetto</string>
-    <string name="titan">Moto G (titan)</string>
-    <string name="titan_summary">Kranoner</string>
-    <string name="condor">Moto E (condor)</string>
-    <string name="condor_summary">Shubhojit</string>
-    <string name="potter">Moto G5 Plus</string>
-    <string name="potter_summary">Garv Maggu</string>
-    <string name="athene">Moto G4 Plus</string>
-    <string name="athene_summary">Rajat Gupta (tywinlannister7)</string>
-    <string name="yu">YU</string>
-    <string name="oneplus">OnePlus</string>
-    <string name="redmi">Xiaomi</string>
-    <string name="samsung">Samsung</string>
-    <string name="moto">Moto</string>
-    <string name="lg">LG</string>
-    <string name="lenovo">Lenovo</string>
-    <string name="lenovo_k4">Lenovo Vibe K4 Note</string>
-    <string name="lenovo_k4_summary">Mohan Cm</string>
-    <string name="lenovo_k3_note">Lenovo K3 Note</string>
-    <string name="lenovo_k3_note_summary">Sandeep Sethi(adev79)</string>
-    <string name="coolpad">Coolpad</string>
-    <string name="coolpad_note3">Coolpad Note 3</string> 
-    <string name="coolpad_note3_summary">Mohan CM</string>
-    <string name="coolpad_note3_lite">Coolpad Note 3 Lite</string>
-    <string name="coolpad_note3_lite_summary">Sabyasachi Sarkar(MakeMeCool) , Sam Grande(ReaperGod)</string>
-    <string name="note4">Redmi Note 4 (mido)</string>
-    <string name="note4_summary">Sabyasachi Sarkar(MakeMeCool)</string>
 
     <!-- FireHound Main Settings -->
     <string name="fh_online">Hakkımızda</string>
@@ -132,10 +80,6 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Renk seçin</string>
     <string name="press_color_to_apply">Uygulamak istediğiniz rengin üzerine dokunun</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
     <string name="set">Ayarla</string>
     <string name="color_default">Varsayılan</string>
 
@@ -343,7 +287,6 @@
     <!-- Fling -->
     <string name="fling_settings">Fling ayarları</string>
     <string name="fling_settings_summary">Çok benzersiz ve tamamen uyarlanabilir bir hareket tabanlı gezinme çubuğu</string>
-    <string name="fling_interface">Fling</string>
     <string name="fling_enable_title">Fling\'i etkinleştir</string>
     <string name="fling_back_home_policy">Geri ve ana ekran her zaman ayarlanması gerekmektedir. Bir geri veya ana ekran atamasını değiştirmek için ilk istediğiniz görevi ayarlayın.\n\nAyrıca bir çift dokunma eylemi ayarlama tek seferlik tek dokunuşu geciktirecektir.</string>
     <string name="fling_split_bar_policy">Yalnızca sağ veya sol hareket atandığında işlem tüm çubuğa uygulanır.</string>
@@ -397,7 +340,6 @@
 
     <!-- Pulse navigation bar music visualizer -->
     <string name="pulse_help_policy_notice_summary">Pulse cihaz hoparlörünü dinlerken bazı ses kaynakları ile çalışmayabilir</string>
-    <string name="pulse_settings">Pulse</string>
     <string name="pulse_settings_summary">Gezinme çubuğu ses görselleştirme</string>
     <string name="fling_show_pulse_title">Pulse\'yi göster</string>
     <string name="fling_show_pulse_summary">Gezinme çubuğunda ses görselleştirmesi gösterir</string>
@@ -473,7 +415,7 @@
     <string name="smartbar_longpress_delay_long">Uzun gecikme</string>
     <string name="smartbar_custom_icon_size_title">Özel simge boyutu</string>
     <string name="one_handed_mode_title">Tek el modu</string>
-    <string name="one_handed_mode_summary">Tek el modunu etkinleştirmek için gezinme çubuğunda hızlıca kaydırmaya izin verir</string>
+    <string name="one_handed_mode_summary">Tek el modunu etkinleştirmek için gezinme çubuğunda hızlıca kaydırmaya izin ver</string>
 
     <!-- DUI -->
     <string name="dui_title">Gezinme çubuğu</string>
@@ -511,7 +453,7 @@
     <!-- Hardware keys -->
     <string name="hw_buttons_title">Donanım tuşları</string>
     <string name="hw_buttons_summary">Donanım tuşlarının özel eylemlerini yeniden yönlendir</string>
-     <string name="hardware_keys_home_key_title">Ana ekran tuşu</string>
+    <string name="hardware_keys_home_key_title">Ana ekran tuşu</string>
     <string name="hardware_keys_menu_key_title">Menü tuşu</string>
     <string name="hardware_keys_assist_key_title">Arama tuşu</string>
     <string name="hardware_keys_appswitch_key_title">Son uygulamalar tuşu</string>
@@ -542,7 +484,7 @@
     <string name="anbi_title">Yanlışlıkla dokunma</string>
     <string name="anbi_summary">Ekrana dokunulduğunda gezinme tuşları ile etkileşimi önle</string>
 
-    <!-- Show or Hide emergency button on lockscreen-->
+    <!-- Show or Hide emergency button on lockscreen -->
     <string name="show_emergency_button">Acil durum tuşu</string>
     <string name="show_emergency_button_on">Acil durum tuşunu kilit ekranında göster</string>
     <string name="show_emergency_button_off">Acil durum tuşunu kilit ekranında göster</string>
@@ -570,8 +512,8 @@
     <string name="battery_bar_no_navbar">Pil çubuğu konumu</string>
     <string name="battery_bar_location_hide">Gizli</string>
     <string name="battery_bar_location_statusbar">Durum çubuğu</string>
-    <string name="battery_bar_location_top_navbar">Gezinme çubuğunun üstü</string>
-    <string name="battery_bar_location_bottom_navbar">Gezinme çubuğunun altı</string>
+    <string name="battery_bar_location_top_navbar">Gezinme çubuğu üstü</string>
+    <string name="battery_bar_location_bottom_navbar">Gezinme çubuğu altı</string>
     <string name="battery_bar_color">Pil çubuğu rengi</string>
     <string name="battery_bar_charging_color">Pil çubuğu şarj rengi</string>
     <string name="battery_bar_battery_low_color">Pil çubuğu düşük pil rengi</string>
@@ -614,7 +556,7 @@
 
     <!-- Power Menu -->
     <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
-    <string name="advanced_reboot_summary">Kilit açıldığında, kurtarma veya ön yükleyici modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
+    <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya ön yükleyici modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
     <string name="powermenu_screenshot">Ekran görüntüsü</string>
     <string name="power_menu_reboot_title">Yeniden başlatma menüsü</string>
     <string name="power_menu_screenshot_title">Ekran görüntüsü</string>
@@ -706,7 +648,6 @@
     <string name="daylight_header_pack_title">Başlık görüntü koleksiyonu</string>
     <string name="status_bar_custom_header_shadow_title">Başlık görüntü gölgesi</string>
     <string name="status_bar_custom_header_shadow_summary">Parlak görüntülerde daha iyi görünürlük için</string>
-    <string name="unit_percent">\u0025</string>
     <string name="static_header_provider_title">Statik görüntü</string>
     <string name="daylight_header_provider_title">Görüntü koleksiyonu</string>
     <string name="custom_header_provider_title">Başlık sağlayıcı</string>
@@ -852,10 +793,6 @@
     <string name="toast_fade_animation">Karart</string>
     <string name="toast_SlideRight_animation">Sağa kaydır</string>
     <string name="toast_SlideLeft_animation">Sola kaydır</string>
-    <string name="toast_Xylon_animation">Xylon</string>
-    <string name="toast_Toko_animation">Toko</string>
-    <string name="toast_Tn_animation">Tn</string>
-    <string name="toast_Honami_animation">Honami</string>
     <string name="toast_FastFade_animation">Hızlı karart</string>
     <string name="toast_GrowFade_animation">Büyüterek karart</string>
     <string name="toast_GrowFadeCenter_animation">Ortadan büyüterek karart</string>
@@ -885,7 +822,7 @@
     <string name="volume_adjust_sounds_title">Ses ayarlama sesleri</string>
 
     <!-- Option to enable/disable scrolling cache -->
-     <string name="pref_scrollingcache_title">Kaydırma önbelleği</string>
+    <string name="pref_scrollingcache_title">Kaydırma önbelleği</string>
     <string name="pref_scrollingcache_summary">Kaydırma önbelleği fazla bellek kullanımı olsa dahi performansı arttırabilir</string>
     <string name="pref_scrollingcache_force_enable">Zorla etkin</string>
     <string name="pref_scrollingcache_default_enable">Varsayılan etkin</string>
@@ -951,15 +888,15 @@
     <string name="fp_swipe_to_dismiss_notifications_summary">Bildirimleri kapatmak için telefonunuzun arkasındaki parmak izi sensöründe parmağınızı sola veya sağa kaydırın.</string>
 
     <!-- Smart Pixels -->
-  <string name="smart_pixels_title">Akıllı piksel</string>
-  <string name="smart_pixels_summary">Fazladan pikselleri kapatarak pil tasarrufu sağlayın</string>
-  <string name="smart_pixels_enable_title">Akıllı pikseli etkinleştir</string>
-  <string name="smart_pixels_enable_summary">Güç tüketimini azaltmak için pikselleri kapatın</string>
-  <string name="smart_pixels_on_power_save_title">Pil tasarrufu için otomatik etkinleştir</string>
-  <string name="smart_pixels_on_power_save_summary">Pil tasarrufu etkinleştirildiğinde akıllı pikselleri etkinleştir</string>
-  <string name="smart_pixels_percent">Devre dışı bırakılan piksel yüzdesi</string>
-  <string name="smart_pixels_shift">Pikselleri her değiştirerek yanmayı önle</string>
-  <string name="smart_pixels_warning_text">Akıllı piksel bir güç tasarrufu özelliğidir. Kaç piksele karar verdiğinize bağlı olarak pil ömründe önemli bir iyileşme görebilirsiniz. İyi bir kullanıcı deneyimi için devre dışı bırakılmış piksel miktarını yüzde 75 olarak ayarlamanızı öneririz.</string>
+    <string name="smart_pixels_title">Akıllı piksel</string>
+    <string name="smart_pixels_summary">Fazladan pikselleri kapatarak pil tasarrufu sağlayın</string>
+    <string name="smart_pixels_enable_title">Akıllı pikseli etkinleştir</string>
+    <string name="smart_pixels_enable_summary">Güç tüketimini azaltmak için pikselleri kapatın</string>
+    <string name="smart_pixels_on_power_save_title">Pil tasarrufu için otomatik etkinleştir</string>
+    <string name="smart_pixels_on_power_save_summary">Pil tasarrufu etkinleştirildiğinde akıllı pikselleri etkinleştir</string>
+    <string name="smart_pixels_percent">Devre dışı bırakılan piksel yüzdesi</string>
+    <string name="smart_pixels_shift">Pikselleri her değiştirerek yanmayı önle</string>
+    <string name="smart_pixels_warning_text">Akıllı piksel bir güç tasarrufu özelliğidir. Kaç piksele karar verdiğinize bağlı olarak pil ömründe önemli bir iyileşme görebilirsiniz. İyi bir kullanıcı deneyimi için devre dışı bırakılmış piksel miktarını yüzde 75 olarak ayarlamanızı öneririz.</string>
 
     <!-- Blink flashlight for incoming calls -->
     <string name="flashlight_on_call_title">Gelen aramada el feneri</string>
