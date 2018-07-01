@@ -56,15 +56,22 @@ public class LockScreenUI extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.lockscreen_ui);
 
         ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+        PreferenceScreen prefScreen = getPreferenceScreen();
         Resources resources = getResources();
+
+        boolean fpDevice = getContext().getResources().
+                getBoolean(R.bool.config_deviceHasFp);
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
         mFpKeystore = (SwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
-        if (mFingerprintManager == null){
-            prefScreen.removePreference(mFingerprintVib);
-            prefScreen.removePreference(mFpKeystore);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        PreferenceCategory fingerprintSettings = (PreferenceCategory) findPreference("lockscreen_fingerprint");
+
+        if (!fpDevice){
+            prefSet.removePreference(fingerprintSettings);
         } else {
         mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));

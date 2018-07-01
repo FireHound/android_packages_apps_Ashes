@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2017 FireHound ROMs
+     Copyright (C) 2018 FireHound
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -22,7 +22,7 @@
     <!-- Lockscreen UI Settings -->
     <PreferenceCategory
             android:key="lockscreen_ui_sub"
-            android:title="@string/lockscreen_misc">
+            android:title="@string/display_title">
 
     <!-- Media cover on lockscreen -->
     <lineageos.preference.LineageSecureSettingSwitchPreference
@@ -50,20 +50,6 @@
         android:key="lockscreen_quick_unlock_control"
         android:title="@string/unlock_quick_unlock_control_title"
         android:summary="@string/unlock_quick_unlock_control_summary" />
-
-    <!-- FP vibration -->
-    <SwitchPreference
-        android:key="fingerprint_success_vib"
-        android:title="@string/fprint_sucess_vib_title"
-        android:summary="@string/fprint_sucess_vib_summary"
-        android:persistent="false" />
-
-    <!-- FP quick unlock -->
-    <com.fh.settings.preferences.SystemSettingSwitchPreference
-        android:key="fp_unlock_keystore"
-        android:title="@string/fp_unlock_keystore_title"
-        android:summary="@string/fp_unlock_keystore_summary"
-        android:defaultValue="false" />
 
     <!-- Disable emergency button on lockscreen -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
@@ -93,6 +79,26 @@
         android:title="@string/show_lockscreen_alarm_title"
         android:summary="@string/show_lockscreen_alarm_summary"
         android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen_fingerprint"
+        android:title="@string/fingerprint_title">
+
+    <!-- FP vibration -->
+    <SwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:persistent="false" />
+
+    <!-- FP quick unlock -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="fp_unlock_keystore"
+        android:title="@string/fp_unlock_keystore_title"
+        android:summary="@string/fp_unlock_keystore_summary"
+        android:defaultValue="false" />
 
     </PreferenceCategory>
 
