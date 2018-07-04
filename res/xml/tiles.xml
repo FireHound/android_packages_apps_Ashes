@@ -51,6 +51,13 @@
             settings:min="1"
             settings:units="" />
 
+        <com.fh.settings.preferences.CustomSeekBarPreference
+            android:key="sysui_qqs_count_key"
+            android:title="@string/sysui_qqs_count_title"
+            android:max="7"
+            settings:min="1"
+            settings:units="" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
