@@ -1012,4 +1012,7 @@
     <!-- On the go mode -->
     <string name="power_menu_onthego_title">On-The-Go</string>
 
+    <!-- Custom small QS tiles -->
+    <string name="sysui_qqs_count_title">Small QS tiles</string>
+
 </resources>
