@@ -51,11 +51,13 @@ import com.android.internal.logging.nano.MetricsProto;
 public class Tiles extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "QuickSettings";
+    private static final String PREF_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
 
     private CustomSeekBarPreference mQsRowsPort;
     private CustomSeekBarPreference mQsRowsLand;
     private CustomSeekBarPreference mQsColumnsPort;
     private CustomSeekBarPreference mQsColumnsLand;
+    private CustomSeekBarPreference mSysuiQqsCount;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,6 +89,12 @@ public class Tiles extends SettingsPreferenceFragment implements OnPreferenceCha
         mQsColumnsLand = (CustomSeekBarPreference) findPreference("qs_columns_landscape");
         mQsColumnsLand.setValue(value);
         mQsColumnsLand.setOnPreferenceChangeListener(this);
+
+        mSysuiQqsCount = (CustomSeekBarPreference) findPreference(PREF_SYSUI_QQS_COUNT);
+        int SysuiQqsCount = Settings.Secure.getInt(resolver,
+                Settings.Secure.QQS_COUNT, 6);
+        mSysuiQqsCount.setValue(SysuiQqsCount);
+        mSysuiQqsCount.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -121,6 +129,11 @@ public class Tiles extends SettingsPreferenceFragment implements OnPreferenceCha
             int val = (Integer) newValue;
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.QS_COLUMNS_LANDSCAPE, val, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mSysuiQqsCount) {
+            int SysuiQqsCountValue = (Integer) newValue;
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.QQS_COUNT, SysuiQqsCountValue);
             return true;
         }
         return false;
