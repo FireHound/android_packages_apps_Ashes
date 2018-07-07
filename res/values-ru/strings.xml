@@ -807,6 +807,7 @@
   <!-- Fingerprint unlock keystore -->
   <string name="fp_unlock_keystore_title">Разблокировка отпечатком пальца</string>
   <string name="fp_unlock_keystore_summary">Разблокировка устройства после перезагрузки с помощью отпечатка пальца без использования PIN-кода/Пароля/Графического ключа\nПримечание: используйте на свой страх и риск!</string>
+  <string name="fingerprint_title">Fingerprint customizations</string>
   <!-- QuickSettings Panel Transparency -->
   <string name="qs_panel_alpha_title">Прозрачность</string>
   <!-- Tiles animation style  -->
@@ -868,4 +869,19 @@
   <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
   <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
   <string name="flashlight_on_call_always">Always blink flashlight</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Edge gestures</string>
+  <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
+  <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
+  <string name="edge_gestures_back_category_title">Back gesture</string>
+  <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
+  <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
+  <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
+  <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
+  <string name="edge_gestures_summary">Navigate using edge gestures</string>
+  <!-- On the go mode -->
+  <string name="power_menu_onthego_title">On-The-Go</string>
+  <!-- Berry Styles -->
+  <string name="style_title">Style</string>
+  <string name="style_summary">Choose system colors</string>
 </resources>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, FH version -->
-  <string name="fh_mod_version">FireHoundバージョン</string>
+  <string name="fh_mod_version">FireHound バージョン</string>
   <!-- FHSettings -->
   <string name="fh_settings_title">FireHound Ashes</string>
   <string name="fh_section_title">Burnt Extras</string>
@@ -213,9 +213,9 @@
   <string name="incall_vibrate_call_wait_title">割込通話時に振動させる</string>
   <string name="incall_vibrate_disconnect_title">切断時に振動させる</string>
   <!-- Recents panel settings -->
-  <string name="show_clear_all_recents_button_title">「全てを終了」ボタン</string>
-  <string name="show_clear_all_recents_button_summary">「全てを終了」ボタンを表示する</string>
-  <string name="recents_clear_all_location_title">ボタンの表示位置</string>
+  <string name="show_clear_all_recents_button_title">全て終了ボタン</string>
+  <string name="show_clear_all_recents_button_summary">全て終了ボタンを表示する</string>
+  <string name="recents_clear_all_location_title">全て終了ボタンの表示位置</string>
   <string name="recents_clear_all_location_top_right">右上</string>
   <string name="recents_clear_all_location_top_left">左上</string>
   <string name="recents_clear_all_location_top_center">中央上</string>
@@ -704,7 +704,7 @@
   <string name="battery_style_big_circle">大きな円</string>
   <string name="battery_style_big_dotted_circle">大きい点線の円</string>
   <string name="battery_style_square">正方形</string>
-  <string name="battery_style_dotted_square">Dotted square</string>
+  <string name="battery_style_dotted_square">点線の四角</string>
   <string name="battery_style_text">テキスト</string>
   <string name="battery_style_hidden">非表示</string>
   <string name="show_battery_percent_title">電池残量をパーセントで表示</string>
@@ -807,6 +807,7 @@
   <!-- Fingerprint unlock keystore -->
   <string name="fp_unlock_keystore_title">指紋認証によるロック解除</string>
   <string name="fp_unlock_keystore_summary">再起動後も PIN/パスワード/パターン による認証なしで指紋認証によるロック解除を可能にします。\n注意: 自己責任で使用してください！</string>
+  <string name="fingerprint_title">Fingerprint customizations</string>
   <!-- QuickSettings Panel Transparency -->
   <string name="qs_panel_alpha_title">透明度</string>
   <!-- Tiles animation style  -->
@@ -863,9 +864,24 @@
   <string name="smart_pixels_shift">使う画素をたまにずらして有機ELのの焼き付きを避ける</string>
   <string name="smart_pixels_warning_text">スマートピクセルは省電力機能です。消灯するピクセル数に応じて、バッテリ寿命が大幅に改善されます。優れたユーザーエクスペリエンスを得るには、無効ピクセル数を75％に設定することをお勧めします。</string>
   <!-- Blink flashlight for incoming calls -->
-  <string name="flashlight_on_call_title">Blink Flashlight on call</string>
-  <string name="flashlight_on_call_disabled">Disabled</string>
-  <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
-  <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
-  <string name="flashlight_on_call_always">Always blink flashlight</string>
+  <string name="flashlight_on_call_title">着信時にフラッシュライト点滅</string>
+  <string name="flashlight_on_call_disabled">無効</string>
+  <string name="flashlight_on_call_not_dnd">着信モードでのみフラッシュライトを点滅させる</string>
+  <string name="flashlight_on_call_dnd">マナーモードのみモードでのみフラッシュライトを点滅させる</string>
+  <string name="flashlight_on_call_always">常にフラッシュライトを点滅させる</string>
+  <!-- Edge gestures -->
+  <string name="edge_gestures_title">Edge gestures</string>
+  <string name="edge_gestures_feedback_duration_title">Haptic feedback duration</string>
+  <string name="edge_gestures_long_press_delay_title">Delay until long press action starts</string>
+  <string name="edge_gestures_back_category_title">Back gesture</string>
+  <string name="edge_gestures_back_edges_title">Trigger back gesture from</string>
+  <string name="edge_gestures_landscape_back_edges_title">Trigger back gesture on landscape from</string>
+  <string name="edge_gestures_back_screen_percent_title">Back gesture must start below this percentage of the screen</string>
+  <string name="edge_gestures_back_screen_percent_summary">Trigger below % of screen</string>
+  <string name="edge_gestures_summary">Navigate using edge gestures</string>
+  <!-- On the go mode -->
+  <string name="power_menu_onthego_title">On-The-Go</string>
+  <!-- Berry Styles -->
+  <string name="style_title">Style</string>
+  <string name="style_summary">Choose system colors</string>
 </resources>
