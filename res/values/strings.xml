@@ -926,4 +926,8 @@
     <!-- Custom small QS tiles -->
     <string name="sysui_qqs_count_title">Small QS tiles</string>
 
+    <!-- Media volume muted toggle -->
+    <string name="media_muted_icon_title">Media-volume-muted icon</string>
+    <string name="media_muted_icon_summary">Show an icon in statusbar when media volume is set to zero</string>
+
 </resources>
