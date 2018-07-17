@@ -1007,4 +1007,8 @@
     <string name="style_title">Style</string>
     <string name="style_summary">Choose system colors</string>
 
+    <!-- Media volume muted toggle -->
+    <string name="media_muted_icon_title">Media-volume-muted icon</string>
+    <string name="media_muted_icon_summary">Show an icon in statusbar when media volume is set to zero</string>
+
 </resources>

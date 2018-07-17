@@ -32,4 +32,11 @@
             android:summary="@string/show_fourg_icon_summary"
             android:defaultValue="false"/>
 
+        <!-- Media volume muted icon -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_media_muted"
+            android:title="@string/media_muted_icon_title"
+            android:summary="@string/media_muted_icon_summary"
+            android:defaultValue="false"/>
+
 </PreferenceScreen>
