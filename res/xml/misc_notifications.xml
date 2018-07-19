@@ -39,4 +39,11 @@
         android:summary="@string/disable_fc_notifications_summary"
         android:defaultValue="false" />
 
+    <!-- Battery fully charged notification -->
+    <com.fh.settings.preferences.SystemSettingSwitchPreference
+        android:key="show_battery_fully_charged"
+        android:title="@string/battery_fully_charged_title"
+        android:summary="@string/battery_fully_charged_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
