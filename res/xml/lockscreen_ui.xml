@@ -49,15 +49,16 @@
     <com.fh.settings.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_quick_unlock_control"
         android:title="@string/unlock_quick_unlock_control_title"
-        android:summary="@string/unlock_quick_unlock_control_summary" />
+        android:summary="@string/unlock_quick_unlock_control_summary"
+        android:defaultValue="false" />
 
     <!-- Disable emergency button on lockscreen -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
-            android:key="show_emergency_button"
-            android:title="@string/show_emergency_button"
-            android:summaryOn="@string/show_emergency_button_on"
-            android:summaryOff="@string/show_emergency_button_off"
-            android:defaultValue="true" />
+        android:key="show_emergency_button"
+        android:title="@string/show_emergency_button"
+        android:summaryOn="@string/show_emergency_button_on"
+        android:summaryOff="@string/show_emergency_button_off"
+        android:defaultValue="true" />
 
     <!-- Show lockscreen clock -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
@@ -91,7 +92,8 @@
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
-        android:persistent="false" />
+        android:persistent="false"
+        android:defaultValue="false" />
 
     <!-- FP quick unlock -->
     <com.fh.settings.preferences.SystemSettingSwitchPreference
