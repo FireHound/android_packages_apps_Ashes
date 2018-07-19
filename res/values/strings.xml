@@ -18,96 +18,10 @@
     <!-- About phone screen, FH version -->
     <string name="fh_mod_version">FireHound Version</string>
 
-    <!-- FHSettings -->
-    <string name="fh_settings_title">FireHound Ashes</string>
-    <string name="fh_section_title">Burnt Extras</string>
-    <string name="fh_title">Fire Scars</string>
-
     <!-- RESET -->
     <string name="reset">Reset</string>
 
-    <!-- FireHound Info -->
-    <string name="fh_developer_title">Developers Github</string>
-    <string name="fh_developer_summary">Support the Developer and FireHound Team</string>
-    <string name="maintainers_fh_title">FireHound Official Maintainers</string>
-    <string name="about_developer">About Developer</string>
-    <string name="fh_git_title">Github Source</string>
-    <string name="fh_git_summary">Compile FireHound for your Device</string>
-    <string name="fh_google_plus_title">FireHound Google Plus Community</string>
-    <string name="fh_google_plus_summary">Visit and Join Community for More Information</string>
-    <string name="about_fh">About FireHound</string>
-    <string name="fh_donation_title">Buy us a Coffee</string>
-    <string name="fh_donation_summary">Donations are welcome and will be used to keep our build servers alive</string>
-    <string name="fh_maintainers_title">Official Maintainers</string>
-    <string name="fh_maintainers_summary">Official Device Maintainers and Officially Supported Devices</string>
-    <string name="fh_website_title">FireHound Website</string>
-    <string name="fh_website_summary">Visit for more info</string>
-    <string name="fh_gerrit_title">FireHound Gerrit</string>
-    <string name="fh_gerrit_summary">Every single contribution is welcome on our Gerrit</string>
-    
-    <!-- Share FH -->
-    <string name="share_fh_title">Share FireHound</string>
-    <string name="share_fh_summary">Pour some fuel and spread Fire</string>
-    <string name="share_message">FireHound is Custom ROM developed focusing on stability and features! Go go go, flash FireHound and change the way you use your smartphone! For more information, join our community: @ https://plus.google.com/communities/114615598909452601377</string>
-    <string name="share_chooser_title">Share FireHound</string>
-
-    <!-- Maintainers -->
-    <string name="maintainers">Official FireHound Maintainers</string>
-    <string name="yureka">YU YUREKA (tomato)</string>
-    <string name="yureka_summary">Rakesh Batra</string>
-    <string name="yuphoria">YU YUPHORIA (lettuce)</string>
-    <string name="yuphoria_summary">Pranay Narang</string>
-    <string name="yunique">YU YUNIQUE (jalebi)</string>
-    <string name="yunique_summary">Shubhojit Nag</string>
-    <string name="op1">One Plus One (bacon)</string>
-    <string name="op1_summary">PrathameshMS</string>
-    <string name="op2">One Plus Two (oneplus2)</string>
-    <string name="op2_summary">Bilal (oldswag)</string>
-    <string name="op3">One Plus Three (oneplus3)</string>
-    <string name="op3_summary">PrathameshMS</string>
-    <string name="note3">Redmi Note 3 (kenzo)</string>
-    <string name="note3_summary">Manhar Gupta</string>
-    <string name="dior">Redmi Note 4g (dior)</string>
-    <string name="dior_summary">Luy Nagda (Devil2709)</string>
-    <string name="fortuna3g">Samsung Galaxy Grand (fortuna3g)</string>
-    <string name="fortuna3g_summary">Siddhant Satam</string>
-    <string name="note2">Samsung Note 2 (note2)</string>
-    <string name="note2_summary">Sagar Shah</string>
-    <string name="victara">Mote G (victara)</string>
-    <string name="victara_summary">Anderson Mendes</string>
-    <string name="merlin">Moto G (merlin)</string>
-    <string name="merlin_summary">DerkLord</string>
-    <string name="g3">LG G3 (D855)</string>
-    <string name="g3_summary">Rafael Marchetto</string>
-    <string name="titan">Moto G (titan)</string>
-    <string name="titan_summary">Kranoner</string>
-    <string name="condor">Moto E (condor)</string>
-    <string name="condor_summary">Shubhojit</string>
-    <string name="potter">Moto G5 Plus</string>
-    <string name="potter_summary">Garv Maggu</string>
-    <string name="athene">Moto G4 Plus</string>
-    <string name="athene_summary">Rajat Gupta (tywinlannister7)</string>
-    <string name="yu">YU</string>
-    <string name="oneplus">OnePlus</string>
-    <string name="redmi">Xiaomi</string>
-    <string name="samsung">Samsung</string>
-    <string name="moto">Moto</string>
-    <string name="lg">LG</string>
-    <string name="lenovo">Lenovo</string>
-    <string name="lenovo_k4">Lenovo Vibe K4 Note</string>
-    <string name="lenovo_k4_summary">Mohan Cm</string>
-    <string name="lenovo_k3_note">Lenovo K3 Note</string>
-    <string name="lenovo_k3_note_summary">Sandeep Sethi(adev79)</string>
-    <string name="coolpad">Coolpad</string>
-    <string name="coolpad_note3">Coolpad Note 3</string> 
-    <string name="coolpad_note3_summary">Mohan CM</string>
-    <string name="coolpad_note3_lite">Coolpad Note 3 Lite</string>
-    <string name="coolpad_note3_lite_summary">Sabyasachi Sarkar(MakeMeCool) , Sam Grande(ReaperGod)</string>
-    <string name="note4">Redmi Note 4 (mido)</string>
-    <string name="note4_summary">Sabyasachi Sarkar(MakeMeCool)</string>
-
     <!-- FireHound Main Settings -->
-    <string name="fh_online">About Us</string>
     <string name="status_bar_title">Status Bar</string>
     <string name="qs_title">Quick Settings</string>
     <string name="notification_title">Notifications</string>
