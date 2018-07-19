@@ -1016,4 +1016,8 @@
     <!-- Custom small QS tiles -->
     <string name="sysui_qqs_count_title">Small QS tiles</string>
 
+    <!-- Battery fully charged notification -->
+    <string name="battery_fully_charged_title">Battery charged notification</string>
+    <string name="battery_fully_charged_summary">Notify when the battery is fully charged</string>
+
 </resources>
