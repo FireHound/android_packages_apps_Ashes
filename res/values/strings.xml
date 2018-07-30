@@ -930,4 +930,10 @@
     <string name="media_muted_icon_title">Media-volume-muted icon</string>
     <string name="media_muted_icon_summary">Show an icon in statusbar when media volume is set to zero</string>
 
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">Camera Shutter Sound</string>
+    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
+    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+    <string name="attention">Attention</string>
+
 </resources>
