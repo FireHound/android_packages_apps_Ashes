@@ -31,6 +31,13 @@
             android:summary="@string/screenshot_sound_summary"
             android:defaultValue="true" />
 
+    <!-- Camera shutter sound toggle -->
+    <SwitchPreference
+        android:key="camera_sounds"
+        android:title="@string/camera_sounds_title"
+        android:summary="@string/camera_sounds_summary"
+        android:defaultValue="true" />
+
     <!-- Force expanded mode -->
 	<com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="volume_dialog_force_expanded"
