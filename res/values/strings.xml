@@ -1054,4 +1054,8 @@
     <string name="audio_panel_view_voice_title">Voice</string>
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
 
+    <!-- QuickSettings Panel Transparency -->
+    <string name="qs_panel_alpha_title">Panel configurations</string>
+    <string name="qs_panel_alpha_summary">Configure opacity of background</string>
+
 </resources>
