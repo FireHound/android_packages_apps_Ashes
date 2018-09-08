@@ -198,34 +198,6 @@
     <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
-    <!-- Lockscreen weather -->
-    <string name="lock_screen_weather_settings_title">Weather</string>
-    <string name="weather_show_weather_title">Show weather</string>
-    <string name="weather_show_weather_summary">Enable to show weather information</string>
-    <string name="weather_show_location_title">Show location</string>
-    <string name="weather_show_location_summary">Enable to show the location</string>
-    <string name="weather_config_title">Service settings</string>
-    <string name="weather_icon_pack_title">Condition icon pack</string>
-
-    <!-- Wakelock blocker -->
-    <string name="wakelock_blocker_title">Wakelock Blocker</string>
-    <string name="wakelock_blocker_summary">Block system wakelocks</string>
-    <string name="wakelock_blocker_save">Save</string>
-    <string name="wakelock_list_header">Available wakelocks</string>
-    <string name="wakelock_blocker_reload">Reload</string>
-    <string name="wakelock_blocker_warning_title">Proceed with caution</string>
-    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
-
-    <!-- Alarm blocker -->
-    <string name="alarm_blocker">Alarm blocker</string>
-    <string name="alarm_blocker_title">Enable</string>
-    <string name="alarm_blocker_summary">Block alarms while screen off</string>
-    <string name="alarm_blocker_save">Save</string>
-    <string name="alarm_list_header">Available alarms</string>
-    <string name="alarm_blocker_reload">Reload</string>
-    <string name="alarm_blocker_warning_title">Proceed with caution</string>
-    <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
-
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick Unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
@@ -1422,4 +1394,30 @@
     <!-- Fingerprint unlock without bouncer -->
     <string name="unlock_without_bouncer_title">Use fingerprint unlock to view notification</string>
     <string name="unlock_without_bouncer_summary">Allows to unlock device with fingerprint on notification double tap without need to input pin/password/pattern</string>
+
+    <!-- Weather -->
+    <string name="weather">Weather</string>
+    <string name="omnijaws_settings_title">Weather service</string>
+    <string name="omnijaws_settings_summary">Customize service settings and icon pack</string>
+    <string name="weather_config_title">Service settings</string>
+    <string name="weather_config_summary">Configure service to enable weather details</string>
+    <string name="weather_icon_pack_title">Weather icon pack</string>
+    <string name="find_icon_pack_title">Find icon packs</string>
+    <string name="find_icon_pack_summary">Find and install new icon packs from Play Store</string>
+    <string name="weather_icon_pack_note">Note\u003a you can install new icon packs from play store by searching for \"Chronus icons\"</string>
+    <string name="lock_screen_weather_title">Weather</string>
+    <string name="lock_screen_weather_summary">Display weather info next to date</string>
+    <string name="lock_screen_weather_summaryOn">Display weather on lockscreen</string>
+    <string name="lock_screen_location_title">Location</string>
+    <string name="lock_screen_location_summary">Display location on lockscreen</string>
+    <string name="lock_screen_weather_condition_icon_title">Condition image</string>
+    <string name="lock_screen_weather_condition_icon_summary">Display condition image on lockscreen</string>
+    <string name="lock_screen_ambient_weather_title">Ambient weather</string>
+    <string name="lock_screen_ambient_weather_summary">Display weather on ambient screen</string>
+    <string name="lock_screen_weather_style_title">Pixel style</string>
+    <string name="lock_screen_weather_style_summary">Display weather next to date instead big widget</string>
+    <string name="weather_unit">Temperature unit</string>
+    <string name="weather_unit_metric" translatable="false">Celsius</string>
+    <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
+    <string name="weather_client_not_available">Weather client not available</string>
 </resources>

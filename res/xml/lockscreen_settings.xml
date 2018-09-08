@@ -24,6 +24,13 @@
         android:key="lockscreen_ui"
         android:title="@string/lockscreen_ui_ux" >
 
+        <!-- Weather -->
+        <PreferenceScreen
+            android:key="omnijaws_settings"
+            android:title="@string/omnijaws_settings_title"
+            android:summary="@string/omnijaws_settings_summary"
+            android:fragment="com.fh.settings.fragments.lockscreen.OmniJawsSettings" />
+
         <!-- Lockscreen charging -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
