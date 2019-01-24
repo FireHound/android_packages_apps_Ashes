@@ -19,6 +19,14 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/misc_title">
 
+        <!-- Gaming Mode -->
+        <Preference
+            android:key="gaming_mode"
+            android:fragment="com.fh.settings.fragments.misc.GamingMode"
+            android:icon="@drawable/ic_gaming_mode"
+            android:title="@string/gaming_mode_title"
+            android:summary="@string/gaming_mode_summary" />
+
         <!-- App OPS Main fragment -->
         <Preference
             android:key="app_ops"
