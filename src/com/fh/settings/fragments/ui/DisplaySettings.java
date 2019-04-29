@@ -42,14 +42,18 @@ import android.view.View;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.fh.settings.utils.DeviceUtils;
+
 import com.fh.settings.preferences.SystemSettingSwitchPreference;
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String ON_POWER_SAVE = "smart_pixels_on_power_save";
+    private static final String DISPLAY_CUTOUT = "display_cutout_force_fullscreen_settings";
 
     private SystemSettingSwitchPreference mSmartPixelsOnPowerSave;
+    private Preference mDisplayCutout;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -57,6 +61,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.ui_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+        Context mContext = getActivity().getApplicationContext();
 
         mSmartPixelsOnPowerSave = (SystemSettingSwitchPreference) findPreference(ON_POWER_SAVE);
         updateDependency();
@@ -67,6 +72,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (!enableSmartPixels){
             prefScreen.removePreference(SmartPixels);
         }
+
+        mDisplayCutout = (Preference) prefScreen.findPreference(DISPLAY_CUTOUT);
+        if (!DeviceUtils.hasNotch(mContext))
+            prefScreen.removePreference(mDisplayCutout);
     }
 
     @Override
