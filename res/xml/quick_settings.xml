@@ -32,6 +32,22 @@
             settings:min="0"
             android:persistent="false" />
 
+        <!-- Battery in QS Header -->
+        <com.fh.settings.preferences.SecureSettingSwitchPreference
+            android:key="qs_battery_location_bar"
+            android:title="@string/qs_battery_location_bar"
+            android:summary="@string/qs_battery_location_bar_summary"
+            android:defaultValue="false" />
+
+        <!-- battery_percentage_title -->
+        <com.fh.settings.preferences.SystemSettingListPreference
+            android:key="qs_battery_mode"
+            android:title="@string/battery_percentage_title"
+            android:entries="@array/qs_battery_mode_entries"
+            android:entryValues="@array/qs_battery_mode_values"
+            android:defaultValue="1" />
+
+
     </PreferenceCategory>
 
     <PreferenceCategory

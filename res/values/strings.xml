@@ -724,25 +724,33 @@
     <string name="heads_up_snooze_20min">20 minutes</string>
 
     <!-- Battery Styles -->
-    <string name="fh_battery_title">Battery</string>
-    <string name="fh_battery_summary">Control battery styles in statusbar</string>
-    <string name="battery_style_title">Battery icon style</string>
-    <string name="battery_style_port">Portrait</string>
-    <string name="battery_style_land">Landscape</string>
-    <string name="battery_style_circle">Circle</string>
-    <string name="battery_style_dotted_circle">Dotted circle</string>
-    <string name="battery_style_big_circle">Big circle</string>
-    <string name="battery_style_big_dotted_circle">Big dotted circle</string>
-    <string name="battery_style_square">Square</string>
-    <string name="battery_style_dotted_square">Dotted square</string>
-    <string name="battery_style_text">Text</string>
-    <string name="battery_style_hidden">Hidden</string>
-    <string name="show_battery_percent_title">Show battery percentage</string>
-    <string name="show_battery_percent_summary">Control battery percentage view</string>
-    <string name="battery_style_category_title">Battery icon</string>
-    <string name="battery_percent_none">Don\'t show</string>
-    <string name="battery_percent_outside">Show near icon</string>
-    <string name="battery_percent_inside">Show inside icon</string>
+    <string name="fh_battery">Battery</string>
+    <string name="battery_style_category_title">Battery level</string>
+    <string name="battery_percent_title">Battery percent</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_q">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_circle">Filled circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
+    <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
+
+    <!-- Battery mode -->
+    <string name="battery_percentage_title">Battery percentage</string>
+    <string name="battery_percentage_off">Disabled</string>
+    <string name="battery_percentage_next">Enabled</string>
+    <string name="battery_percentage_inside">Enabled (inside icon)</string>
+    <string name="battery_percentage_estimate">Enabled (estimate)</string>
+    <string name="battery_percentage_percentage_estimate">Enabled (percent | estimate)</string>
 
     <!-- Torch Power button gestures -->
     <string name="actions">Actions</string>
@@ -1056,7 +1064,10 @@
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
 
     <!-- QuickSettings Panel Transparency -->
-    <string name="qs_panel_alpha_title">Panel configurations</string>
     <string name="qs_panel_alpha_summary">Configure opacity of background</string>
+
+    <!-- Quick Settings battery location bar -->
+    <string name="qs_battery_location_bar">Battery in QS Header</string>
+    <string name="qs_battery_location_bar_summary">Shows battery in QS Header</string>
 
 </resources>
