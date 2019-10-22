@@ -20,6 +20,19 @@
                   android:title="@string/animation_settings">
 
     <PreferenceCategory
+        android:key="fh_screen_animations"
+        android:title="@string/screen_animation">
+
+        <!-- Screen off animations -->
+        <ListPreference
+            android:key="screen_off_animation"
+            android:title="@string/screen_off_animation_title"
+            android:entries="@array/screen_off_animation_entries"
+            android:entryValues="@array/screen_off_animation_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="toast_animations"
         android:title="@string/toast_settings" >
 
