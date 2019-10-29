@@ -14,16 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.aim.freedomhub.preferences.dslv;
+package com.fh.settings.preferences.dslv;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.DialogInterface;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.ListFragment;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -61,8 +57,16 @@ import com.android.internal.util.slim.ImageHelper;
 import com.android.internal.util.slim.DeviceUtils;
 import com.android.internal.util.slim.DeviceUtils.FilteredDeviceFeaturesArray;
 
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.ListFragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceScreen;
+
 import com.android.settings.R;
-import com.aim.freedomhub.preferences.SlimShortcutPickerHelper;
+import com.fh.settings.preferences.SlimShortcutPickerHelper;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -194,6 +198,7 @@ public class ActionListViewSettings extends ListFragment implements
         mUseAppPickerOnly = getArguments().getBoolean("useAppPickerOnly", false);
         mUseFullAppsOnly = getArguments().getBoolean("useOnlyFullAppPicker", false);
         mDisableIconPicker = getArguments().getBoolean("disableIconPicker", false);
+        mDisableIconPicker = true;
         mDisableDeleteLastEntry = getArguments().getBoolean("disableDeleteLastEntry", false);
 
         mDisableMessage = (TextView) view.findViewById(R.id.disable_message);

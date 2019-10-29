@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.aim.freedomhub.preferences.dslv;
+package com.fh.settings.preferences.dslv;
 
 import android.content.Context;
 import android.view.Gravity;

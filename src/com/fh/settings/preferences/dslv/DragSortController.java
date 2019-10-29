@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.aim.freedomhub.preferences.dslv;
+package com.fh.settings.preferences.dslv;
 
 import android.graphics.Point;
 import android.view.GestureDetector;
@@ -326,7 +326,6 @@ public class DragSortController extends SimpleFloatViewManager
      * if a drag handle touch was detected.
      *
      * @param ev The ACTION_DOWN MotionEvent.
-
      * @return The list position of the item whose drag handle was
      * touched; MISS if unsuccessful.
      */
