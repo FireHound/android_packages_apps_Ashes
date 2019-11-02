@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 FireHound ROMs
+ * Copyright (C) 2016 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import android.view.ViewParent;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.support.v7.preference.*;
+import androidx.preference.*;
 
 import com.android.settings.R;
 
@@ -54,12 +54,19 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         mMax = attrs.getAttributeIntValue(ANDROIDNS, "max", 100);
         mMin = attrs.getAttributeIntValue(SETTINGS_NS, "min", 0);
         mDefaultValue = attrs.getAttributeIntValue(ANDROIDNS, "defaultValue", -1);
+        if (mDefaultValue > mMax) {
+            mDefaultValue = mMax;
+        }
         mUnits = getAttributeStringValue(attrs, SETTINGS_NS, "units", "");
         mDefaultText = getAttributeStringValue(attrs, SETTINGS_NS, "defaultText", "Def");
 
         Integer id = a.getResourceId(R.styleable.CustomSeekBarPreference_units, 0);
         if (id > 0) {
             mUnits = context.getResources().getString(id);
+        }
+        id = a.getResourceId(R.styleable.CustomSeekBarPreference_defaultText, 0);
+        if (id > 0) {
+            mDefaultText = context.getResources().getString(id);
         }
 
         try {
@@ -137,12 +144,14 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             mStatusText.setText(mDefaultText);
         } else {
             mStatusText.setText(String.valueOf(mCurrentValue) + mUnits);
-        } 
+        }
         mSeekBar.setProgress(mCurrentValue - mMin);
         mTitle = (TextView) view.findViewById(android.R.id.title);
 
         view.setDividerAllowedAbove(false);
         //view.setDividerAllowedBelow(false);
+
+        mSeekBar.setEnabled(isEnabled());
     }
 
     public void setMax(int max) {
@@ -219,6 +228,16 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             }
             persistInt(temp);
             mCurrentValue = temp;
+        }
+    }
+
+    public void setDefaultValue(int value) {
+        mDefaultValue = value;
+        if (mDefaultValue > mMax) {
+            mDefaultValue = mMax;
+        }
+        if (mCurrentValue == mDefaultValue && mStatusText != null) {
+            mStatusText.setText(mDefaultText);
         }
     }
 

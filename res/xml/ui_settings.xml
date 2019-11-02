@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2018 FireHound
+     Copyright (C) 2019 FireHound
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -18,35 +19,5 @@
                   xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/display_title">
-        
-        <!-- Berry Styles -->
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
-            android:key="style"
-            android:title="@string/style_title"
-            android:summary="@string/style_summary"
-            android:icon="@drawable/ic_berry_style" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="misc_display"
-            android:fragment="com.fh.settings.fragments.ui.MiscDisplay"
-            android:icon="@drawable/ic_misc_display"
-            android:title="@string/misc_display_title"
-            android:summary="@string/misc_display_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="force_ambient_for_media_pref"
-            android:icon="@drawable/ic_music"
-            android:fragment="com.fh.settings.fragments.ui.AmbientTicker"
-            android:title="@string/force_ambient_for_media_pref_title"
-            android:summary="@string/force_ambient_for_media_pref_summary"/>
-
-        <!-- Expanded Desktop -->
-        <org.lineageos.internal.lineageparts.LineagePartsPreference
-            android:key="expanded_desktop_settings"
-            android:title="@string/expanded_desktop_settings_title"
-            android:summary="@string/expanded_desktop_settings_summary"
-            android:icon="@drawable/ic_expanded" />
 
 </PreferenceScreen>

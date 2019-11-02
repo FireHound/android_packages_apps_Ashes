@@ -22,7 +22,9 @@
     <string name="reset">Reset</string>
 
     <!-- FireHound Main Settings -->
+    <string name="ashes_title">Ashes</string>
     <string name="status_bar_title">Status Bar</string>
+    <string name="statusbar_icons">Icons</string>
     <string name="qs_title">Quick Settings</string>
     <string name="notification_title">Notifications</string>
     <string name="lockscreen_title">Lock Screen</string>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2018 FireHound
+     Copyright (C) 2019 FireHound
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
+
 
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,102 +18,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/misc_title">
-
-        <!-- App OPS Main fragment -->
-        <Preference
-            android:key="app_ops"
-            android:fragment="com.android.settings.applications.AppOpsSummary"
-            android:icon="@drawable/ic_settings_appops"
-            android:title="@string/app_ops_category"
-            android:summary="@string/app_ops_summary" />
-
-        <!-- Wakelock blocker -->
-        <Preference
-             android:key="wakelock_blocker"
-             android:icon="@drawable/ic_wakelock_fh"
-             android:fragment="com.fh.settings.fragments.misc.WakeLockBlocker"
-             android:title="@string/wakelock_blocker_title"
-             android:summary="@string/wakelock_blocker_sumary" />
-
-        <!-- Alarm blocker -->
-        <Preference
-             android:id="@+id/alarm_blocker"
-             android:icon="@drawable/ic_alarm_fh"
-             android:fragment="com.fh.settings.fragments.misc.AlarmBlocker"
-             android:title="@string/alarm_blocker"
-             android:summary="@string/alarm_blocker_summary" />
-
-        <!-- Smart Pixels -->
-        <Preference
-             android:key="smart_pixels"
-             android:title="@string/smart_pixels_title"
-             android:summary="@string/smart_pixels_summary"
-             android:icon="@drawable/ic_smart_pixels"
-             android:fragment="com.fh.settings.fragments.misc.SmartPixels" />
-
-        <!-- Misc shitz -->
-        <PreferenceCategory
-            android:key="misc_settings_category"
-            android:title="@string/misc_title">
-
-        <!-- MediaScanner behavior on boot -->
-        <ListPreference
-            android:key="media_scanner_on_boot"
-            android:icon="@drawable/ic_movie"
-            android:title="@string/media_scanner_on_boot_title"
-            android:entries="@array/media_scanner_on_boot_entries"
-            android:entryValues="@array/media_scanner_on_boot_values" />
-
-        <!-- Flashlight on incoming calls -->
-        <ListPreference
-            android:key="flashlight_on_call"
-            android:icon="@drawable/ic_flashlight_call"
-            android:title="@string/flashlight_on_call_title"
-            android:entries="@array/flashlight_on_call_entries"
-            android:entryValues="@array/flashlight_on_call_values" />
-
-        <!-- Disable scrolling cache -->
-        <ListPreference
-            android:key="pref_scrollingcache"
-            android:dialogTitle="@string/pref_scrollingcache_title"
-            android:title="@string/pref_scrollingcache_title"
-            android:summary="@string/pref_scrollingcache_summary"
-            android:icon="@drawable/ic_cache"
-            android:entries="@array/entries_scrollingcache"
-            android:entryValues="@array/values_scrollingcache" />
-
-        <!-- Pocket Mode -->
-        <com.fh.settings.preferences.SystemSettingSwitchPreference
-            android:key="pocket_judge"
-            android:icon="@drawable/ic_pocket_judge"
-            android:title="@string/pocket_judge_title"
-            android:summary="@string/pocket_judge_summary"
-            android:defaultValue="false" />
-
-        <!-- Signature spoofing -->
-        <com.fh.settings.preferences.SecureSettingSwitchPreference
-            android:key="allow_signature_fake"
-            android:icon="@drawable/ic_lockscreen_tuner"
-            android:title="@string/allow_signature_fake"
-            android:summary="@string/allow_signature_fake_summary"
-            android:defaultValue="false" />
-
-        <!-- Auto face unlock -->
-        <com.fh.settings.preferences.SecureSettingSwitchPreference
-            android:key="face_auto_unlock"
-            android:icon="@drawable/ic_face"
-            android:title="@string/face_auto_unlock_title"
-            android:summary="@string/face_auto_unlock_summary"
-            android:defaultValue="false" />
-
-        <!-- MTP Dirty hack -->
-        <com.fh.settings.preferences.SystemSettingSwitchPreference
-            android:key="mtp_dirty_hack"
-            android:icon="@drawable/ic_mtp"
-            android:title="@string/enable_mtp_dirtyhack_title"
-            android:summary="@string/enable_mtp_dirtyhack_summary"
-            android:defaultValue="true" />
-
-        </PreferenceCategory>
 
 </PreferenceScreen>

@@ -23,10 +23,12 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Color;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v7.preference.*;
+import androidx.preference.*;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
@@ -34,6 +36,8 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.fh.settings.R;
 
 /**
  * A preference type that allows a user to choose a time
@@ -151,7 +155,7 @@ public class ColorPickerPreference extends Preference implements
 
         widgetFrameView.addView(defView);
         widgetFrameView.setMinimumWidth(0);
-        defView.setBackground(getContext().getDrawable(android.R.drawable.ic_menu_revert));
+        defView.setBackground(getContext().getDrawable(R.drawable.ic_settings_backup_restore));
         defView.setTag("default");
         defView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -200,35 +204,11 @@ public class ColorPickerPreference extends Preference implements
         }
         widgetFrameView.addView(iView);
         widgetFrameView.setMinimumWidth(0);
-        iView.setBackgroundDrawable(new AlphaPatternDrawable((int) (5 * mDensity)));
-        iView.setImageBitmap(getPreviewBitmap());
+        final int size = (int) getContext().getResources().getDimension(R.dimen.picker_circle_preview_size);
+        final int imageColor = ((mValue & 0xF0F0F0) == 0xF0F0F0) ?
+                (mValue - 0x101010) : mValue;
+        iView.setImageDrawable(createOvalShape(size, 0xFF000000 + imageColor));
         iView.setTag("preview");
-        iView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showDialog(null);
-            }
-        });
-    }
-
-    private Bitmap getPreviewBitmap() {
-        int d = (int) (mDensity * 31); // 30dip
-        int color = mValue;
-        Bitmap bm = Bitmap.createBitmap(d, d, Config.ARGB_8888);
-        int w = bm.getWidth();
-        int h = bm.getHeight();
-        int c = color;
-        for (int i = 0; i < w; i++) {
-            for (int j = i; j < h; j++) {
-                c = (i <= 1 || j <= 1 || i >= w - 2 || j >= h - 2) ? Color.GRAY : color;
-                bm.setPixel(i, j, c);
-                if (i != j) {
-                    bm.setPixel(j, i, c);
-                }
-            }
-        }
-
-        return bm;
     }
 
     @Override
@@ -285,6 +265,10 @@ public class ColorPickerPreference extends Preference implements
      */
     public void setNewPreviewColor(int color) {
         onColorChanged(color);
+    }
+
+    public void setDefaultColor(int color) {
+        mDefValue = color;
     }
 
     /**
@@ -403,5 +387,13 @@ public class ColorPickerPreference extends Preference implements
                 return new SavedState[size];
             }
         };
+    }
+
+    private static ShapeDrawable createOvalShape(int size, int color) {
+        ShapeDrawable shape = new ShapeDrawable(new OvalShape());
+        shape.setIntrinsicHeight(size);
+        shape.setIntrinsicWidth(size);
+        shape.getPaint().setColor(color);
+        return shape;
     }
 }

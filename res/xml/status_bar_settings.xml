@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-      Copyright (C) 2016 FireHound ROMs
+     Copyright (C) 2019 FireHound
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -18,79 +19,10 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/status_bar_title">
 
-        <!-- Status bar tuner -->
-        <Preference
-            android:key="systemui_tuner_statusbar"
-            android:title="@string/statusbar_items_category"
-            android:summary="@string/statusbar_tuner_summary"
-            android:icon="@drawable/ic_systemui_tuner_statusbaritems" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
-        </Preference>
+    <PreferenceCategory
+        android:key="statusbar_icons"
+        android:title="@string/statusbar_icons" >
 
-        <!-- Main fragment -->
-        <Preference
-            android:key="fh_battery"
-            android:fragment="com.fh.settings.fragments.statusbar.Battery"
-            android:icon="@drawable/ic_fh_battery"
-            android:title="@string/fh_battery_title"
-            android:summary="@string/fh_battery_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="fh_clock"
-            android:fragment="com.fh.settings.fragments.statusbar.Clock"
-            android:icon="@drawable/ic_clock"
-            android:title="@string/fh_clock_title"
-            android:summary="@string/fh_clock_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="traffic"
-            android:fragment="com.fh.settings.fragments.statusbar.Traffic"
-            android:icon="@drawable/ic_traffic"
-            android:title="@string/traffic_title"
-            android:summary="@string/traffic_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="pulldown"
-            android:fragment="com.fh.settings.fragments.statusbar.Pulldown"
-            android:icon="@drawable/ic_pulldown"
-            android:title="@string/pulldown_title"
-            android:summary="@string/pulldown_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="indicators_category"
-            android:fragment="com.fh.settings.fragments.statusbar.Indicators"
-            android:icon="@drawable/ic_indicators"
-            android:title="@string/indicators_title"
-            android:summary="@string/indicators_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="ticker_category"
-            android:fragment="com.fh.settings.fragments.statusbar.Ticker"
-            android:icon="@drawable/ic_cursor"
-            android:title="@string/ticker_screen_title"
-            android:summary="@string/ticker_screen_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="carrier_label"
-            android:fragment="com.fh.settings.fragments.statusbar.CarrierLabel"
-            android:icon="@drawable/ic_carrierlabel"
-            android:title="@string/carrierlabel_title"
-            android:summary="@string/carrierlabel_summary" />
-
-        <!-- Main fragment -->
-        <Preference
-            android:key="battery_bar_category"
-            android:fragment="com.fh.settings.fragments.statusbar.BatteryBar"
-            android:icon="@drawable/ic_battery_bar"
-            android:title="@string/battery_bar_title"
-            android:summary="@string/battery_bar_summary" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

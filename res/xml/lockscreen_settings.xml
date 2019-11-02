@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-      Copyright (C) 2016 FireHound ROMs
+     Copyright (C) 2019 FireHound
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -17,31 +18,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/lockscreen_title">
-
-    <!-- Lockscreen Tuner -->
-    <Preference
-        android:title="@string/lockscreen_tuner_title"
-        android:summary="@string/lockscreen_tuner_summary"
-        android:icon="@drawable/ic_lockscreen_tuner">
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
-    </Preference>
-
-    <!-- Lockscreen weather -->
-     <Preference
-        android:key="lockscreen_weather"
-        android:title="@string/lock_screen_weather_settings_title"
-        android:summary="@string/lock_screen_weather_settings_summary"
-        android:icon="@drawable/ic_lockscreen_weather"
-        android:fragment="com.fh.settings.fragments.lockscreen.LockScreenWeatherSettings" />
-
-    <!-- Lockscreen UI -->
-    <Preference
-            android:key="lockscreen_ui_sub"
-            android:fragment="com.fh.settings.fragments.lockscreen.LockScreenUI"
-            android:icon="@drawable/ic_lockscreen_ui"
-            android:title="@string/lockscreen_ui"
-            android:summary="@string/lockscreen_ui_summary" />
 
 </PreferenceScreen>

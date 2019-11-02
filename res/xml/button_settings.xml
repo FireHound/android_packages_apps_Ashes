@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-      Copyright (C) 2016 FireHound ROMs
+     Copyright (C) 2019 FireHound
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -17,29 +18,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/button_title">
-
-    <!-- Hardware Keys -->
-        <Preference
-            android:key="hardware_key_category"
-            android:fragment="com.fh.settings.fragments.hwbuttons.HardwareButtons"
-            android:icon="@drawable/ic_hw_buttons"
-            android:title="@string/hw_buttons_title"
-            android:summary="@string/hw_buttons_summary" />
-
-    <!-- Volume button -->
-        <Preference
-            android:key="volume_buttons_category"
-            android:fragment="com.fh.settings.fragments.hwbutton.VolumeButtons"
-            android:icon="@drawable/ic_volume_buttons"
-            android:title="@string/volume_buttons_title"
-            android:summary="@string/volume_buttons_summary" />
-
-    <!-- Power Button -->
-         <Preference
-            android:key="power_buttons_category"
-            android:fragment="com.fh.settings.fragments.hwbutton.PowerButton"
-            android:icon="@drawable/ic_power_button"
-            android:title="@string/power_button_title"
-            android:summary="@string/power_button_summary" />
 
 </PreferenceScreen>

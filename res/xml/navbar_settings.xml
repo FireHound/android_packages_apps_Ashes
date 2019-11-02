@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2018 FireHound
+     Copyright (C) 2019 FireHound
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -17,23 +18,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/navbar_title">
-
-    <!-- Navbar Tuner -->
-    <Preference
-            android:title="@string/navbar_tuner_title"
-            android:summary="@string/navbar_tuner_summary"
-            android:icon="@drawable/ic_navbar_tuner">
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavBarActivity" />
-    </Preference>
-
-    <!-- DUI -->
-    <Preference
-            android:key="dui_category"
-            android:fragment="com.fh.settings.fragments.navbar.dui.DUI"
-            android:icon="@drawable/ic_dui"
-            android:title="@string/dui_title"
-            android:summary="@string/dui_summary" />
 
 </PreferenceScreen>
