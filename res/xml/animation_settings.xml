@@ -30,6 +30,12 @@
             android:summary="@string/toast_icon_summary"
             android:defaultValue="true" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="tiles_animations"
+        android:title="@string/tiles_title">
+
         <!-- QS tile animations -->
         <ListPreference
             android:key="qs_tile_animation_style"
