@@ -67,15 +67,23 @@
     <string name="statusbar_items_category">Statusbar Tuner</string>
 
     <!-- Network traffic -->
-    <string name="traffic_title">Network Traffic indicators</string>
-    <string name="traffic_summary">Control network traffic indicators</string>
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_up">Uplink</string>
-    <string name="show_network_traffic_down">Downlink</string>
-    <string name="show_network_traffic_all">Uplink and Downlink</string>
-    <string name="network_traffic_state_title">Show net activity in statusbar</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="network_traffic_settings_title">Network traffic monitor</string>
+    <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
+    <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_mode_disable">Disabled</string>
+    <string name="network_traffic_mode_up">Upload only</string>
+    <string name="network_traffic_mode_down">Download only</string>
+    <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_units_title">Traffic measurement units</string>
+    <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
+    <string name="network_traffic_show_units">Show units</string>
+    <string name="network_traffic_show_units_summary">Whether to show traffic measurement units in the statusbar</string>
+    <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
 
     <!-- Quick pull down-->
     <string name="pulldown_title">Statusbar Pulldown</string>
@@ -584,6 +592,11 @@
     <!-- Status bar -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+    <string name="status_bar_brightness_category">Brightness</string>
+    <string name="status_bar_brightness_slider_title">Brightness slider</string>
+    <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick Settings</string>
+    <string name="status_bar_brightness_slider_auto_title">Auto brightness</string>
+    <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
 
     <!-- Disable dashboard conditions -->
     <string name="dashboard_conditions_title">Dashboard conditions</string>
@@ -771,6 +784,13 @@
     <string name="clock_date_position">Date position</string>
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_hidden">Hidden</string>
+    <string name="status_bar_clock_position_title">Clock position</string>
+    <string name="status_bar_clock_position_right">Right</string>
+    <string name="status_bar_clock_position_left">Left</string>
+    <string name="status_bar_clock_position_center">Center</string>
 
     <!-- Dynamic Navbar -->
     <string name="navbar_dynamic_title">Dynamic navbar color</string>
@@ -956,5 +976,73 @@
     <!-- Roaming indicator icon -->
     <string name="roaming_indicator_icon_title">Roaming indicator</string>
     <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
+
+    <!-- Status bar - icons -->
+    <string name="status_bar_system_icons_title">System icons</string>
+    <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
+
+    <!-- Pull down -->
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Left</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Right</string>
+    <string name="status_bar_quick_qs_pulldown_off">Off</string>
+    <string name="status_bar_quick_qs_pulldown_left">Left</string>
+    <string name="status_bar_quick_qs_pulldown_right">Right</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_category">Navigation bar</string>
+    <string name="navigation_bar_invert_layout_title">Invert layout</string>
+    <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
+    <string name="navigation_bar_home_long_press_title">Home long press action</string>
+    <string name="navigation_bar_home_double_tap_title">Home double tap action</string>
+    <string name="navigation_bar_app_switch_long_press_title">Recents long press action</string>
+
+    <!-- Power menu -->
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
+    <string name="power_menu_bug_report_title">Bug report</string>
+    <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
+    <string name="torch_long_press_power_gesture_title">Long press for torch</string>
+    <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
+    <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
+    <string name="torch_long_press_power_timeout_never">Never</string>
+    <string name="torch_long_press_power_timeout_1min">1 minute</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutes</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutes</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutes</string>
+
+    <!-- Volume button -->
+    <string name="volbtn_music_controls_title">Control playback</string>
+    <string name="volbtn_music_controls_summary">Seek music tracks by long pressing the volume keys while the display is off</string>
+    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_cursor_control_off">Disabled</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="power_end_call_title">End call</string>
+    <string name="power_end_call_summary">End the current call by pressing the power button</string>
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="volume_panel_on_left_title">Show panel on left</string>
+    <string name="volume_panel_on_left_summary">Display volume panel on the left side of the screen</string>
+    <string name="button_wake_title">Wake device</string>
+    <string name="volume_answer_call_title">Answer call</string>
+    <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
+
+    <!-- Hardware actions -->
+    <string name="hardware_keys_short_press_title">Short press action</string>
+    <string name="hardware_keys_action_nothing">No action</string>
+    <string name="hardware_keys_action_menu">Open/close menu</string>
+    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
+    <string name="hardware_keys_action_search">Search assistant</string>
+    <string name="hardware_keys_action_voice_search">Voice search</string>
+    <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="hardware_keys_action_launch_camera">Launch camera</string>
+    <string name="hardware_keys_action_sleep">Turn screen off</string>
+    <string name="hardware_keys_action_last_app">Last app</string>
+    <string name="hardware_keys_action_split_screen">Split screen</string>
+    <string name="hardware_keys_action_single_handed_left">Single hand mode (left)</string>
+    <string name="hardware_keys_action_single_handed_right">Single hand mode (right)</string>
 
 </resources>
