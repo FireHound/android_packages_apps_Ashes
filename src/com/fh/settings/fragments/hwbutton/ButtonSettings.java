@@ -43,6 +43,10 @@ import java.util.ArrayList;
 public class ButtonSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT =
+            "torch_long_press_power_timeout";
+    private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
