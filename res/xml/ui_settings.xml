@@ -85,6 +85,13 @@
         android:key="fh_ui"
         android:title="@string/ui" >
 
+        <!-- Rounded Corners -->
+        <PreferenceScreen
+            android:key="rounded_corners"
+            android:title="@string/corners_title"
+            android:summary="@string/corners_summary"
+            android:fragment="com.fh.settings.fragments.ui.RoundedCorners" />
+
         <!-- Disable dashboard conditions -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="enable_conditions"

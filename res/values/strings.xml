@@ -1133,4 +1133,12 @@
     <string name="doze_vibrate">Vibrate</string>
     <string name="doze_vibrate_summary">Duration to vibrate when pulsing notifications</string>
 
+    <!-- Rounded corners -->
+    <string name="corners_title">Rounded corners</string>
+    <string name="corners_summary">Allow customized rounded corners</string>
+    <string name="corner_radius">Rounded corner radius</string>
+    <string name="content_padding">Corner content padding</string>
+    <string name="status_bar_padding">Statusbar extra padding</string>
+    <string name="corner_fwvals">Use default values</string>
+
 </resources>
