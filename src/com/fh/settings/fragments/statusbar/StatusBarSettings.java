@@ -47,7 +47,6 @@ import java.util.ArrayList;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String PREF_BATT_BAR = "statusbar_battery_bar_list";
     private static final String PREF_BATT_BAR_NO_NAVBAR = "statusbar_battery_bar_no_navbar_list";
     private static final String PREF_BATT_BAR_STYLE = "statusbar_battery_bar_style";
     private static final String PREF_BATT_BAR_COLOR = "statusbar_battery_bar_color";
@@ -74,7 +73,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private ListPreference mBatteryStyle;
     private SwitchPreference mBatteryCharging;
 
-    private ListPreference mBatteryBar;
     private ListPreference mBatteryBarNoNavbar;
     private ListPreference mBatteryBarStyle;
     private CustomSeekBarPreference mBatteryBarThickness;
@@ -95,11 +93,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
         int intColor;
         String hexColor;
-
-        mBatteryBar = (ListPreference) prefSet.findPreference(PREF_BATT_BAR);
-        mBatteryBar.setValue((Settings.System.getInt(resolver, Settings.System.STATUSBAR_BATTERY_BAR, 0)) + "");
-        mBatteryBar.setSummary(mBatteryBar.getEntry());
-        mBatteryBar.setOnPreferenceChangeListener(this);
 
         mBatteryBarNoNavbar = (ListPreference) prefSet.findPreference(PREF_BATT_BAR_NO_NAVBAR);
         mBatteryBarNoNavbar.setValue((Settings.System.getInt(resolver, Settings.System.STATUSBAR_BATTERY_BAR, 0)) + "");
@@ -154,7 +147,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.Secure.NAVIGATION_BAR_MODE, 0) == 0;
         if (!enableNavigationBar || !batteryBarSupported) {
 */
-            prefSet.removePreference(mBatteryBar);
+//            prefSet.removePreference(mBatteryBar);
 /*
         } else {
             prefSet.removePreference(mBatteryBarNoNavbar);
@@ -200,13 +193,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver,
                 Settings.System.STATUSBAR_BATTERY_BAR_BATTERY_LOW_COLOR, intHex);
             return true;
-        } else if (preference == mBatteryBar) {
-            int val = Integer.parseInt((String) newValue);
-            int index = mBatteryBar.findIndexOfValue((String) newValue);
-            Settings.System.putInt(resolver,
-                Settings.System.STATUSBAR_BATTERY_BAR, val);
-            mBatteryBar.setSummary(mBatteryBar.getEntries()[index]);
-            updateBatteryBarOptions();
         } else if (preference == mBatteryBarNoNavbar) {
             int val = Integer.parseInt((String) newValue);
             int index = mBatteryBarNoNavbar.findIndexOfValue((String) newValue);
