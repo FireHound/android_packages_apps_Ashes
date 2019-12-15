@@ -24,6 +24,13 @@
         android:key="fh_ux"
         android:title="@string/ux" >
 
+        <!-- Ambient Display -->
+        <PreferenceScreen
+            android:key="doze_fragment"
+            android:title="@string/doze_display_title"
+            android:summary="@string/doze_display_summary"
+            android:fragment="com.fh.settings.fragments.ui.DozeSettings" />
+
         <!-- Pocket Judge -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="pocket_judge"
