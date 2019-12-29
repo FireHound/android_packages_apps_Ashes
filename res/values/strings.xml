@@ -1424,4 +1424,8 @@
     <!-- Gradient picker -->
     <string name="gradient_color">Gradient picker</string>
     <string name="gradient_summary">Gradient effect maker</string>
+
+    <!-- OOS clear all -->
+    <string name="enable_clear_all_button">OxygenOS clear al button</string>
+    <string name="enable_clear_all_button_summary">Show clear all notifications button in quick settings instead of default text one</string>
 </resources>

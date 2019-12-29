@@ -42,6 +42,13 @@
         android:key="fh_notifications_ui_ux"
         android:title="@string/notification_title">
 
+        <!-- Clear all button -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="dismiss_all_button"
+            android:title="@string/enable_clear_all_button"
+            android:summary="@string/enable_clear_all_button_summary"
+            android:defaultValue="true" />
+
         <!-- Android R style notifications -->
         <com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_headers"
