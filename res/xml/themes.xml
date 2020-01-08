@@ -28,6 +28,13 @@
             settings:defaultColorValue="0xFFB30000"
             android:persistent="false" />
 
+        <!-- Accent picker -->
+        <PreferenceScreen
+            android:key="gradient_themes"
+            android:title="@string/gradient_color"
+            android:summary="@string/gradient_summary"
+            android:fragment="com.fh.settings.fragments.ui.Gradient" />
+
         <ListPreference
             android:key="android.theme.customization.font"
             android:title="@string/theme_customization_font_title"/>
