@@ -45,5 +45,4 @@ public class SystemSettingListPreference extends ListPreference {
         // Instead, we better do
         setValue(restoreValue ? getPersistedString((String) defaultValue) : (String) defaultValue);
     }
-
 }

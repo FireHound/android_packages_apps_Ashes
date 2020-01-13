@@ -123,8 +123,6 @@
     <string name="indicators_title">Indicators</string>
     <string name="indicators_summary">Control statusbar indicators</string>
     <string name="indicators_title_1">Statusbar Indicators</string>
-    <string name="bluetooth_battery_title">Show Bluetooth battery status</string>
-    <string name="bluetooth_battery_summary">Show battery status for the currently connected bluetooth device, if availible.</string>
 
     <!-- QS Customizations -->
     <string name="tiles_title_1">Quick Settings tiles</string>
@@ -506,19 +504,19 @@
 
     <!-- Battery Bar -->
     <string name="battery_bar_title">Battery bar</string>
-    <string name="battery_bar_summary">Display and customize battery bar near status bar or navigation bar</string>
-    <string name="battery_bar">Battery bar location</string>
-    <string name="battery_bar_no_navbar">Battery bar location</string>
+    <string name="battery_bar_summary">Display and customize battery bar above status bar</string>
+    <string name="battery_bar">Location</string>
+    <string name="battery_bar_no_navbar">Location</string>
     <string name="battery_bar_location_hide">Hide</string>
     <string name="battery_bar_location_statusbar">Statusbar</string>
     <string name="battery_bar_location_top_navbar">Top of navbar</string>
     <string name="battery_bar_location_bottom_navbar">Bottom of navbar</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar_charging_color">Battery bar charging color</string>
-    <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
-    <string name="battery_bar_cat">Battery bar style</string>
-    <string name="battery_bar_style_title">Battery bar alignment</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_color">Color</string>
+    <string name="battery_bar_charging_color">Charging color</string>
+    <string name="battery_bar_battery_low_color">Low battery color</string>
+    <string name="battery_bar_cat">Style</string>
+    <string name="battery_bar_style_title">Alignment</string>
+    <string name="battery_bar_thickness_title">Thickness</string>
     <string name="battery_bar_animate_title">Charging animation</string>
     <string name="battery_bar_style_regular">Regular</string>
     <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
@@ -529,6 +527,7 @@
     <string name="battery_bar_blend_color_reverse_title">Reverse color direction</string>
     <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
     <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
+    <string name="unit_pixels">dp</string>
 
     <!-- Recents Membar -->
     <string name="systemui_recents_mem_display_title">Show memory bar</string>
@@ -715,32 +714,55 @@
 
     <!-- Battery Styles -->
     <string name="fh_battery">Battery</string>
-    <string name="battery_style_category_title">Battery level</string>
-    <string name="battery_percent_title">Battery percent</string>
-
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Battery style</string>
-    <string name="status_bar_battery_style_q">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
-    <string name="status_bar_battery_style_circle">Filled circle</string>
+    <string name="status_bar_battery_style_square">Square</string>
+    <string name="status_bar_battery_style_solid">Solid</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
-
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_default">Hidden</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_text_position_title">Battery percent position</string>
+    <string name="status_bar_battery_text_position_left">Left of the icon</string>
+    <string name="status_bar_battery_text_position_right">Right of the icon</string>
     <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
     <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
 
-    <!-- Battery mode -->
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Bluetooth battery status</string>
+    <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
+
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Aggressive Battery</string>
+    <string name="aggressive_battery_summary">More strict battery savings</string>
+    <string name="aggressive_battery_warning_text">These are power saving features. They may interfere with services intended to run at idle, like navigation apps. You can whitelist these apps from being affected in the app battery settings.</string>
+    <string name="aggressive_idle_title">Aggressive Idle</string>
+    <string name="aggressive_idle_summary">Enter device idle more frequently and wake up less</string>
+    <string name="aggressive_standby_title">Aggressive Standby</string>
+    <string name="aggressive_standby_summary">Restrict apps from running the background</string>
+    <string name="aggressive_battery_saver_title">Auto-enable on battery saver</string> 
+    <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
+
+    <!-- Battery percent -->
     <string name="battery_percentage_title">Battery percentage</string>
     <string name="battery_percentage_off">Disabled</string>
     <string name="battery_percentage_next">Enabled</string>
     <string name="battery_percentage_inside">Enabled (inside icon)</string>
-    <string name="battery_percentage_estimate">Enabled (estimate)</string>
-    <string name="battery_percentage_percentage_estimate">Enabled (percent | estimate)</string>
+
+    <!-- Battery estimate -->
+    <string name="battery_estimate_title">Battery estimate</string>
+    <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
+
+    <!-- QS battery -->
+    <string name="qs_battery_location_title">Battery location</string>
+    <string name="qs_battery_location_qs_panel">QS Panel</string>
+    <string name="qs_battery_location_qs_statusbar">Quick Statusbar</string>
+    <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
 
     <!-- Torch Power button gestures -->
     <string name="actions">Actions</string>

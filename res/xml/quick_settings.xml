@@ -86,21 +86,43 @@
             settings:min="0"
             android:persistent="false" />
 
-        <!-- Battery in QS Header -->
-        <com.fh.settings.preferences.SecureSettingSwitchPreference
-            android:key="qs_battery_location_bar"
-            android:title="@string/qs_battery_location_bar"
-            android:summary="@string/qs_battery_location_bar_summary"
-            android:defaultValue="false" />
+    </PreferenceCategory>
 
-        <!-- battery_percentage_title -->
+    <PreferenceCategory
+        android:key="fh_battery_style_qs"
+        android:title="@string/fh_battery">
+
+        <!-- Battery styles -->
         <com.fh.settings.preferences.SystemSettingListPreference
-            android:key="qs_battery_mode"
-            android:title="@string/battery_percentage_title"
-            android:entries="@array/qs_battery_mode_entries"
-            android:entryValues="@array/qs_battery_mode_values"
-            android:defaultValue="1" />
+            android:key="qs_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:dialogTitle="@string/status_bar_battery_style_title"
+            android:entries="@array/qs_battery_style_entries"
+            android:entryValues="@array/qs_battery_style_values"
+            android:defaultValue="-1" />
 
+        <!-- Battery location -->
+        <com.fh.settings.preferences.SystemSettingListPreference
+            android:key="qs_battery_location"
+            android:title="@string/qs_battery_location_title"
+            android:dialogTitle="@string/qs_battery_location_title"
+            android:entries="@array/qs_battery_location_entries"
+            android:entryValues="@array/qs_battery_location_values"
+            android:defaultValue="0" />
+
+        <!-- Battery percent -->
+        <com.fh.settings.preferences.SystemSettingListPreference
+            android:key="qs_show_battery_percent"
+            android:title="@string/battery_percentage_title"
+            android:entries="@array/battery_percentage_entries"
+            android:entryValues="@array/battery_percentage_values"
+            android:defaultValue="2" />
+
+        <!-- Battery estimate -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_battery_estimate"
+            android:title="@string/battery_estimate_title"
+            android:summary="@string/battery_estimate_summary" />
 
     </PreferenceCategory>
 
