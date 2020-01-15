@@ -21,21 +21,6 @@
                   android:title="@string/navbar_title">
 
     <PreferenceCategory
-        android:key="navbar_ui"
-        android:title="@string/ui">
-
-        <!-- Navbar Layouts -->
-        <Preference
-            android:title="@string/navbar_tuner_title"
-            android:summary="@string/navbar_tuner_summary">
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavBarActivity" />
-        </Preference>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="navbar_ux"
         android:title="@string/ux">
 
