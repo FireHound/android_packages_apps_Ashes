@@ -1148,4 +1148,8 @@
     <string name="status_bar_padding">Statusbar extra padding</string>
     <string name="corner_fwvals">Use default values</string>
 
+    <!-- Power Menu -->
+    <string name="power_menu_screenrecord_title">Screenrecord</string>
+    <string name="power_menu_buttons_title">ACTIONS</string>
+
 </resources>
