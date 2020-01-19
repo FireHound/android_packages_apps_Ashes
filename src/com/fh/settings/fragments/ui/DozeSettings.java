@@ -47,7 +47,6 @@ import com.android.settingslib.search.SearchIndexable;
 import com.fh.settings.R;
 import com.fh.settings.fragments.ui.doze.Utils;
 import com.fh.settings.preferences.CustomSeekBarPreference;
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -70,8 +69,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
     private static final String KEY_DOZE_POCKET_GESTURE = "doze_pocket_gesture";
     private static final String KEY_DOZE_GESTURE_VIBRATE = "doze_gesture_vibrate";
 
-    private ColorPickerPreference mEdgeLightColorPreference;
-
     private SwitchPreference mDozeAlwaysOnPreference;
     private SwitchPreference mTiltPreference;
     private SwitchPreference mPickUpPreference;
@@ -86,19 +83,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
         addPreferencesFromResource(R.xml.doze_settings);
 
         Context context = getContext();
-
-        mEdgeLightColorPreference = (ColorPickerPreference) findPreference(PULSE_AMBIENT_LIGHT_COLOR);
-        int edgeLightColor = Settings.System.getInt(getContentResolver(),
-                Settings.System.PULSE_AMBIENT_LIGHT_COLOR, 0xFF3980FF);
-        mEdgeLightColorPreference.setNewPreviewColor(edgeLightColor);
-        mEdgeLightColorPreference.setAlphaSliderEnabled(false);
-        String edgeLightColorHex = String.format("#%08x", (0xFF3980FF & edgeLightColor));
-        if (edgeLightColorHex.equals("#ff3980ff")) {
-            mEdgeLightColorPreference.setSummary(R.string.default_string);
-        } else {
-            mEdgeLightColorPreference.setSummary(edgeLightColorHex);
-        }
-        mEdgeLightColorPreference.setOnPreferenceChangeListener(this);
 
         PreferenceCategory dozeSensorCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(CATEG_DOZE_SENSOR);
@@ -143,19 +127,7 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
         Context context = getContext();
         ContentResolver resolver = context.getContentResolver();
 
-        if (preference == mEdgeLightColorPreference) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(newValue)));
-            if (hex.equals("#ff3980ff")) {
-                preference.setSummary(R.string.default_string);
-            } else {
-                preference.setSummary(hex);
-            }
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putIntForUser(resolver,
-                    Settings.System.PULSE_AMBIENT_LIGHT_COLOR, intHex, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mTiltPreference) {
+        if (preference == mTiltPreference) {
             boolean value = (Boolean) newValue;
             Settings.Secure.putIntForUser(resolver, Settings.Secure.DOZE_TILT_GESTURE, 
                  value ? 1 : 0, UserHandle.USER_CURRENT);
