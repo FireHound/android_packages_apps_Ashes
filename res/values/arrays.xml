@@ -862,10 +862,11 @@
         <item>@string/hardware_keys_action_sleep</item>
         <item>@string/hardware_keys_action_last_app</item>
         <item>@string/hardware_keys_action_split_screen</item>
-        <!--
-        <item>@string/hardware_keys_action_single_handed_left</item>
-        <item>@string/hardware_keys_action_single_handed_right</item>
-        -->
+        <item>@string/hardware_keys_action_close_app</item>
+        <item>@string/hardware_keys_action_torch</item>
+        <item>@string/hardware_keys_action_screenshot</item>
+        <!--<item>@string/hardware_keys_action_single_handed_left</item>
+        <item>@string/hardware_keys_action_single_handed_right</item>-->
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
@@ -881,6 +882,9 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
     </string-array>
 
     <!-- QS Brightness Slider position -->

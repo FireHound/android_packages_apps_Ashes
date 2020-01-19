@@ -127,7 +127,6 @@
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
     <string name="swap_volume_buttons">Swap volume buttons</string>
-    <string name="swap_volume_buttons_summary">Swap volume buttons based on device rotation</string>
     <string name="volume_buttons_category">Volume Buttons</string>
 
     <!-- Indicator customizations -->
@@ -455,22 +454,8 @@
     <!-- Hardware keys -->
     <string name="hw_buttons_title">Hardware Buttons</string>
     <string name="hw_buttons_summary">Hardware keys custom action rebinding</string>
-    <string name="hardware_keys_home_key_title">Home button</string>
-    <string name="hardware_keys_menu_key_title">Menu button</string>
-    <string name="hardware_keys_assist_key_title">Search button</string>
-    <string name="hardware_keys_appswitch_key_title">Overview button</string>
-    <string name="hardware_keys_back_key_title">Back button</string>
-    <string name="hardware_keys_double_tap_summary">Set double tap action</string>
-    <string name="hardware_keys_single_tap_summary">Set single tap action</string>
-    <string name="hardware_keys_long_press_summary">Set long press action</string>
-    <string name="hardware_keys_single_tap_title">Single tap action</string>
-    <string name="hardware_keys_long_press_title">Long press action</string>
-    <string name="hardware_keys_double_tap_title">Double tap action</string>
-    <string name="hardware_keys_category">Hardware keys</string>
-    <string name="hardware_keys_disable_title">Disable keys</string>
 
     <!-- Buttons backlight timeout -->
-    <string name="backlight_timeout_title">Buttons backlight timeout</string>
     <string name="backlight_timeout_on">Enabled always</string>
     <string name="backlight_timeout_3s">3 sec</string>
     <string name="backlight_timeout_default">5 sec (default)</string>
@@ -1043,37 +1028,6 @@
     <string name="torch_long_press_power_timeout_5min">5 minutes</string>
     <string name="torch_long_press_power_timeout_10min">10 minutes</string>
 
-    <!-- Volume button -->
-    <string name="volbtn_music_controls_title">Control playback</string>
-    <string name="volbtn_music_controls_summary">Seek music tracks by long pressing the volume keys while the display is off</string>
-    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
-    <string name="volbtn_cursor_control_off">Disabled</string>
-    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
-    <string name="power_end_call_title">End call</string>
-    <string name="power_end_call_summary">End the current call by pressing the power button</string>
-    <string name="swap_volume_buttons_title">Reorient</string>
-    <string name="volume_panel_on_left_title">Show panel on left</string>
-    <string name="volume_panel_on_left_summary">Display volume panel on the left side of the screen</string>
-    <string name="button_wake_title">Wake device</string>
-    <string name="volume_answer_call_title">Answer call</string>
-    <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
-
-    <!-- Hardware actions -->
-    <string name="hardware_keys_short_press_title">Short press action</string>
-    <string name="hardware_keys_action_nothing">No action</string>
-    <string name="hardware_keys_action_menu">Open/close menu</string>
-    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
-    <string name="hardware_keys_action_search">Search assistant</string>
-    <string name="hardware_keys_action_voice_search">Voice search</string>
-    <string name="hardware_keys_action_in_app_search">In-app search</string>
-    <string name="hardware_keys_action_launch_camera">Launch camera</string>
-    <string name="hardware_keys_action_sleep">Turn screen off</string>
-    <string name="hardware_keys_action_last_app">Last app</string>
-    <string name="hardware_keys_action_split_screen">Split screen</string>
-    <string name="hardware_keys_action_single_handed_left">Single hand mode (left)</string>
-    <string name="hardware_keys_action_single_handed_right">Single hand mode (right)</string>
-
     <!-- Audio Panel view  -->
     <string name="audio_panel_view">Volume Panel</string>
     <string name="audio_panel_view_media_title">Media</string>
@@ -1270,5 +1224,75 @@
     <string name="lockscreen_solid_units_count_title">Solid lines count</string>
     <string name="lockscreen_solid_fudge_factor_title">Sanity level</string>
     <string name="lockscreen_solid_units_opacity_title">Solid lines opacity</string>
+
+    <!-- Button settings -->
+    <string name="hardware_keys_power_key_title">Power button</string>
+    <string name="hardware_keys_home_key_title">Home button</string>
+    <string name="hardware_keys_back_key_title">Back button</string>
+    <string name="hardware_keys_menu_key_title">Menu button</string>
+    <string name="hardware_keys_assist_key_title">Search button</string>
+    <string name="hardware_keys_appswitch_key_title">Recents button</string>
+    <string name="hardware_keys_camera_key_title">Camera button</string>
+    <string name="hardware_keys_volume_keys_title">Volume buttons</string>
+    <string name="hardware_keys_short_press_title">Short press action</string>
+    <string name="hardware_keys_long_press_title">Long press action</string>
+    <string name="hardware_keys_double_tap_title">Double tap action</string>
+    <string name="hardware_keys_action_nothing">No action</string>
+    <string name="hardware_keys_action_menu">Open/close menu</string>
+    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
+    <string name="hardware_keys_action_search">Search assistant</string>
+    <string name="hardware_keys_action_voice_search">Voice search</string>
+    <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="hardware_keys_action_launch_camera">Launch camera</string>
+    <string name="hardware_keys_action_sleep">Turn screen off</string>
+    <string name="hardware_keys_action_last_app">Last app</string>
+    <string name="hardware_keys_action_split_screen">Split screen</string>
+    <string name="hardware_keys_action_close_app">Kill app</string>
+    <string name="hardware_keys_action_torch">Torch</string>
+    <string name="hardware_keys_action_screenshot">Screenshot</string>
+    <string name="hardware_keys_action_single_handed_left">Single hand mode (left)</string>
+    <string name="hardware_keys_action_single_handed_right">Single hand mode (right)</string>
+    <string name="camera_sleep_on_release_title">Screen peek</string>
+    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
+    <string name="camera_launch_title">Launch camera</string>
+    <string name="camera_launch_summary">A longpress and release will launch camera</string>
+    <string name="volbtn_music_controls_title">Control playback</string>
+    <string name="volbtn_music_controls_summary">Seek music tracks by long-pressing the volume keys while the display is off</string>
+    <string name="volbtn_cursor_control_title">Keyboard cursor control</string>
+    <string name="volbtn_cursor_control_off">Disabled</string>
+    <string name="volbtn_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volbtn_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="power_end_call_title">End call</string>
+    <string name="power_end_call_summary">End the current call by pressing the power button</string>
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
+    <string name="button_wake_title">Wake device</string>
+    <string name="button_wake_summary">Wake device by pressing the button</string>
+    <string name="volume_answer_call_title">Answer call</string>
+    <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
+    <string name="home_answer_call_title">Answer call</string>
+    <string name="home_answer_call_summary">Answer incoming calls by pressing the home button</string>
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back button</string>
+    <string name="extras_title">Extras</string>
+    <string name="additional_buttons_title">Additional buttons</string>
+
+    <!-- Key backlight -->
+    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_summary">Customize button backlight settings</string>
+    <string name="button_backlight_enabled">Illuminate buttons</string>
+    <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
+    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
+    <string name="button_backlight_seekbar_title">Button brightness</string>
+    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
+    <string name="backlight_timeout_title">Illumination timeout</string>
+    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
+    <string name="backlight_summary_disabled">Disabled</string>
+    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Enabled</string>
+
+    <!-- Disable HW keys -->
+    <string name="hwkeys_disabled_title">Disable HW keys</string>
+    <string name="hwkeys_disabled_summary">Enabling this will disable hardware keys for navigation</string>
 
 </resources>
