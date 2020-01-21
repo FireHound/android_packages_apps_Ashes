@@ -93,6 +93,13 @@
         android:key="fh_ui"
         android:title="@string/ui" >
 
+        <!-- Accent picker -->
+        <PreferenceScreen
+            android:key="themes"
+            android:title="@string/themes_title"
+            android:summary="@string/themes_summary"
+            android:fragment="com.fh.settings.fragments.ui.Themes" />
+
         <!-- Display cutout options -->
         <Preference
             android:key="display_cutout_force_fullscreen_settings"
