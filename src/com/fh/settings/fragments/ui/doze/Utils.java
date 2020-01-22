@@ -47,29 +47,33 @@ public final class Utils {
     }
 
     public static boolean getTiltSensor(Context context) {
-        return context.getResources().getBoolean(
-                com.android.internal.R.bool.config_dozePulseTilt);
+//        return context.getResources().getBoolean(
+ //               com.android.internal.R.bool.config_dozePulseTilt);
+        return true;
     }
 
     public static boolean getPickupSensor(Context context) {
-        return context.getResources().getBoolean(
-                com.android.internal.R.bool.config_dozePulsePickup);
+//        return context.getResources().getBoolean(
+//                com.android.internal.R.bool.config_dozePulsePickup);
+        return true;
     }
 
     public static boolean getProximitySensor(Context context) {
-        return getProxCheckBeforePulse(context) && context.getResources().getBoolean(
-                com.android.internal.R.bool.config_dozePulseProximity);
+//        return getProxCheckBeforePulse(context) && context.getResources().getBoolean(
+ //               com.android.internal.R.bool.config_dozePulseProximity);
+        return true;
     }
 
     private static boolean getProxCheckBeforePulse(Context context) {
-        try {
+/*        try {
             Context con = context.createPackageContext("com.android.systemui", 0);
             int id = con.getResources().getIdentifier("doze_proximity_check_before_pulse",
                     "bool", "com.android.systemui");
             return con.getResources().getBoolean(id);
         } catch (PackageManager.NameNotFoundException e) {
             return false;
-        }
+        } */
+        return true;
     }
 
     public static boolean isDozeEnabled(Context context) {

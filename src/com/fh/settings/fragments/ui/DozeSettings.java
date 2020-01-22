@@ -69,11 +69,16 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
     private static final String KEY_DOZE_POCKET_GESTURE = "doze_pocket_gesture";
     private static final String KEY_DOZE_GESTURE_VIBRATE = "doze_gesture_vibrate";
 
+    private static final String KEY_PULSE_BRIGHTNESS = "ambient_pulse_brightness";
+    private static final String KEY_DOZE_BRIGHTNESS = "ambient_doze_brightness";
+
     private SwitchPreference mDozeAlwaysOnPreference;
     private SwitchPreference mTiltPreference;
     private SwitchPreference mPickUpPreference;
     private SwitchPreference mHandwavePreference;
     private SwitchPreference mPocketPreference;
+    private CustomSeekBarPreference mDozeBrightness;
+    private CustomSeekBarPreference mPulseBrightness;
 
     private SharedPreferences mPreferences;
 
@@ -86,6 +91,26 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
         PreferenceCategory dozeSensorCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(CATEG_DOZE_SENSOR);
+
+        int defaultDoze = getResources().getInteger(
+                com.android.internal.R.integer.config_screenBrightnessDoze);
+        int defaultPulse = getResources().getInteger(
+                com.android.internal.R.integer.config_screenBrightnessPulse);
+        if (defaultPulse == -1) {
+            defaultPulse = defaultDoze;
+        }
+
+        mPulseBrightness = (CustomSeekBarPreference) findPreference(KEY_PULSE_BRIGHTNESS);
+        int value = Settings.System.getInt(getContentResolver(),
+                Settings.System.OMNI_PULSE_BRIGHTNESS, defaultPulse);
+        mPulseBrightness.setValue(value);
+        mPulseBrightness.setOnPreferenceChangeListener(this);
+
+        mDozeBrightness = (CustomSeekBarPreference) findPreference(KEY_DOZE_BRIGHTNESS);
+        value = Settings.System.getInt(getContentResolver(),
+                Settings.System.OMNI_DOZE_BRIGHTNESS, defaultDoze);
+        mDozeBrightness.setValue(value);
+        mDozeBrightness.setOnPreferenceChangeListener(this);
 
         mDozeAlwaysOnPreference = (SwitchPreference) findPreference(KEY_DOZE_ALWAYS_ON);
 
@@ -158,6 +183,16 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
             Utils.enableService(context);
             if (newValue != null)
                 sensorWarning(context);
+            return true;
+        } else if (preference == mPulseBrightness) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.OMNI_PULSE_BRIGHTNESS, value);
+            return true;
+        } else if (preference == mDozeBrightness) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.OMNI_DOZE_BRIGHTNESS, value);
             return true;
         }
         return false;

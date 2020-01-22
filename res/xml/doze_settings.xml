@@ -75,4 +75,27 @@
             settings:units="@string/unit_milliseconds" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="doze_sensor_brighness"
+        android:title="@string/doze_brightness_title" >
+
+        <com.fh.settings.preferences.CustomSeekBarPreference
+            android:key="ambient_doze_brightness"
+            android:title="@string/ambient_doze_brightness_title"
+            android:summary="@string/ambient_doze_brightness_summary"
+            android:max="255"
+            settings:min="1"
+            android:persistent="false" />
+
+        <com.fh.settings.preferences.CustomSeekBarPreference
+            android:key="ambient_pulse_brightness"
+            android:title="@string/ambient_pulse_brightness_title"
+            android:summary="@string/ambient_pulse_brightness_summary"
+            android:max="255"
+            settings:min="1"
+            android:persistent="false" />
+
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
