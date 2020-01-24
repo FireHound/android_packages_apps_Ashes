@@ -91,7 +91,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT =
             "torch_long_press_power_timeout";
     private static final String KEY_BACK_WAKE_SCREEN = "back_wake_screen";
-    private static final String KEY_BACK_LONG_PRESS = "hardware_keys_back_long_press";
     private static final String KEY_CAMERA_WAKE_SCREEN = "camera_wake_screen";
     private static final String KEY_CAMERA_SLEEP_ON_RELEASE = "camera_sleep_on_release";
     private static final String KEY_CAMERA_LAUNCH = "camera_launch";
@@ -110,7 +109,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mHardwareKeysDisable;
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
-    private ListPreference mBackLongPressAction;
     private ListPreference mMenuPressAction;
     private ListPreference mMenuLongPressAction;
     private ListPreference mAssistPressAction;
@@ -213,12 +211,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 LineageSettings.System.KEY_HOME_DOUBLE_TAP_ACTION,
                 defaultHomeDoubleTapAction);
 
-        Action defaultBackLongPressAction = Action.fromIntSafe(res.getInteger(
-                org.lineageos.platform.internal.R.integer.config_longPressOnBackBehavior));
-        Action backLongPressAction = Action.fromSettings(resolver,
-                LineageSettings.System.KEY_BACK_LONG_PRESS_ACTION,
-                defaultBackLongPressAction);
-
         backlight = (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported() /*&& !backlight.isKeyboardSupported()*/) {
             prefScreen.removePreference(backlight);
@@ -265,7 +257,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 backCategory.removePreference(findPreference(KEY_BACK_WAKE_SCREEN));
             }
 
-            mBackLongPressAction = initList(KEY_BACK_LONG_PRESS, backLongPressAction);
         } else {
             prefScreen.removePreference(backCategory);
         }
@@ -452,10 +443,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mHomeDoubleTapAction) {
             handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_HOME_DOUBLE_TAP_ACTION);
-            return true;
-        } else if (preference == mBackLongPressAction) {
-            handleListChange((ListPreference) preference, newValue,
-                    LineageSettings.System.KEY_BACK_LONG_PRESS_ACTION);
             return true;
         } else if (preference == mMenuPressAction) {
             handleListChange(mMenuPressAction, newValue,
