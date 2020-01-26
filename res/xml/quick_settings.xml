@@ -24,6 +24,14 @@
         android:key="qs_columns_rows_category"
         android:title="@string/qs_layout_category">
 
+        <com.fh.settings.preferences.SystemSettingListPreference
+            android:key="qs_quickbar_columns"
+            android:title="@string/sysui_qqs_count_title"
+            android:dialogTitle="@string/sysui_qqs_count_title"
+            android:entries="@array/qs_quickbar_layout_entries"
+            android:entryValues="@array/qs_quickbar_layout_values"
+            android:defaultValue="6" />
+
         <com.fh.settings.preferences.CustomSeekBarPreference
             android:key="qs_rows_portrait"
             android:title="@string/qs_rows_portrait_title"

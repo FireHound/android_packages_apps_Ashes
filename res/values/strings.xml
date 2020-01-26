@@ -142,7 +142,6 @@
     <string name="qs_misc_summary">Miscellaneous Quick Settings customizations</string>
 
     <!-- QS rows and columns -->
-    <string name="sysui_qqs_count_title">Columns (Quickbar)</string>
     <string name="qs_layout_category">Layout</string>
     <string name="qs_column_rows_settings_title">QS panel settings</string>
     <string name="qs_columns_rows_category_title">QS columns and rows</string>
@@ -1432,4 +1431,11 @@
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
     <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+
+    <!-- QQS config -->
+    <string name="sysui_qqs_count_title">Columns (Quickbar)</string>
+    <string name="qs_quickbar_auto">Auto</string>
+    <string name="qs_quickbar_six">6 tiles</string>
+    <string name="qs_quickbar_seven">7 tiles</string>
+    <string name="qs_quickbar_eight">8 tiles</string>
 </resources>
