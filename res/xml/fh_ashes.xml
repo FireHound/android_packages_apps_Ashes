@@ -46,13 +46,6 @@
         android:fragment="com.fh.settings.fragments.lockscreen.LockScreenSettings" 
         android:icon="@drawable/ic_ashes_lockscreen" />
 
-    <!-- Recents -->
-    <Preference
-        android:key="fh_recents_category"
-        android:title="@string/recents_settings"
-        android:fragment="com.fh.settings.fragments.recents.RecentsSettings" 
-        android:icon="@drawable/ic_ashes_recents" />
-
     <!-- Hardware buttons -->
     <Preference
         android:key="fh_buttons_category"
