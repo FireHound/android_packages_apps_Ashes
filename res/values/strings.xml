@@ -638,7 +638,8 @@
     <string name="qqs_scroll_summary">Allow scrolling through the small QS tiles</string>
 
     <!-- QS Headers -->
-    <string name="status_bar_custom_header_title">Enable</string>
+    <string name="custom_header_title">Custom header</string>
+    <string name="custom_header_summary">Display image at top of the notification panel</string>
     <string name="daylight_header_pack_title">Header image collection</string>
     <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
     <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
@@ -653,16 +654,11 @@
     <string name="custom_header_browse_summary_new">Browse all available header collections</string>
     <string name="custom_header_pick_title">Select header image</string>
     <string name="custom_header_pick_summary">Select an image to use for static mode</string>
-    <string name="style_enabled_summary">Custom header image is ON</string>
-    <string name="style_disabled_summary">Custom header image is OFF</string>
     <string name="header_provider_disabled">Disabled</string>
-    <string name="custom_header_title">Custom header image</string>
     <string name="file_header_select_title">Select image</string>
     <string name="file_header_select_summary">Select custom image</string>
     <string name="file_header_provider_title">Custom image</string>
     <string name="file_header_provider" translatable="false">file</string>
-    <string name="qs_header_title">Custom Headers</string>
-    <string name="qs_header_summary">Beautify quick settings with custom headers</string>
 
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Pocket detection</string>

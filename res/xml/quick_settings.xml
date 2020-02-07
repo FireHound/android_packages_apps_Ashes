@@ -60,7 +60,14 @@
 
     <PreferenceCategory
         android:key="quick_settings_category"
-        android:title="@string/qs_panel_alpha_title">
+        android:title="@string/ui">
+
+        <!-- Custom header -->
+        <Preference
+            android:key="custom_header"
+            android:fragment="com.fh.settings.fragments.qs.CustomHeader"
+            android:title="@string/custom_header_title"
+            android:summary="@string/custom_header_summary" />
 
         <!-- QS Brightness Slider position -->
         <lineageos.preference.LineageSecureSettingListPreference
