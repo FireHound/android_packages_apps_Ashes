@@ -48,11 +48,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String FP_SUCCESS_VIBRATE = "lockscreen_fingerprint";
     private static final String KEY_AUTOCOLOR = "lockscreen_visualizer_autocolor";
     private static final String KEY_LAVALAMP = "lockscreen_lavalamp_enabled";
+    private static final String KEY_SCREEN_OFF_FOD = "screen_off_fod";
 
     private Preference mFingerprintVib;
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mAutoColor;
     private SwitchPreference mLavaLamp;
+    private SwitchPreference mScreenOffFOD;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -86,6 +88,13 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
 
         mLavaLamp = (SwitchPreference) findPreference(KEY_LAVALAMP);
         mLavaLamp.setOnPreferenceChangeListener(this);
+
+        boolean mScreenOffFODValue = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_FOD, 0) != 0;
+
+        mScreenOffFOD = (SwitchPreference) findPreference(KEY_SCREEN_OFF_FOD);
+        mScreenOffFOD.setChecked(mScreenOffFODValue);
+        mScreenOffFOD.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -104,6 +113,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                         R.string.lockscreen_autocolor_summary));
             }
 
+            return true;
+        }
+        if (preference == mScreenOffFOD) {
+            int mScreenOffFODValue = (Boolean) newValue ? 1 : 0;
+            Settings.System.putInt(resolver, Settings.System.SCREEN_OFF_FOD, mScreenOffFODValue);
+            Settings.Secure.putInt(resolver, Settings.Secure.DOZE_ALWAYS_ON, mScreenOffFODValue);
             return true;
         }
 

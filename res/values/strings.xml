@@ -1340,4 +1340,8 @@
     <string name="qs_blur_title">Background blur</string>
     <string name="qs_blur_summary">Blur empty space in notification panel below quick settings</string>
 
+    <!-- screen off FOD -->
+    <string name="scr_off_fod">Screen off FOD</string>
+    <string name="scr_off_fod_summary">Use fingerprint reader also while screen is off</string>
+
 </resources>
