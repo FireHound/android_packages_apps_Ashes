@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fh.settings.fragments.quicksettings;
+package com.fh.settings.fragments.qs;
 
 import android.app.Activity;
 import android.content.ContentResolver;
