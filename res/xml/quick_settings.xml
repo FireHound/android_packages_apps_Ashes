@@ -93,6 +93,13 @@
             settings:min="0"
             android:persistent="false" />
 
+        <!-- QS blur -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_background_blur"
+            android:defaultValue="false"
+            android:title="@string/qs_blur_title"
+            android:summary="@string/qs_blur_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
