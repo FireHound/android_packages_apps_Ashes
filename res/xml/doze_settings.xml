@@ -20,12 +20,14 @@
 
     <com.fh.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_enabled"
+        android:defaultValue="false"
         android:title="@string/doze_title"
         android:summary="@string/doze_summary" />
 
     <com.fh.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_always_on"
         android:title="@string/doze_always_on_title"
+        android:defaultValue="false"
         android:summary="@string/doze_always_on_summary" />
 
     <lineageos.preference.RemotePreference
