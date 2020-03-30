@@ -19,13 +19,6 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/misc_title">
 
-    <!-- Aggressive battery -->
-    <Preference
-        android:key="aggressive_battery"
-        android:title="@string/aggressive_battery_title"
-        android:summary="@string/aggressive_battery_summary"
-        android:fragment="com.fh.settings.fragments.misc.AggressiveBattery"/>
-
     <!-- Disable scrolling cache -->
         <ListPreference
             android:key="pref_scrollingcache"
