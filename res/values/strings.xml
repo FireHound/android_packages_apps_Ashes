@@ -1351,5 +1351,9 @@
     <!-- Accent color -->
     <string name="themes_title">Themes</string>
     <string name="themes_summary">Customize system accent and components</string>
+    <string name="theme_customization_category">Accents and Shapes</string>
+    <string name="theme_customization_accent_color_title">System Accent</string>
+    <string name="theme_customization_font_title">System Font</string>
+    <string name="theme_customization_icon_shape_title">System Icons Shape</string>
 
 </resources>
