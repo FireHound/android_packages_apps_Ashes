@@ -155,6 +155,12 @@
             android:summary="@string/scr_off_fod_summary"
             android:defaultValue="false" />
 
+        <com.fh.settings.preferences.SecureSettingSwitchPreference
+            android:key="unlock_without_bouncer"
+            android:defaultValue="false"
+            android:title="@string/unlock_without_bouncer_title"
+            android:summary="@string/unlock_without_bouncer_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

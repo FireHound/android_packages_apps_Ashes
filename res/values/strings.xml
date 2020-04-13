@@ -1419,4 +1419,7 @@
     <string name="notification_headers_title">Show notification headers</string>
     <string name="notification_headers_summary">Whether to show R style notification headers (Requires a SystemUI restart)</string>
 
+    <!-- Fingerprint unlock without bouncer -->
+    <string name="unlock_without_bouncer_title">Use fingerprint unlock to view notification</string>
+    <string name="unlock_without_bouncer_summary">Allows to unlock device with fingerprint on notification double tap without need to input pin/password/pattern</string>
 </resources>
