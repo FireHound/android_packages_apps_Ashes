@@ -42,6 +42,13 @@
         android:key="fh_notifications_ui_ux"
         android:title="@string/notification_title">
 
+        <!-- Android R style notifications -->
+        <com.fh.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_headers"
+            android:title="@string/notification_headers_title"
+            android:summary="@string/notification_headers_summary"
+            android:defaultValue="true" />
+
         <!-- Force Expanded Notifications -->
 	<com.fh.settings.preferences.SystemSettingSwitchPreference
             android:key="force_expanded_notifications"
