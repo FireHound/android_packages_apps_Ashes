@@ -15,6 +15,7 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ashes_title" >
 
@@ -61,10 +62,9 @@
         android:icon="@drawable/ic_ashes_buttons" />
 
     <!-- Navigation Bar -->
-    <Preference
-        android:key="fh_navbar_category"
-        android:title="@string/navbar_title"
-        android:fragment="com.fh.settings.fragments.navbar.NavbarSettings" 
+    <org.lineageos.internal.lineageparts.LineagePartsPreference
+        android:key="button_settings"
+        android:title="@string/navbar_title" 
         android:icon="@drawable/ic_ashes_navbar" />
 
     <!-- UI / UX -->
