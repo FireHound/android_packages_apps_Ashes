@@ -30,5 +30,4 @@
         android:summary="@string/lock_screen_weather_style_summary"
         android:dependency="lockscreen_weather_enabled"
         android:defaultValue="true" />
-
 </PreferenceScreen>
