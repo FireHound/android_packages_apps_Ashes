@@ -16,7 +16,7 @@
  *
 */
 
-package com.fh.settings.fragments.lockscreen;
+package com.fh.settings.fragments.ui;
 
 import android.content.Context;
 import android.content.Intent;

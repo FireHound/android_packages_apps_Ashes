@@ -24,6 +24,13 @@
         android:key="fh_ux"
         android:title="@string/ux" >
 
+        <!-- Weather -->
+        <PreferenceScreen
+            android:key="omnijaws_settings"
+            android:title="@string/omnijaws_settings_title"
+            android:summary="@string/omnijaws_settings_summary"
+            android:fragment="com.fh.settings.fragments.ui.OmniJawsSettings" />
+
         <!-- Ambient Display -->
         <PreferenceScreen
             android:key="doze_fragment"
