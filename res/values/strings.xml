@@ -1438,4 +1438,9 @@
     <string name="qs_quickbar_six">6 tiles</string>
     <string name="qs_quickbar_seven">7 tiles</string>
     <string name="qs_quickbar_eight">8 tiles</string>
+
+    <!-- QQS bar -->
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
 </resources>
