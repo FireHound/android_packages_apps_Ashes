@@ -1444,7 +1444,8 @@
     <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
     <string name="status_bar_brightness_slider_show_always">Show always</string>
 
-    <!-- Clipboard toast toggle -->
-    <string name="show_clipboard_toast_title">Clipboard access alerts</string>
-    <string name="show_clipboard_toast_summary">Display a toast when an app tries to access the clipboard</string>
+    <!-- Clipboard toast info -->
+    <string name="clipboard_toast_info_title">Clipboard access alerts</string>
+    <string name="clipboard_toast_info_show_important">Show only important alerts</string>
+    <string name="clipboard_toast_info_show_all">Show all access alerts</string>
 </resources>
