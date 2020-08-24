@@ -155,13 +155,6 @@
             android:defaultValue="0"
             android:dependency="fod_recognizing_animation" />
 
-        <!-- Screen off FOD -->
-        <SwitchPreference
-            android:key="screen_off_fod"
-            android:title="@string/scr_off_fod"
-            android:summary="@string/scr_off_fod_summary"
-            android:defaultValue="false" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
